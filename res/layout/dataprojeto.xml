@@ -1,0 +1,12 @@
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dataProjeto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="@color/cinza"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="10dp"
+        android:textSize="16sp">
+</TextView>

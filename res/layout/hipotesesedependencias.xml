@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidLintOverdraw -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff2f2f2"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <EditText
+            android:id="@+id/textoHipotese"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/tela_hipoteses_e_dependencias_hint_adicionar_hipotese"
+            android:maxLines="1"
+            android:layout_toLeftOf="@+id/botaoAdicionarHipotese"/>
+
+        <Button
+            android:id="@+id/botaoAdicionarHipotese"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_adicionar" android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svHipoteses"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <TableLayout
+            android:id="@+id/tabelaHipoteses"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="0"
+            tools:ignore="ScrollViewSize" >
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

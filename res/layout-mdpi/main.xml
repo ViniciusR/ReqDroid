@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidLintContentDescription -->
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:background="#414141">
+
+        <ImageView
+                android:layout_width="29dp"
+                android:layout_height="26dp"
+                android:id="@+id/imageView"
+                android:background="@drawable/icone"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tela_principal_titulo"
+                android:textSize="22sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:layout_marginTop="30dp"
+            >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:id="@+id/layoutNovoProjeto"
+                android:background="@drawable/layout_color"
+                android:baselineAligned="true"
+                android:layout_marginBottom="20dp">
+
+            <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="83dp"
+                    android:id="@+id/ivNovoProjeto"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/ic_novo_projeto"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/tela_principal_novo_projeto"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="26dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/layoutAbrirProjeto"
+                android:clickable="true"
+                android:baselineAligned="true"
+                android:background="@drawable/layout_color"
+                android:layout_marginTop="10dp">
+
+            <ImageView
+                    android:layout_width="86dp"
+                    android:layout_height="62dp"
+                    android:id="@+id/ivAbrirProjeto"
+                    android:focusableInTouchMode="false"
+                    android:background="@drawable/ic_abrir_projeto"
+                    android:layout_marginLeft="25dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/tela_principal_abrir_projeto"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:id="@+id/llRecentes"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp">
+    </LinearLayout>
+
+
+</LinearLayout>

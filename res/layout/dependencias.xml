@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidLintOverdraw -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:measureWithLargestChild="false">
+
+            <Spinner
+                android:id="@+id/spinnerRequisito1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+
+            <Button
+                android:id="@+id/BotaoAlternarRequisitos"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0"
+                android:background="@drawable/ic_mudar_direcao" />
+
+            <Spinner
+                android:id="@+id/spinnerRequisito2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:focusable="false"
+                    />
+
+            <Button
+                android:id="@+id/botaoAdicionarDependencia"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_adicionar"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/requisitoSelecionado1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/preto"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tela_dependencias_text_depende"
+                android:textColor="@color/preto"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/requisitoSelecionado2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/preto"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lvDependencias"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:dividerHeight="5dp"
+            android:clickable="true"
+            android:divider="@android:color/transparent"
+            android:choiceMode="singleChoice"
+            android:layout_marginTop="5dp"/>
+
+</LinearLayout>

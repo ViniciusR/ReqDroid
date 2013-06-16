@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidLintOverdraw, AndroidLintOverdraw, AndroidLintOverdraw -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#fff2f2f2"
+              android:gravity="bottom"
+              android:orientation="vertical">
+
+    <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_light"
+            >
+
+        <EditText
+                android:id="@+id/etHipotese"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/tela_hipoteses_e_dependencias_hint_adicionar_hipotese"
+                android:maxLines="1"
+                android:layout_toLeftOf="@+id/botaoAdicionarHipotese"/>
+
+        <Button
+                android:id="@+id/botaoAdicionarHipotese"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_adicionar"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lvHipoteses"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:dividerHeight="5dp"
+            android:clickable="true"
+            android:divider="@android:color/transparent"
+            android:choiceMode="singleChoice"/>
+
+</LinearLayout>

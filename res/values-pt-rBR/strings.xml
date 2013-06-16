@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ReqDroid</string>
+
+    <string name="tela_sobre">Sobre</string>
+    <string name="tela_sobre_titulo">Sobre o ReqDroid</string>
+    <string name="tela_sobre_versao">Versão:</string>
+    <string name="tela_sobre_versao_num">1.0</string>
+    <string name="tela_sobre_desenvolvido_por">Desenvolvido por:</string>
+    <string name="tela_sobre_meu_nome">Vinicius Rodrigues Silva\nvinicius.rodsilva@gmail.com\n\n2012</string>
+    <string name="tela_sobre_descricao">ReqDroid é um sistema gerenciador de requisitos de software desenvolvido como Trabalho de Conclusão de Curso do curso de Ciência da Computação da Universidade Estadual do Centro-Oeste - Unicentro.</string>
+
+    <string name="tela_abrir_projeto_abrir">Abrir projeto</string>
+    <string name="tela_abrir_projeto_lista_vazia">Você não criou nenhum projeto ainda!</string>
+
+    <string name="tela_escopo_titulo">Escopo</string>
+    <string name="tela_escopo_criado_em">Criado em:</string>
+    <string name="tela_escopo_descricao">Descrição:</string>
+    <string name="tela_escopo_objetivos">Objetivos:</string>
+    <string name="tela_escopo_beneficios">Benefícios:</string>
+    <string name="tela_escopo_publico_alvo">Público-alvo:</string>
+    <string name="menu_editar_projeto">Editar</string>
+    <string name="menu_deletar_projeto">Remover projeto</string>
+
+
+    <string name="tela_detalhes_requisito_titulo">Detalhes do requisito</string>
+    <string name="tela_detalhes_requisito_criado_em">Criado em:</string>
+    <string name="tela_detalhes_requisito_versao">Versão:</string>
+    <string name="tela_detalhes_requisito_botao_editar">Editar</string>
+    <string name="tela_detalhes_requisito_botao_remover">Remover</string>
+    <string name="tela_detalhes_requisito_botao_atrasar">Atrasar</string>
+    <string name="tela_detalhes_requisito_prioridade">Prioridade:</string>
+    <string name="tela_detalhes_requisito_autor">Autor:</string>
+    <string name="tela_detalhes_requisito_botao_editar_autor">Editar autor</string>
+    <string name="tela_detalhes_requisito_nome_requisito">Requisito #</string>
+
+    <string name="tela_detalhes_requisito_atrasado_nome_requisito">Requisito atrasado #</string>
+    <string name="tela_detalhes_requisito_atrasado_botao_mover">Mover</string>
+
+    <string name="tela_principal_titulo">ReqDroid</string>
+    <string name="tela_principal_novo_projeto">Novo projeto</string>
+    <string name="tela_principal_abrir_projeto">Abrir projeto</string>
+
+    <string name="tela_visao_geral_titulo">Visão geral</string>
+    <string name="tela_visao_geral_requisitos">Requisitos</string>
+    <string name="tela_visao_geral_caracteristicas_do_usuario">Características\ndo usuário</string>
+    <string name="tela_visao_geral_hipoteses_e_dependencias">Hipóteses\ne dependências</string>
+    <string name="tela_visao_geral_requisitos_atrasados">Requisitos\natrasados</string>
+    <string name="tela_visao_geral_escopo">Escopo</string>
+
+    <string name="tela_escopo_hint_titulo_sistema">Título do sistema</string>
+    <string name="tela_escopo_hint_descricao">Descrição</string>
+    <string name="tela_escopo_hint_beneficios">Benefícios</string>
+    <string name="tela_escopo_hint_objetivos">Objetivos</string>
+    <string name="tela_escopo_hint_publico_alvo">Público-alvo</string>
+    <string name="tela_escopo_botao_salvar">Salvar</string>
+    <string name="tela_escopo_botao_descartar">Descartar</string>
+
+    <string name="tela_editar_escopo_titulo">Editar o escopo do projeto.</string>
+    <string name="tela_editar_escopo_botao_descartar_alteracoes">Descartar</string>
+
+    <string name="tela_requisitos_msg_movido">O requisito foi atrasado.</string>
+    <string name="tela_requisitos_hint_adicionar_requisito">O sistema deve&#x2026;</string>
+
+    <string name="tela_caractetisticas_usuario_titulo">Características do usuário</string>
+    <string name="tela_caractetisticas_usuario_experiencia_titulo">Experiência:</string>
+    <string name="tela_caractetisticas_usuario_experiencia_texto">Nível de experiência\ndo usuário com\nsistemas parecidos.</string>
+    <string name="tela_caractetisticas_usuario_pericia_titulo">Perícia:</string>
+    <string name="tela_caractetisticas_usuario_pericia_texto">Nível de conhecimento\ndo usuário sobre as\nfuncionalidades do sistema.</string>
+    <string name="tela_caractetisticas_usuario_treinamento_titulo">Treinamento\npara o usuário</string>
+    <string name="tela_caractetisticas_usuario_radio_button_alto">Alto</string>
+    <string name="tela_caractetisticas_usuario_radio_button_medio">Médio</string>
+    <string name="tela_caractetisticas_usuario_radio_button_baixo">Baixo</string>
+
+    <string name="tela_hipoteses_e_dependencias_titulo">Insira a hipótese:</string>
+    <string name="tela_hipoteses_e_dependencias_hint_adicionar_hipotese">Assume-se que o sistema&#x2026;</string>
+
+    <string name="tela_detalhes_hipotese_titulo">Detalhes da hipótese</string>
+    <string name="tela_detalhes_hipotese_criado_em">Criado em:</string>
+    <string name="tela_detalhes_hipotese_versao">Versão:</string>
+    <string name="tela_detalhes_hipotese_botao_editar">Editar</string>
+    <string name="tela_detalhes_hipotese_botao_remover">Remover</string>
+    <string name="tela_detalhes_hipotese_botao_validar">Validar (mover para requisitos)</string>
+    <string name="tela_detalhes_hipotese_autor">Autor:</string>
+    <string name="tela_detalhes_hipotese_botao_editar_autor">Editar autor</string>
+
+    <string name="tela_dependencias_text_depende">\u0020depende do\u0020</string>
+    <string name="tela_dependencias_botao_adiciona_dependencia">Adicionar dependência</string>
+
+    <string name="tela_tabs_hed_hipoteses">Hipóteses</string>
+    <string name="tela_tabs_hed_dependencias">Dependências</string>
+
+
+    <!-- alerts -->
+    <string name="alert_remover_requisito_titulo">Remover requisito</string>
+    <string name="alert_remover_requisito_msg">Deseja remover este requisito e todas as suas dependências?</string>
+    <string name="alert_remover_requisito_atrasado_titulo">Remover requisito atrasado</string>
+    <string name="alert_remover_requisito_atrasado_msg">Deseja remover este requisito atrasado?</string>
+    <string name="alert_remover_hipotese_titulo">Remover hipótese</string>
+    <string name="alert_remover_hipotese_msg">Deseja remover esta hipótese?</string>
+    <string name="alert_sim">Sim</string>
+    <string name="alert_cancelar">Cancelar</string>
+    <string name="alert_salvar">Salvar</string>
+    <string name="alert_editar_autor_requisito_titulo">Editar autor do requisito</string>
+    <string name="alert_atrasar_requisito_titulo">Atrasar requisito</string>
+    <string name="alert_atrasar_requisito_msg">Deseja mover este requisito para a lista de requisitos atrasados? Atenção: todas as dependências relacionadas à ele serão removidas.</string>
+    <string name="alert_editar_requisito_titulo">Editar requisito</string>
+    <string name="alert_validar_hipotese_titulo">Validar hipótese</string>
+    <string name="alert_validar_hipotese_msg">Deseja validar esta hipótese e move-la para a lista de requisitos?</string>
+    <string name="alert_editar_hipotese">Editar hipótese</string>
+    <string name="alert_editar_autor_hipotese_titulo">Editar autor da hipótese</string>
+    <string name="alert_remover_projeto_titulo">Remover projeto</string>
+    <string name="alert_remover_projeto_msg">Deseja remover este projeto e todo seu conteúdo?</string>
+    <string name="alert_mover_requisito_atrasado_titulo">Mover requisito atrasado</string>
+    <string name="alert_mover_requisito_atrasado_msg">Deseja mover este requisito atrasado para a lista de requisitos?</string>
+    <string name="alert_editar_requisito_atrasado_titulo">Editar requisito atrasado</string>
+    <string name="alert_titulo">Alerta</string>
+    <string name="alert_campos_preenchidos_msg">Todos os campos devem ser preenchidos.</string>
+    <string name="alert_mesmo_titulo_msg">Já existe um projeto com este título. Escolha outro.</string>
+    <string name="alert_remover_dependencia_titulo">Remover dependência</string>
+    <string name="alert_remover_dependencia_msg">Deseja remover esta dependência?</string>
+
+
+    <!-- toasts -->
+    <string name="toast_descartar_alteracoes">Alterações descartadas.</string>
+    <string name="toast_descartar_projeto">Projeto descartado.</string>
+    <string name="toast_dependencia_igual">Selecione dois requisitos diferentes.</string>
+
+    <string name="msg_adicionar_autor">Clique em editar para adicionar o autor.</string>
+
+</resources>

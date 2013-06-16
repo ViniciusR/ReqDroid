@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_popupmenu">
+        <item android:id="@+id/opcaoEditarRequisitoAtrasado"
+              android:title="@string/tela_detalhes_requisito_botao_editar"/>
+        <item android:id="@+id/opcaoMoverRequisitoAtrasado"
+              android:title="@string/tela_detalhes_requisito_atrasado_botao_mover"/>
+        <item android:id="@+id/opcaoDeletarRequisitoAtrasado"
+              android:title="@string/tela_detalhes_requisito_botao_remover"/>
+    </group>
+</menu>

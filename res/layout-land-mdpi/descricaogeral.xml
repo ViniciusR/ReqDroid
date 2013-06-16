@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+        android:orientation="vertical"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+            
+<TextView 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+		android:layout_marginLeft="20dp"
+		android:text="@string/tela_visao_geral_titulo"
+		android:textSize="22sp"
+		android:textColor="#ff00b0f0"/>
+
+<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+ <LinearLayout
+        android:id="@+id/llBotaoRequisitos"
+        android:layout_width="96dp"
+		android:layout_height="76dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+         >
+    <Button
+        android:id="@+id/botaoRequisitos"
+        android:layout_marginBottom="5dp"
+        android:layout_width="47dp"
+        android:layout_height="51dp"
+        android:background="@drawable/ic_requisitos"
+        android:layout_gravity="center"/>
+
+     <TextView
+        android:id="@+id/textoRequisitos"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_requisitos"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"/>
+ </LinearLayout>
+
+ <LinearLayout
+        android:id="@+id/llBotaoUsuario"
+        android:layout_width="96dp"
+		android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/llBotaoAtrasados"
+        android:layout_alignLeft="@+id/llBotaoAtrasados">
+    <Button
+        android:id="@+id/botaoCaracteristicasUsuario"
+        android:layout_marginBottom="5dp"
+        android:layout_width="57dp"
+        android:layout_height="37dp"
+        android:background="@drawable/ic_caracteristicas_usuario" />
+
+        <TextView
+        android:id="@+id/textoUsuarios"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_caracteristicas_do_usuario"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"/>
+ </LinearLayout>
+
+ <LinearLayout
+        android:id="@+id/llBotaoHipoteses"
+        android:layout_width="96dp"
+		android:layout_height="110dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/llBotaoUsuario"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp">
+    <Button
+        android:id="@+id/botaoHipoteses"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_hipoteses"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"/>
+        
+    <TextView 
+        android:id="@+id/textoHipoteses"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_hipoteses_e_dependencias"
+        android:textSize="12sp"/>
+ </LinearLayout>
+ 
+  <LinearLayout
+        android:id="@+id/llBotaoAtrasados"
+        android:layout_width="96dp"
+		android:layout_height="110dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/llBotaoEscopo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+     <Button
+        android:id="@+id/botaoRequisitosAtrasados"
+        android:layout_marginBottom="5dp"
+        android:layout_width="47dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_requisitosatrasados"
+        android:layout_marginTop="3dp"/>
+     <TextView 
+        android:id="@+id/textoAtrasados"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_requisitos_atrasados"
+        android:textSize="12sp"/>
+ </LinearLayout>
+
+ <LinearLayout
+        android:id="@+id/llBotaoEscopo"
+        android:layout_width="96dp"
+		android:layout_height="76dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+    <Button
+        android:id="@+id/botaoEscopo"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_escopo"  />
+
+    <TextView
+        android:id="@+id/textoEscopo"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_escopo"
+        android:textSize="12sp"/>
+ </LinearLayout>
+</RelativeLayout>
+</LinearLayout>

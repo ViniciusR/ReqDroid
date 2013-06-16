@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+          package="com.vrs.reqdroid"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/icone"
+        		 android:allowBackup="true"
+                 android:theme="@style/TemaHolo">
+        <activity
+            android:name="com.vrs.reqdroid.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+
+             >
+         <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+     </activity>
+     <activity
+         android:name="com.vrs.reqdroid.TelaPrincipalActivity"
+         android:configChanges="orientation|keyboardHidden"
+        >
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+<activity
+    android:name="com.vrs.reqdroid.TelaNovaEspecificacaoActivity"
+    android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.TelaVisaoGeralActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.TelaAbrirProjetoActivity"
+        android:configChanges="orientation|keyboardHidden"
+        >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity
+         android:name="com.vrs.reqdroid.TelaRequisitoDetalhadoActivity"
+         android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.TelaEscopoActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.TelaEditarEscopoActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.TelaRequisitosAtrasadosActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.TelaRequisitoAtrasadoDetalhadoActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.TelaSobreActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.TelaCaracteristicasUsuarioActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.TabsHipotesesEDependenciasActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.HipotesesActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.DependenciasActivity"
+        android:windowSoftInputMode="adjustResize"
+        android:screenOrientation="portrait" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.vrs.reqdroid.HipoteseDetalhadaActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity android:name=".util.ListViewRequisitosAdapter"/>
+        <activity android:name=".TelaRequisitosActivity"/>
+        <activity android:name=".util.ListViewRequisitosAtrasadosAdapter"/>
+        <activity android:name=".util.OperacoesRequisitosAtrasados"/>
+        <activity android:name=".util.OperacoesHipoteses"/>
+        <activity android:name=".util.ListViewHipotesesAdapter"/>
+        <activity android:name=".util.ListViewDependenciasAdapter"/>
+        <activity android:name=".util.OperacoesDependencias"/>
+    </application>
+
+    </manifest>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ReqDroid</string>
+
+    <string name="tela_sobre">About</string>
+    <string name="tela_sobre_titulo">About ReqDroid</string>
+    <string name="tela_sobre_versao">Version:</string>
+    <string name="tela_sobre_versao_num">1.0</string>
+    <string name="tela_sobre_desenvolvido_por">Developed by:</string>
+    <string name="tela_sobre_meu_nome">Vinicius Rodrigues Silva\nvinicius.rodsilva@gmail.com\n\n2012</string>
+    <string name="tela_sobre_descricao">ReqDroid is a software requirements manager system developed as Coursework Conclusion of Computer Science course from Universidade Estadual do Centro-Oeste (Unicentro) - Guarapuava, PR - Brazil.</string>
+
+    <string name="tela_abrir_projeto_abrir">Open project</string>
+    <string name="tela_abrir_projeto_lista_vazia">You haven\'t created any project yet!</string>
+
+    <string name="tela_escopo_titulo">Scope</string>
+    <string name="tela_escopo_criado_em">Created in:</string>
+    <string name="tela_escopo_descricao">Description:</string>
+    <string name="tela_escopo_objetivos">Goals:</string>
+    <string name="tela_escopo_beneficios">Benefits:</string>
+    <string name="tela_escopo_publico_alvo">Target-audience:</string>
+    <string name="menu_editar_projeto">Edit</string>
+    <string name="menu_deletar_projeto">Remove project</string>
+
+
+    <string name="tela_detalhes_requisito_titulo">Requirement details</string>
+    <string name="tela_detalhes_requisito_criado_em">Created in:</string>
+    <string name="tela_detalhes_requisito_versao">Version:</string>
+    <string name="tela_detalhes_requisito_botao_editar">Edit</string>
+    <string name="tela_detalhes_requisito_botao_remover">Delete</string>
+    <string name="tela_detalhes_requisito_botao_atrasar">Delay</string>
+    <string name="tela_detalhes_requisito_prioridade">Priority:</string>
+    <string name="tela_detalhes_requisito_autor">Author:</string>
+    <string name="tela_detalhes_requisito_botao_editar_autor">Edit author</string>
+    <string name="tela_detalhes_requisito_nome_requisito">Requirement #</string>
+
+    <string name="tela_detalhes_requisito_atrasado_nome_requisito">Delayed requirement #</string>
+    <string name="tela_detalhes_requisito_atrasado_botao_mover">Move</string>
+
+    <string name="tela_principal_titulo">ReqDroid</string>
+    <string name="tela_principal_novo_projeto">New project</string>
+    <string name="tela_principal_abrir_projeto">Open project</string>
+
+    <string name="tela_visao_geral_titulo">Overview</string>
+    <string name="tela_visao_geral_requisitos">Requirements</string>
+    <string name="tela_visao_geral_caracteristicas_do_usuario">User\ncharacteristics</string>
+    <string name="tela_visao_geral_hipoteses_e_dependencias">Assumptions\nand dependencies</string>
+    <string name="tela_visao_geral_requisitos_atrasados">Delayed\nrequirements</string>
+    <string name="tela_visao_geral_escopo">Scope</string>
+
+    <string name="tela_escopo_hint_titulo_sistema">System title</string>
+    <string name="tela_escopo_hint_descricao">Description</string>
+    <string name="tela_escopo_hint_beneficios">Benefits</string>
+    <string name="tela_escopo_hint_objetivos">Goals</string>
+    <string name="tela_escopo_hint_publico_alvo">Target-audience</string>
+    <string name="tela_escopo_botao_salvar">Save</string>
+    <string name="tela_escopo_botao_descartar">Discard</string>
+
+    <string name="tela_editar_escopo_titulo">Edit the project scope.</string>
+    <string name="tela_editar_escopo_botao_descartar_alteracoes">Discard</string>
+
+    <string name="tela_requisitos_hint_adicionar_requisito">The system should&#x2026;</string>
+    <string name="tela_requisitos_msg_movido">The requirement has been delayed.</string>
+
+    <string name="tela_caractetisticas_usuario_titulo">User characteristics</string>
+    <string name="tela_caractetisticas_usuario_experiencia_titulo">Experience:</string>
+    <string name="tela_caractetisticas_usuario_experiencia_texto">User\'s experience\nlevel with similar\nsystems.</string>
+    <string name="tela_caractetisticas_usuario_pericia_titulo">Expertise:</string>
+    <string name="tela_caractetisticas_usuario_pericia_texto">User\'s expertise\nlevel about the\nsystem functionalities.</string>
+    <string name="tela_caractetisticas_usuario_treinamento_titulo">User training</string>
+    <string name="tela_caractetisticas_usuario_radio_button_alto">High</string>
+    <string name="tela_caractetisticas_usuario_radio_button_medio">Medium</string>
+    <string name="tela_caractetisticas_usuario_radio_button_baixo">Low</string>
+
+    <string name="tela_hipoteses_e_dependencias_titulo">Insert the assumption:</string>
+    <string name="tela_hipoteses_e_dependencias_hint_adicionar_hipotese">It\'s assumed that the system&#x2026;</string>
+
+    <string name="tela_detalhes_hipotese_titulo">Assumption details</string>
+    <string name="tela_detalhes_hipotese_criado_em">Created in:</string>
+    <string name="tela_detalhes_hipotese_versao">Version:</string>
+    <string name="tela_detalhes_hipotese_botao_editar">Edit</string>
+    <string name="tela_detalhes_hipotese_botao_remover">Delete</string>
+    <string name="tela_detalhes_hipotese_botao_validar">Validate (move to requirements)</string>
+    <string name="tela_detalhes_hipotese_autor">Author:</string>
+    <string name="tela_detalhes_hipotese_botao_editar_autor">Edit author</string>
+
+    <string name="tela_dependencias_text_depende">\u0020depends on \u0020</string>
+    <string name="tela_dependencias_botao_adiciona_dependencia">Add dependence</string>
+
+    <string name="tela_tabs_hed_hipoteses">Assumptions</string>
+    <string name="tela_tabs_hed_dependencias">Dependencies</string>
+
+
+    <!-- alerts -->
+    <string name="alert_remover_requisito_titulo">Remove requirement</string>
+    <string name="alert_remover_requisito_msg">Do you wish to remove this requirement and all its dependencies?</string>
+    <string name="alert_remover_requisito_atrasado_titulo">Remove delayed requirement</string>
+    <string name="alert_remover_requisito_atrasado_msg">Do you wish to remove this delayed requirement?</string>
+    <string name="alert_remover_hipotese_titulo">Remove assumption</string>
+    <string name="alert_remover_hipotese_msg">Do you wish to remove this assumption?</string>
+    <string name="alert_sim">Yes</string>
+    <string name="alert_cancelar">Cancel</string>
+    <string name="alert_salvar">Save</string>
+    <string name="alert_editar_autor_requisito_titulo">Edit requirement\'s author</string>
+    <string name="alert_atrasar_requisito_titulo">Delay requirement</string>
+    <string name="alert_atrasar_requisito_msg">Do you wish to move this requirement to the delayed requirements list? Attention: all the dependencies related to it will be removed.</string>
+    <string name="alert_editar_requisito_titulo">Edit requirement</string>
+    <string name="alert_validar_hipotese_titulo">Validate assumption</string>
+    <string name="alert_validar_hipotese_msg">Do you wish to validate this assumption and move it to the requirements list?</string>
+    <string name="alert_editar_hipotese">Edit assumption</string>
+    <string name="alert_editar_autor_hipotese_titulo">Edit assumption\'s author</string>
+    <string name="alert_remover_projeto_titulo">Remove\ project</string>
+    <string name="alert_remover_projeto_msg">Do you wish to remove this project and all of its content?</string>
+    <string name="alert_mover_requisito_atrasado_titulo">Move delayed requirement</string>
+    <string name="alert_mover_requisito_atrasado_msg">Do you wish to move this dalayed requirement to the requirements list?</string>
+    <string name="alert_editar_requisito_atrasado_titulo">Edit delayed requirement</string>
+    <string name="alert_titulo">Alert</string>
+    <string name="alert_campos_preenchidos_msg">All fields must be completed.</string>
+    <string name="alert_mesmo_titulo_msg">A project with the same name already exists. Choose another title.</string>
+    <string name="alert_remover_dependencia_titulo">Remove dependence</string>
+    <string name="alert_remover_dependencia_msg">Do you wish to remove this dependence?</string>
+
+
+
+    <!-- toasts -->
+    <string name="toast_descartar_alteracoes">Discarded changes.</string>
+    <string name="toast_descartar_projeto">Discarded project.</string>
+    <string name="toast_dependencia_igual">Select two different requirements.</string>
+
+    <string name="msg_adicionar_autor">Tap edit to add the author.</string>
+
+</resources>

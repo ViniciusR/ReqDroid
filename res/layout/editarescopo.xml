@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:gravity="bottom"
+
+            >
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="70dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:textSize="15sp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="left"
+       android:textColor="#000000"
+           />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:fillViewport="true"
+    >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+            >
+                
+                  <EditText
+                   android:id="@+id/novotextotitulosistema"
+                   android:layout_width="fill_parent"  
+                   android:layout_height="wrap_content"  
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:textSize="15sp"
+                   android:hint="@string/tela_escopo_hint_titulo_sistema"
+                   /> 
+    
+                    <EditText
+                    android:id="@+id/novotextodescricao"
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:hint="@string/tela_escopo_hint_descricao"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    android:minLines="2"
+                    /> 
+
+                    <EditText
+                    android:id="@+id/novotextobenefícios"
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:hint="@string/tela_escopo_hint_beneficios"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    android:minLines="2"
+                    /> 
+
+                    <EditText
+                    android:id="@+id/novotextoobjetivos"
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:hint="@string/tela_escopo_hint_objetivos"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    android:minLines="2"
+                    /> 
+
+
+                    <EditText
+                    android:id="@+id/novotextopublicoalvo"
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:hint="@string/tela_escopo_hint_publico_alvo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    />                  
+        </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="12dp">
+<Button
+android:id="@+id/botaoAlterarProjeto"
+android:layout_width="fill_parent"
+android:layout_height="54dp"
+android:layout_weight="1"
+android:layout_marginTop="8dp"
+android:layout_marginLeft="5dp"
+android:layout_marginRight="2dp"
+android:gravity="center"
+android:text="@string/tela_escopo_botao_salvar"
+android:textColor="@android:color/black"
+android:layout_marginBottom="1dp"/>
+
+<Button
+android:id="@+id/botaoDescartarAlteracoesProjeto"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_weight="1"
+android:layout_marginRight="2dp"
+android:layout_marginLeft="5dp"
+android:layout_marginTop="8dp"
+android:gravity="center"
+android:text="@string/tela_editar_escopo_botao_descartar_alteracoes"
+android:textColor="@android:color/black"
+android:layout_marginBottom="1dp"/>
+</LinearLayout>
+</LinearLayout>

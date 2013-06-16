@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi" severity="ignore" />
+    <issue id="PxUsage" severity="ignore" />
+    <issue id="SpUsage">
+        <ignore path="res/layout-hdpi/descricaogeral.xml" />
+        <ignore path="res/layout-hdpi/main.xml" />
+        <ignore path="res/layout-mdpi/descricaogeral.xml" />
+        <ignore path="res/layout-mdpi/main.xml" />
+        <ignore path="res/layout/caracteristicasusuario.xml" />
+        <ignore path="res/layout/hipotesedetalhada.xml" />
+        <ignore path="res/layout/novaespecificacao.xml" />
+        <ignore path="res/layout/requisitoatrasadodetalhado.xml" />
+        <ignore path="res/layout/requisitodetalhado.xml" />
+        <ignore path="res/layout/tab.xml" />
+    </issue>
+</lint>

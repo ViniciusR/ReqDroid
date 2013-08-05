@@ -5,19 +5,17 @@
 
 package com.vrs.reqdroid;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.widget.TextView;
-
+import com.actionbarsherlock.app.SherlockActivity;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.modelo.Projeto;
-//import com.vrs.reqdroid.R;
 
 /**
  * Implementa a tela do escopo do projeto do aplicativo.
@@ -25,7 +23,7 @@ import com.vrs.reqdroid.modelo.Projeto;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaEscopoActivity extends Activity {
+public class TelaEscopoActivity extends SherlockActivity {
     
     private static Projeto projeto;
 
@@ -38,6 +36,7 @@ public class TelaEscopoActivity extends Activity {
         setContentView(R.layout.escopo);
         carregaProjeto();
         preencheInformacoesProjeto();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -122,9 +121,9 @@ public class TelaEscopoActivity extends Activity {
         inflater.inflate(R.menu.menuopcoesprojeto, menu);
         return true;
     }
-    
+
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menueditarprojeto:     
             					Intent i = new Intent(TelaEscopoActivity.this, TelaEditarEscopoActivity.class);  
@@ -134,6 +133,8 @@ public class TelaEscopoActivity extends Activity {
             case R.id.menuexcluirprojeto:     
             					removeProjeto();
                                 break;
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this,new Intent(this, TelaVisaoGeralActivity.class));
         }
         return true;
     }

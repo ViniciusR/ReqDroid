@@ -5,18 +5,18 @@
 
 package com.vrs.reqdroid;
 
-import android.app.ListActivity;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.TypedValue;
+import android.support.v4.app.NavUtils;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
 import android.widget.AdapterView.OnItemClickListener;
-
+import com.actionbarsherlock.app.SherlockListActivity;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.modelo.Projeto;
 import com.vrs.reqdroid.util.ListViewProjetosAdapter;
@@ -29,7 +29,7 @@ import java.util.ArrayList;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaAbrirProjetoActivity extends ListActivity  {
+public class TelaAbrirProjetoActivity extends SherlockListActivity {
 
     private String projetoSelecionado;
     private int idProjetoSelecionado;
@@ -40,6 +40,7 @@ public class TelaAbrirProjetoActivity extends ListActivity  {
     @Override
     public void onCreate(Bundle icicle){
         super.onCreate(icicle);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mostraProjetos();  
     }
 
@@ -75,21 +76,6 @@ public class TelaAbrirProjetoActivity extends ListActivity  {
      */
     private void configuraListView(ListView lv)
     {
-        TextView tvHeader = new TextView(this);
-        tvHeader.setText(R.string.tela_abrir_projeto_abrir);
-        tvHeader.setTextSize(TypedValue.COMPLEX_UNIT_DIP,22);
-        int l = 20;
-        int t = 30;
-        int b = 20;
-        float d = this.getResources().getDisplayMetrics().density;
-        int lmargin = (int)(l * d);
-        int tmargin = (int)(t * d);
-        int bmargin = (int)(b * d);
-        tvHeader.setPadding(lmargin, tmargin, 0, bmargin);
-        tvHeader.setTextColor(getResources().getColor(R.color.titulo));
-
-        lv.addHeaderView(tvHeader,null,false);
-
         lv.setSelectionAfterHeaderView();
         lv.setCacheColorHint(Color.TRANSPARENT);
         lv.setTextFilterEnabled(true);
@@ -113,5 +99,16 @@ public class TelaAbrirProjetoActivity extends ListActivity  {
     private ArrayList<Projeto> carregaProjetos()
     {
     	return (ArrayList<Projeto>) BDGerenciador.getInstance(this).selectAllProjetosComData();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this,new Intent(this, TelaPrincipalActivity.class));
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

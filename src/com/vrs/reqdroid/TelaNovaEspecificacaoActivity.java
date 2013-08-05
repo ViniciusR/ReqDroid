@@ -7,13 +7,14 @@ package com.vrs.reqdroid;
 
 import java.text.DateFormat;
 import java.util.Date;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.actionbarsherlock.app.SherlockActivity;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.modelo.Projeto;
 import com.vrs.reqdroid.util.MsgAlerta;
@@ -24,7 +25,7 @@ import com.vrs.reqdroid.util.MsgAlerta;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaNovaEspecificacaoActivity extends Activity {
+public class TelaNovaEspecificacaoActivity extends SherlockActivity {
 
     private static EditText eTitulo; 
     private static EditText eDescricao;

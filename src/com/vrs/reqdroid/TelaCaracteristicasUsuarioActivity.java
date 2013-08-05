@@ -6,12 +6,16 @@
 package com.vrs.reqdroid;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
-import android.app.Activity;
-
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.MenuItem;
 import com.vrs.reqdroid.dao.BDGerenciador;
 
 
@@ -21,7 +25,7 @@ import com.vrs.reqdroid.dao.BDGerenciador;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaCaracteristicasUsuarioActivity extends Activity {
+public class TelaCaracteristicasUsuarioActivity extends SherlockActivity {
 	
 	private int idProjeto;
 	private RadioGroup radioGroupExperiencia;
@@ -165,5 +169,28 @@ public class TelaCaracteristicasUsuarioActivity extends Activity {
 		radioGroupExperiencia = (RadioGroup) findViewById(R.id.radioGroupExperiencia);
 		radioGroupPericia = (RadioGroup) findViewById(R.id.radioGroupPericia);
 		checkBoxTreinamento = (CheckBox)findViewById(R.id.checkBoxTreinamentoUsuario);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 	}
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menusobre, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menusobre:
+                Intent i = new Intent(TelaCaracteristicasUsuarioActivity.this, TelaSobreActivity.class);
+                startActivity(i);
+                break;
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this,new Intent(this, TelaVisaoGeralActivity.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

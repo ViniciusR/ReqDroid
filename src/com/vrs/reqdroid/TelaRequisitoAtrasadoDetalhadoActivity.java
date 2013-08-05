@@ -5,17 +5,20 @@
 
 package com.vrs.reqdroid;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.widget.TextView;
-
+import com.actionbarsherlock.app.SherlockActivity;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.util.OperacoesRequisitosAtrasados;
 
@@ -25,7 +28,7 @@ import com.vrs.reqdroid.util.OperacoesRequisitosAtrasados;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaRequisitoAtrasadoDetalhadoActivity extends Activity{
+public class TelaRequisitoAtrasadoDetalhadoActivity extends SherlockActivity {
 
     private TextView requisito;
     private TextView data;
@@ -49,6 +52,7 @@ public class TelaRequisitoAtrasadoDetalhadoActivity extends Activity{
         moveRequisito();
         atualizaPrioridade();
         editaAutorRequisito();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     /**
@@ -287,5 +291,27 @@ public class TelaRequisitoAtrasadoDetalhadoActivity extends Activity{
         idRequisito = BDGerenciador.getInstance(this).selectRequisitoAtrasadoPorDescricao(descricaoAtual,
                 TelaVisaoGeralActivity.getIdProjeto());
         BDGerenciador.getInstance(this).updateAutorRequisitoAtrasado(idRequisito, autorNovo);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menusobre, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menusobre:
+                Intent i = new Intent(TelaRequisitoAtrasadoDetalhadoActivity.this, TelaSobreActivity.class);
+                startActivity(i);
+                break;
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this,new Intent(this, TelaRequisitosAtrasadosActivity.class));
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

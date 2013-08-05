@@ -5,14 +5,19 @@
 
 package com.vrs.reqdroid;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.actionbarsherlock.app.SherlockActivity;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.util.OperacoesHipoteses;
 
@@ -22,7 +27,7 @@ import com.vrs.reqdroid.util.OperacoesHipoteses;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class HipoteseDetalhadaActivity extends Activity{
+public class HipoteseDetalhadaActivity extends SherlockActivity {
 
     private TextView hipotese;
     private TextView data;
@@ -44,6 +49,7 @@ public class HipoteseDetalhadaActivity extends Activity{
         removeHipotese();
         validaHipotese();
         editaAutorHipotese();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     /**
@@ -245,5 +251,26 @@ public class HipoteseDetalhadaActivity extends Activity{
         int idHipotese = BDGerenciador.getInstance(this).selectHipotesePorDescricao(descricaoAtual,
                                                                                      TelaVisaoGeralActivity.getIdProjeto());
         BDGerenciador.getInstance(this).updateAutorHipotese(idHipotese, autorNovo);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menusobre, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menusobre:
+                Intent i = new Intent(HipoteseDetalhadaActivity.this, TelaSobreActivity.class);
+                startActivity(i);
+                break;
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this,new Intent(this, TabsHipotesesEDependenciasActivity.class));
+        }
+        return true;
     }
 }

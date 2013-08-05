@@ -9,12 +9,16 @@ import android.os.Bundle;
 import android.app.ActivityGroup;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TabHost;
 import android.widget.TextView;
+
 
 
 /**
@@ -23,7 +27,6 @@ import android.widget.TextView;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-@SuppressWarnings("deprecation")
 public class TabsHipotesesEDependenciasActivity extends ActivityGroup {
     
     private static TabHost tabHost;
@@ -81,5 +84,23 @@ public class TabsHipotesesEDependenciasActivity extends ActivityGroup {
         tv.setText(label);
 
         return ll;
-    }    
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menusobre, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(android.view.MenuItem item) { //MUDAR pro Sherlock
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this,new Intent(this, TelaVisaoGeralActivity.class));
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

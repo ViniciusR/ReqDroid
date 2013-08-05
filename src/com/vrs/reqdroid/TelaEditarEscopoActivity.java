@@ -5,12 +5,13 @@
 
 package com.vrs.reqdroid;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.actionbarsherlock.app.SherlockActivity;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.modelo.Projeto;
 import com.vrs.reqdroid.util.MsgAlerta;
@@ -22,7 +23,7 @@ import com.vrs.reqdroid.util.MsgAlerta;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaEditarEscopoActivity extends Activity{
+public class TelaEditarEscopoActivity extends SherlockActivity{
 	
 	private EditText eTitulo;
     private EditText eDescricao;

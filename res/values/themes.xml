@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="TemaHolo" parent="@android:style/Theme.Light.NoTitleBar">
-        <item name="android:windowNoTitle">true</item>
-        <!-- Any customizations for your app running on pre-3.0 devices here -->
+    <style name="TemaReqDroid" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/TemaReqDroid.ActionBarStyle</item>
+    </style>
+
+    <style name="TemaReqDroid.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/branco</item>
     </style>
 </resources>

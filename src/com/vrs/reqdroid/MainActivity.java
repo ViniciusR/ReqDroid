@@ -5,12 +5,14 @@
 
 package com.vrs.reqdroid;
 
-import android.app.Activity;
+//import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import com.actionbarsherlock.app.SherlockActivity;
 
 /**
  * Implementa a activity principal do aplicativo.
@@ -18,7 +20,7 @@ import android.view.MenuItem;
  * @author Vinicius Rodrigues Silva <vvinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class MainActivity extends Activity
+public class MainActivity extends SherlockActivity
 {
     /** Called when the activity is first created. */
     @Override

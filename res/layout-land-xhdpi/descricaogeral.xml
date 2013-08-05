@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+        android:orientation="vertical"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:layout_gravity="center"
+        android:measureWithLargestChild="false"
+        android:layout_marginTop="71dp">
+            
+   <LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="9dp">
+      <Button
+        android:id="@+id/botaoRequisitos"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_width="73dp"
+        android:layout_height="78dp"
+        android:background="@drawable/ic_requisitos"/>
+        
+     <TextView 
+        android:id="@+id/textoRequisitos"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_requisitos"/>
+   </LinearLayout>      
+   
+ <LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp">
+    <Button
+        android:id="@+id/botaoCaracteristicasUsuario"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_width="83dp"
+        android:layout_height="58dp"
+        android:background="@drawable/ic_caracteristicas_usuario" />
+        
+        <TextView 
+        android:id="@+id/textoUsuarios"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_caracteristicas_do_usuario"/>
+  </LinearLayout>        
+ 
+  <LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="9dp">
+    <Button
+        android:id="@+id/botaoHipoteses"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="73dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_hipoteses"  />
+        
+    <TextView 
+        android:id="@+id/textoHipoteses"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_hipoteses_e_dependencias"/>
+   </LinearLayout>
+
+   <LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp">
+    <Button
+        android:id="@+id/botaoRequisitosAtrasados"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_width="73dp"
+        android:layout_height="83dp"
+        android:background="@drawable/ic_requisitosatrasados" />
+     <TextView
+        android:id="@+id/textoAtrasados"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_requisitos_atrasados"/>
+   </LinearLayout>
+
+      <LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="9dp">
+    <Button
+        android:id="@+id/botaoEscopo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_width="73dp"
+        android:layout_height="74dp"
+        android:background="@drawable/ic_escopo" />
+     <TextView 
+        android:id="@+id/textoEscopo"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textColor="#000000"
+		android:text="@string/tela_visao_geral_escopo"/>
+   </LinearLayout>  
+</LinearLayout>
+</LinearLayout>

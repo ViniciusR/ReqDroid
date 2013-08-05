@@ -6,11 +6,11 @@
 package com.vrs.reqdroid;
 
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -24,6 +24,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+
+import com.actionbarsherlock.app.SherlockActivity;
 import com.vrs.reqdroid.util.ListViewRequisitosAtrasadosAdapter;
 import com.vrs.reqdroid.util.OperacoesRequisitos;
 import com.vrs.reqdroid.util.OperacoesRequisitosAtrasados;
@@ -38,7 +40,7 @@ import java.util.Date;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaRequisitosAtrasadosActivity extends Activity {
+public class TelaRequisitosAtrasadosActivity extends SherlockActivity {
 
     private static ArrayList<String> requisitosAtrasados;
     private static ListViewRequisitosAtrasadosAdapter lvRequisitosAtrasadosAdapter;
@@ -57,6 +59,7 @@ public class TelaRequisitosAtrasadosActivity extends Activity {
         carregaRequisitos();
         adicionaRequisito();
         exibeDetalhesRequisito();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     /**
@@ -321,13 +324,19 @@ public class TelaRequisitosAtrasadosActivity extends Activity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menusobre:
                 Intent i = new Intent(TelaRequisitosAtrasadosActivity.this, TelaSobreActivity.class);
                 startActivity(i);
                 break;
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this, new Intent(this, TelaVisaoGeralActivity.class));
+                return true;
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
+
+
 }

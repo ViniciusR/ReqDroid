@@ -5,16 +5,18 @@
 
 package com.vrs.reqdroid;
 
-import android.app.Activity;
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import com.actionbarsherlock.app.SherlockActivity;
 
 /**
  * Implementa a tela da secao de visao geral do sistema.
@@ -22,7 +24,7 @@ import android.widget.Button;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaVisaoGeralActivity extends Activity {
+public class TelaVisaoGeralActivity extends SherlockActivity {
 
     private static int idProjeto;
     private static String tituloProjeto;
@@ -39,6 +41,7 @@ public class TelaVisaoGeralActivity extends Activity {
         AbreTelaRequisitosAtrasados();
         AbreTelaRequisitosCaracteristicasUsuario();
         AbreTelaHipotesesEDependencias();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     
     /**
@@ -153,13 +156,17 @@ public class TelaVisaoGeralActivity extends Activity {
        return true;
    }
    
+   @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
    @Override
-   public boolean onOptionsItemSelected(MenuItem item) {
+   public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
        switch (item.getItemId()) {
            case R.id.menusobre:     
            					Intent i = new Intent(TelaVisaoGeralActivity.this, TelaSobreActivity.class);  
            					startActivity(i);  
                              break;
+           // Respond to the action bar's Up/Home button
+           case android.R.id.home:
+               NavUtils.navigateUpTo(this,new Intent(this, TelaPrincipalActivity.class));
        }
        return true;
    }

@@ -5,15 +5,15 @@
 
 package com.vrs.reqdroid;
 
-import android.app.Activity;
+
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import com.actionbarsherlock.app.SherlockActivity;
 
 
 /**
@@ -22,7 +22,7 @@ import android.widget.LinearLayout;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaPrincipalActivity extends Activity {
+public class TelaPrincipalActivity extends SherlockActivity {
 
     private static String projetoSelecionado;
     private static int idProjetoSelecionado;
@@ -141,7 +141,7 @@ public class TelaPrincipalActivity extends Activity {
    }
    
    @Override
-   public boolean onOptionsItemSelected(MenuItem item) {
+   public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
        switch (item.getItemId()) {
            case R.id.menusobre:     
            					Intent i = new Intent(TelaPrincipalActivity.this, TelaSobreActivity.class);  
@@ -150,4 +150,6 @@ public class TelaPrincipalActivity extends Activity {
        }
        return true;
    }
+
+
 }

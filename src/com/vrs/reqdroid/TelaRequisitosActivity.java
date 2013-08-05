@@ -6,11 +6,11 @@
 package com.vrs.reqdroid;
 
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -24,6 +24,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+
+import com.actionbarsherlock.app.SherlockActivity;
 import com.vrs.reqdroid.util.ListViewRequisitosAdapter;
 import com.vrs.reqdroid.util.OperacoesRequisitos;
 
@@ -37,7 +39,7 @@ import java.util.Date;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaRequisitosActivity extends Activity {
+public class TelaRequisitosActivity extends SherlockActivity {
 
     private static ArrayList<String> requisitos;
     private static ListViewRequisitosAdapter lvRequisitosAdapter;
@@ -310,6 +312,7 @@ public class TelaRequisitosActivity extends Activity {
         lvRequisitos = (ListView) findViewById(R.id.lvRequisitos);
         requisitos = new ArrayList<String>();
         editTextRequisito = (EditText) findViewById(R.id.etRequisito);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -320,12 +323,14 @@ public class TelaRequisitosActivity extends Activity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menusobre:
                 Intent i = new Intent(TelaRequisitosActivity.this, TelaSobreActivity.class);
                 startActivity(i);
                 break;
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this,new Intent(this, TelaVisaoGeralActivity.class));
         }
         return true;
     }

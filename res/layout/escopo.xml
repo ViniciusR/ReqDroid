@@ -7,21 +7,12 @@
     android:orientation="vertical" >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/tela_escopo_titulo"
-        android:textColor="#ff00b0f0"
-        android:textSize="22sp" />
-
-    <TextView
         android:id="@+id/tituloSistema"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:textColor="#000000"
         android:textSize="18sp" />
 

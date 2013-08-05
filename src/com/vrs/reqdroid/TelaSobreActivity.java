@@ -6,7 +6,8 @@
 package com.vrs.reqdroid;
 
 import android.os.Bundle;
-import android.app.Activity;
+
+import com.actionbarsherlock.app.SherlockActivity;
 
 /**
  * Implementa a tela de sobre o sistema.
@@ -14,7 +15,7 @@ import android.app.Activity;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TelaSobreActivity extends Activity {
+public class TelaSobreActivity extends SherlockActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

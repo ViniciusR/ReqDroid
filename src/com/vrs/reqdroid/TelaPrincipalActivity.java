@@ -9,8 +9,8 @@ package com.vrs.reqdroid;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import com.actionbarsherlock.app.SherlockActivity;
@@ -132,10 +132,10 @@ public class TelaPrincipalActivity extends SherlockActivity {
   	     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
   	     startActivity(intent);
    }
-   
+
    @Override
    public boolean onCreateOptionsMenu(Menu menu) {
-       MenuInflater inflater = getMenuInflater();
+       MenuInflater inflater = getSupportMenuInflater();
        inflater.inflate(R.menu.menusobre, menu);
        return true;
    }
@@ -150,6 +150,4 @@ public class TelaPrincipalActivity extends SherlockActivity {
        }
        return true;
    }
-
-
 }

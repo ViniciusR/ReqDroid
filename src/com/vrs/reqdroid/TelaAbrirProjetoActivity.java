@@ -17,9 +17,12 @@ import android.view.ViewGroup;
 import android.widget.*;
 import android.widget.AdapterView.OnItemClickListener;
 import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.modelo.Projeto;
 import com.vrs.reqdroid.util.ListViewProjetosAdapter;
+
 
 import java.util.ArrayList;
 
@@ -102,8 +105,19 @@ public class TelaAbrirProjetoActivity extends SherlockListActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getSupportMenuInflater();
+        inflater.inflate(R.menu.menusobre, menu);
+        return true;
+    }
+
+    @Override
     public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.menusobre:
+                Intent i = new Intent(TelaAbrirProjetoActivity.this, TelaSobreActivity.class);
+                startActivity(i);
+                break;
             // Respond to the action bar's Up/Home button
             case android.R.id.home:
                 NavUtils.navigateUpTo(this,new Intent(this, TelaPrincipalActivity.class));

@@ -6,15 +6,12 @@
 package com.vrs.reqdroid;
 
 import java.util.ArrayList;
-import android.app.Activity;
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -22,6 +19,8 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.actionbarsherlock.app.SherlockFragment;
 import com.vrs.reqdroid.modelo.Dependencia;
 import com.vrs.reqdroid.util.ListViewDependenciasAdapter;
 import com.vrs.reqdroid.util.OperacoesDependencias;
@@ -33,7 +32,7 @@ import com.vrs.reqdroid.util.OperacoesDependencias;
  * @version 1.0
  */
 @SuppressWarnings("ForLoopReplaceableByForEach")
-public class DependenciasActivity extends Activity
+public class DependenciasFragment extends SherlockFragment
 {
     private static ArrayList<Dependencia> dependencias;
     private static ListViewDependenciasAdapter lvDependenciasAdapter;
@@ -45,13 +44,18 @@ public class DependenciasActivity extends Activity
     private static Button botaoAlternarRequisitos;
     private int primeiroRequisitoSelecionado;
     private int segundoRequisitoSelecionado;
-    
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        return inflater.inflate(R.layout.dependencias, container, false);
+    }
+
     /** Called when the activity is first created. */
     @Override
-    public void onCreate(Bundle savedInstanceState)
+    public void onStart()
     {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.dependencias);
+        super.onStart();
         init();
         carregaRequisitos();
         carregaDependencias();
@@ -65,7 +69,7 @@ public class DependenciasActivity extends Activity
      */
     private void carregaRequisitos()
     {
-        OperacoesDependencias.preencheSpinners(this, spinnerPrimeiroRequisito, spinnerSegundoRequisito, idProjeto);
+        OperacoesDependencias.preencheSpinners(getActivity(), spinnerPrimeiroRequisito, spinnerSegundoRequisito, idProjeto);
     }
 
     /**
@@ -73,10 +77,10 @@ public class DependenciasActivity extends Activity
      */
     private void carregaDependencias()
     {
-        dependencias = OperacoesDependencias.carregaDependenciasBD(DependenciasActivity.this, idProjeto);
+        dependencias = OperacoesDependencias.carregaDependenciasBD(getActivity(), idProjeto);
         lvDependencias.setCacheColorHint(Color.TRANSPARENT);
         lvDependencias.setSelectionAfterHeaderView();
-        lvDependenciasAdapter = new ListViewDependenciasAdapter(this, dependencias, botaoRemoverListener);
+        lvDependenciasAdapter = new ListViewDependenciasAdapter(getActivity(), dependencias, botaoRemoverListener);
         lvDependencias.setAdapter(lvDependenciasAdapter);
     }
 
@@ -89,7 +93,7 @@ public class DependenciasActivity extends Activity
             LinearLayout caixaDependencia = (LinearLayout)view.getParent();
             posicao = lvDependencias.getPositionForView(caixaDependencia);
             Dependencia dependencia = (Dependencia) lvDependenciasAdapter.getItem(posicao);
-            OperacoesDependencias.removeDependencia(DependenciasActivity.this, dependencias, dependencia,
+            OperacoesDependencias.removeDependencia(getActivity(), dependencias, dependencia,
                                                     posicao, idProjeto, lvDependenciasAdapter);
         }
     };
@@ -99,7 +103,7 @@ public class DependenciasActivity extends Activity
      */
     private void adicionaDependencia()
     {   
-        Button botaoAdicionarDependencia = (Button) findViewById(R.id.botaoAdicionarDependencia);
+        Button botaoAdicionarDependencia = (Button) getView().findViewById(R.id.botaoAdicionarDependencia);
 
         botaoAdicionarDependencia.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -113,7 +117,7 @@ public class DependenciasActivity extends Activity
             	    }
             	    else
             	    {
-            		  Toast toast = Toast.makeText(getApplicationContext(), R.string.toast_dependencia_igual, Toast.LENGTH_SHORT);
+            		  Toast toast = Toast.makeText(getActivity().getApplicationContext(), R.string.toast_dependencia_igual, Toast.LENGTH_SHORT);
                       toast.show();
             	    }
                 }
@@ -126,7 +130,7 @@ public class DependenciasActivity extends Activity
      */
     private void salvaDependencia(Dependencia dependencia)
     {
-        OperacoesDependencias.salvaDependenciaBD(this, dependencia, idProjeto);
+        OperacoesDependencias.salvaDependenciaBD(getActivity(), dependencia, idProjeto);
     }
 
     /**
@@ -134,8 +138,8 @@ public class DependenciasActivity extends Activity
      */
     private void selecionaRequisitosSpinners()
     {
-    	final TextView tvRequisitoSelecionado1 = (TextView)findViewById(R.id.requisitoSelecionado1);
-    	final TextView tvRequisitoSelecionado2 = (TextView)findViewById(R.id.requisitoSelecionado2);
+    	final TextView tvRequisitoSelecionado1 = (TextView)getView().findViewById(R.id.requisitoSelecionado1);
+    	final TextView tvRequisitoSelecionado2 = (TextView)getView().findViewById(R.id.requisitoSelecionado2);
         final String titulo = getResources().getString(R.string.tela_detalhes_requisito_nome_requisito);
 
         spinnerPrimeiroRequisito.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -163,7 +167,7 @@ public class DependenciasActivity extends Activity
      */
     private void alternaSpinners()
     { 	
-    	botaoAlternarRequisitos = (Button)findViewById(R.id.BotaoAlternarRequisitos);
+    	botaoAlternarRequisitos = (Button)getView().findViewById(R.id.BotaoAlternarRequisitos);
     	
     	botaoAlternarRequisitos.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -180,15 +184,15 @@ public class DependenciasActivity extends Activity
      */
     void init()
 	{
-		this.setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		getActivity().setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		idProjeto = TelaVisaoGeralActivity.getIdProjeto();
-        lvDependencias = (ListView) findViewById(R.id.lvDependencias);
+        lvDependencias = (ListView) getView().findViewById(R.id.lvDependencias);
         dependencias = new ArrayList<Dependencia>();
-		spinnerPrimeiroRequisito =  (Spinner)findViewById(R.id.spinnerRequisito1);
-		spinnerSegundoRequisito =  (Spinner)findViewById(R.id.spinnerRequisito2);
+		spinnerPrimeiroRequisito =  (Spinner)getView().findViewById(R.id.spinnerRequisito1);
+		spinnerSegundoRequisito =  (Spinner)getView().findViewById(R.id.spinnerRequisito2);
 	}
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menusobre, menu);
@@ -199,10 +203,10 @@ public class DependenciasActivity extends Activity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menusobre:
-                Intent i = new Intent(DependenciasActivity.this, TelaSobreActivity.class);
+                Intent i = new Intent(DependenciasFragment.this, TelaSobreActivity.class);
                 startActivity(i);
                 break;
         }
         return true;
-    }
+    }*/
 }

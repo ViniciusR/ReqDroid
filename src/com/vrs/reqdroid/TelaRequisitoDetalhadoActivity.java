@@ -290,6 +290,13 @@ public class TelaRequisitoDetalhadoActivity extends SherlockActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu) {
+        com.actionbarsherlock.view.MenuInflater inflater = getSupportMenuInflater();
+        inflater.inflate(R.menu.menusobre, menu);
+        return true;
+    }
+
+    @Override
     public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menusobre:

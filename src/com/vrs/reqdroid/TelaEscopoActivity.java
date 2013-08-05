@@ -10,8 +10,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.vrs.reqdroid.dao.BDGerenciador;
@@ -114,10 +112,10 @@ public class TelaEscopoActivity extends SherlockActivity {
     {
     	BDGerenciador.getInstance(this).deleteProjeto(id);
     }
-    
+
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
+    public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu) {
+        com.actionbarsherlock.view.MenuInflater inflater = getSupportMenuInflater();
         inflater.inflate(R.menu.menuopcoesprojeto, menu);
         return true;
     }

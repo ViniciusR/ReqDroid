@@ -15,6 +15,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.modelo.Projeto;
 import com.vrs.reqdroid.util.MsgAlerta;
@@ -198,5 +200,23 @@ public class TelaNovaEspecificacaoActivity extends SherlockActivity {
      */
     public static String getTituloProjeto() {
         return tituloProjeto;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getSupportMenuInflater();
+        inflater.inflate(R.menu.menusobre, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menusobre:
+                Intent i = new Intent(TelaNovaEspecificacaoActivity.this, TelaSobreActivity.class);
+                startActivity(i);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

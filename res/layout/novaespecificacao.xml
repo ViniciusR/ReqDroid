@@ -11,72 +11,72 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:fillViewport="true"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="70dp">
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
             >
-                
+
                   <EditText
                    android:id="@+id/textotitulosistema"
-                   android:layout_width="fill_parent"  
-                   android:layout_height="wrap_content"  
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
                    android:layout_marginTop="10dp"
                    android:layout_marginBottom="10dp"
                    android:layout_marginLeft="10dp"
                    android:layout_marginRight="10dp"
                    android:textSize="15sp"
                    android:hint="@string/tela_escopo_hint_titulo_sistema"
-                   /> 
-    
+                   />
+
                     <EditText
                     android:id="@+id/textodescricao"
-                    android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content"  
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
                     android:hint="@string/tela_escopo_hint_descricao"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textSize="15sp"
                     android:minLines="2"
-                    /> 
+                    />
 
                     <EditText
                     android:id="@+id/textobenefícios"
-                    android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content"  
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
                     android:hint="@string/tela_escopo_hint_beneficios"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textSize="15sp"
                     android:minLines="2"
-                    /> 
+                    />
 
                     <EditText
                     android:id="@+id/textoobjetivos"
-                    android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content"  
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
                     android:hint="@string/tela_escopo_hint_objetivos"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textSize="15sp"
                     android:minLines="2"
-                    /> 
+                    />
 
 
                     <EditText
                     android:id="@+id/textopublicoalvo"
-                    android:layout_width="fill_parent"  
-                    android:layout_height="wrap_content"  
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
                     android:hint="@string/tela_escopo_hint_publico_alvo"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textSize="15sp"
-                    />                  
+                    />
         </LinearLayout>
     </ScrollView>
 

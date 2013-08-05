@@ -211,7 +211,7 @@ public class SherlockFragmentActivity extends Watson implements OnActionModeStar
     }
 
     @Override
-    public final boolean onOptionsItemSelected(android.view.MenuItem item) {
+    public boolean onOptionsItemSelected(android.view.MenuItem item) {
         return false;
     }
 

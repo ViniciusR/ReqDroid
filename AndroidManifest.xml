@@ -183,7 +183,7 @@
         </intent-filter>
     </activity>
     <activity
-        android:name="com.vrs.reqdroid.HipotesesActivity"
+        android:name=".HipotesesFragment"
         android:label="@string/tela_tabs_hed_hipoteses"
         android:configChanges="orientation|keyboardHidden"
         android:windowSoftInputMode="adjustResize" >
@@ -194,7 +194,7 @@
         </intent-filter>
     </activity>
     <activity
-        android:name="com.vrs.reqdroid.DependenciasActivity"
+        android:name=".DependenciasFragment"
         android:label="@string/tela_tabs_hed_dependencias"
         android:windowSoftInputMode="adjustResize"
         android:screenOrientation="portrait" >

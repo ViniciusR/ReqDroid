@@ -11,7 +11,8 @@
     	android:gravity="center_horizontal"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp">
         
  <LinearLayout
         android:id="@+id/llBotaoRequisitos"
@@ -101,7 +102,7 @@
 		android:layout_height="110dp"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_above="@+id/llBotaoEscopo"
+        android:layout_alignTop="@+id/llBotaoHipoteses"
         android:layout_alignParentRight="true">
      <Button
         android:id="@+id/botaoRequisitosAtrasados"
@@ -126,8 +127,9 @@
 		android:layout_height="76dp"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_below="@+id/llBotaoHipoteses"
-        android:layout_alignParentLeft="true">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp">
     <Button
         android:id="@+id/botaoEscopo"
         android:layout_width="47dp"

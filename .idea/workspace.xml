@@ -48,7 +48,7 @@
       <layout url="file://$PROJECT_DIR$/res/layout-land-mdpi/descricaogeral.xml">
         <config>
           <device>3.2in HVGA slider (ADP1)</device>
-          <state>Landscape, closed</state>
+          <state>Landscape, open</state>
           <theme>@style/Theme.Sherlock.Light</theme>
         </config>
       </layout>
@@ -81,455 +81,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57eb6955-7d00-42ba-81db-c15b7edfd98a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_inverse_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_inverse_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_inverse_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_solid_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_solid_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_transparent_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_transparent_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_bottom_transparent_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_bottom_transparent_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_share_pack_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_share_pack_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_share_pack_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_share_pack_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_solid_shadow_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_shadow_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_solid_shadow_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_solid_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_solid_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_solid_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_solid_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_transparent_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_transparent_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_stacked_transparent_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_stacked_transparent_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_transparent_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_transparent_dark_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ab_transparent_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ab_transparent_light_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_focused_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_focused_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__cab_background_bottom_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_bottom_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__cab_background_bottom_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_bottom_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__cab_background_top_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_top_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__cab_background_top_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__cab_background_top_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_ab_back_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_ab_back_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_ab_back_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_ab_back_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_cab_done_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_cab_done_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_cab_done_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_cab_done_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_search_api_disabled_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_disabled_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_search_api_disabled_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_clear_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_clear_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_commit_search_api_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_commit_search_api_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_commit_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_commit_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_go.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_go.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_go.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_go_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_go_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_go_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_share_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_share_holo_dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_menu_share_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_menu_share_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_voice_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_voice_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__ic_voice_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__ic_voice_search_api_holo_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__list_activated_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__list_activated_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_activated_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_divider_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__list_divider_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_divider_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__list_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__list_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__list_longpressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__list_longpressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_longpressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__list_pressed_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_pressed_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__list_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__list_selector_disabled_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_selector_disabled_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__list_selector_disabled_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__list_selector_disabled_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__menu_dropdown_panel_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__menu_dropdown_panel_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_bg_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_bg_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_bg_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_bg_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_primary_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_primary_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_primary_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_primary_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_secondary_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_secondary_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__progress_secondary_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__progress_secondary_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_48_inner_holo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_inner_holo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_48_inner_holo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_48_outer_holo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_outer_holo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_48_outer_holo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_disabled_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_disabled_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_focused_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_focused_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_focused_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_pressed_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__spinner_ab_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__tab_selected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__tab_selected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__tab_unselected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__tab_unselected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__tab_unselected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_default_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_default_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_selected_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_right_selected_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_right_selected_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_selected_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_selected_holo_dark.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__textfield_search_selected_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__textfield_search_selected_holo_light.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-hdpi/abs__toast_frame.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-mdpi/abs__toast_frame.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-xhdpi/abs__toast_frame.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/libs/android-support-v4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/AbsActionBarView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/ActionBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/ActionBarContainer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/ActionBarContextView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/app/ActionBarImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/ActionBarSherlock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/ActionBarSherlockCompat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/ActionBarSherlockNative.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/ActionBarView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/app/ActionBarWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenuItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenuItemView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenuPresenter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ActionMenuView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/view/ActionMode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/view/ActionProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/ActionProviderWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/widget/ActivityChooserModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/widget/ActivityChooserView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/Animator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorListenerAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/animation/AnimatorProxy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/AnimatorSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/BaseMenuPresenter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CapitalizingTextView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/view/CollapsibleActionView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/CollapsibleActionViewWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/FloatEvaluator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/FloatKeyframeSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsAbsSpinner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsAdapterView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsColorDrawable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsLinearLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsListPopupWindow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsProgressBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsSpinner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsToast.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/IntEvaluator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/IntKeyframeSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/Keyframe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/KeyframeSet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/ListMenuItemView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/view/Menu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/view/MenuInflater.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/view/MenuItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuItemImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuItemWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuPopupHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuPresenter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineHorizontalScrollView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/ObjectAnimator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/PopupWindowCompat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/PropertyValuesHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/ResourcesCompat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/ScrollingTabContainerView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/widget/SearchView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/widget/ShareActionProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockDialogFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockExpandableListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragmentActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockListFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockPreferenceActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/StandaloneActionMode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/view/SubMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/SubMenuBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/SubMenuWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/widget/SuggestionsAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/TabsLinearLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/TypeEvaluator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/nineoldandroids/animation/ValueAnimator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/View_HasStateListenerSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/View_OnAttachStateChangeListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/android/support/v4/app/Watson.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/view/Window.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__action_bar_home.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__action_bar_tab.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__action_bar_tab_bar_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__action_bar_title_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__action_menu_item_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__action_menu_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__action_mode_bar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__action_mode_close_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout-large/abs__action_mode_close_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__activated_background_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__activated_background_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__activity_chooser_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__activity_chooser_view_list_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values/abs__attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values/abs__bools.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-sw600dp/abs__bools.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-w480dp/abs__bools.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__btn_cab_done_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__btn_cab_done_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values/abs__colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values/abs__config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-w480dp/abs__config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-land/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-large-hdpi-1024x600/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-large-land-hdpi-1024x600/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-large-land-mdpi-1024x600/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-large-mdpi-1024x600/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-sw600dp/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-w360dp/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-w500dp/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-w600dp/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-xlarge/abs__dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__ic_clear.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__ic_clear_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__ic_menu_moreoverflow_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__ic_menu_moreoverflow_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values/abs__ids.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__item_background_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__item_background_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__list_menu_item_checkbox.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__list_menu_item_icon.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__list_menu_item_radio.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__list_selector_background_transition_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__list_selector_background_transition_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__list_selector_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__list_selector_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__popup_menu_item_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/color/abs__primary_text_disable_only_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/color/abs__primary_text_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/color/abs__primary_text_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__progress_horizontal_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__progress_horizontal_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__progress_medium_holo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable-v11/abs__progress_medium_holo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__screen_action_bar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__screen_action_bar_overlay.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout-xlarge/abs__screen_action_bar_overlay.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__screen_simple.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__screen_simple_overlay_action_mode.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__search_dropdown_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__search_dropdown_item_icons_2line.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__search_dropdown_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__search_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__simple_dropdown_hint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__spinner_ab_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__spinner_ab_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values/abs__strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values/abs__styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-v14/abs__styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__tab_indicator_ab_holo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__textfield_searchview_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__textfield_searchview_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__textfield_searchview_right_holo_dark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/drawable/abs__textfield_searchview_right_holo_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values/abs__themes.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-v11/abs__themes.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/values-v14/abs__themes.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/actionbarsherlock.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-land-xhdpi/descricaogeral.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/lint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-land-xhdpi/main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/project.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/sherlock_spinner_dropdown_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout-v14/sherlock_spinner_dropdown_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/sherlock_spinner_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/res/layout-v14/sherlock_spinner_item.xml" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\values-v11\themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\values-v14\themes.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\layout\tab.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\layout\tabshipotesesedependencias.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/HipoteseDetalhadaActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/HipoteseDetalhadaActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReqDroid.iml" afterPath="$PROJECT_DIR$/ReqDroid.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragmentActivity.java" afterPath="$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragmentActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TabsHipotesesEDependenciasActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TabsHipotesesEDependenciasActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaAbrirProjetoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaAbrirProjetoActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaCaracteristicasUsuarioActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaCaracteristicasUsuarioActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEditarEscopoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEditarEscopoActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEscopoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEscopoActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaNovaEspecificacaoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaNovaEspecificacaoActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaPrincipalActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaPrincipalActivity.java" />
@@ -537,32 +97,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitoDetalhadoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitoDetalhadoActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosAtrasadosActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosAtrasadosActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaSobreActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaSobreActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaVisaoGeralActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaVisaoGeralActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/caracteristicasusuario.xml" afterPath="$PROJECT_DIR$/res/layout/caracteristicasusuario.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-hdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-hdpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-hdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-land-hdpi/descricaogeral.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-ldpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-land-ldpi/descricaogeral.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-mdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-land-mdpi/descricaogeral.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-ldpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-ldpi/descricaogeral.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-mdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-mdpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xhdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-xhdpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/escopo.xml" afterPath="$PROJECT_DIR$/res/layout/escopo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/hipotesedetalhada.xml" afterPath="$PROJECT_DIR$/res/layout/hipotesedetalhada.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-hdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-hdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-hdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-land-hdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-ldpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-land-ldpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-mdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-land-mdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-ldpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-ldpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-mdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-mdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xhdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-xhdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/novaespecificacao.xml" afterPath="$PROJECT_DIR$/res/layout/novaespecificacao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/requisitoatrasadodetalhado.xml" afterPath="$PROJECT_DIR$/res/layout/requisitoatrasadodetalhado.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/requisitodetalhado.xml" afterPath="$PROJECT_DIR$/res/layout/requisitodetalhado.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/themes.xml" afterPath="$PROJECT_DIR$/res/values/themes.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\src\com\vrs\reqdroid\DependenciasActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/DependenciasFragment.java" />
+      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\src\com\vrs\reqdroid\HipotesesActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/HipotesesFragment.java" />
     </list>
     <ignored path="GerenciadorDeRequisitos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -585,6 +128,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -621,7 +165,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -631,28 +174,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TelaEscopoActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEscopoActivity.java">
+      <file leaf-file-name="TabsHipotesesEDependenciasActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TabsHipotesesEDependenciasActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="31" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="2499">
+            <state line="60" column="15" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="2227">
+              <folding>
+                <element signature="e#0#4884#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1296#1354#0" expanded="true" />
+                <element signature="e#1603#1664#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SherlockFragmentActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragmentActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="117" column="8" selection-start="3699" selection-end="3699" vertical-scroll-proportion="0.22816399" vertical-offset="1606" max-vertical-offset="5083">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TelaPrincipalActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaPrincipalActivity.java">
+      <file leaf-file-name="HipotesesFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/HipotesesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="35" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2516">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TelaRequisitoAtrasadoDetalhadoActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitoAtrasadoDetalhadoActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="13" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="4552" max-vertical-offset="5100">
+            <state line="40" column="55" selection-start="1189" selection-end="1205" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="5610">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -660,43 +208,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TelaRequisitoDetalhadoActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitoDetalhadoActivity.java">
+      <file leaf-file-name="DependenciasFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/DependenciasFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="13" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="4369" max-vertical-offset="4930">
+            <state line="29" column="2" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3536">
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TelaRequisitosActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="333" column="9" selection-start="11308" selection-end="11308" vertical-scroll-proportion="0.0" vertical-offset="4998" max-vertical-offset="5576">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TelaRequisitosAtrasadosActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosAtrasadosActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="339" column="0" selection-start="12095" selection-end="12095" vertical-scroll-proportion="0.0" vertical-offset="4641" max-vertical-offset="5202">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TelaVisaoGeralActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaVisaoGeralActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="47" selection-start="5209" selection-end="5209" vertical-scroll-proportion="4.121212" vertical-offset="0" max-vertical-offset="2839">
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#951#999#0" expanded="true" />
+                <element signature="e#4541#4578#0" expanded="true" />
+                <element signature="e#5374#5447#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -726,22 +246,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout-ldpi/descricaogeral.xml" />
-        <option value="$PROJECT_DIR$/res/layout-mdpi/descricaogeral.xml" />
-        <option value="$PROJECT_DIR$/res/layout-hdpi/descricaogeral.xml" />
-        <option value="$PROJECT_DIR$/res/layout-xhdpi/descricaogeral.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosAtrasadosActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaCaracteristicasUsuarioActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TabsHipotesesEDependenciasActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitoDetalhadoActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/HipoteseDetalhadaActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitoAtrasadoDetalhadoActivity.java" />
         <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaVisaoGeralActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaAbrirProjetoActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/HipoteseDetalhadaActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/novaespecificacao.xml" />
         <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEscopoActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaPrincipalActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/HipotesesActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/HipotesesFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/DependenciasActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/DependenciasFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/TabsHipotesesEDependenciasActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/descricaogeral.xml" />
+        <option value="$PROJECT_DIR$/res/layout-land-mdpi/descricaogeral.xml" />
+        <option value="$PROJECT_DIR$/res/layout-ldpi/descricaogeral.xml" />
+        <option value="$PROJECT_DIR$/res/layout-land-ldpi/descricaogeral.xml" />
+        <option value="$PROJECT_DIR$/res/layout/sobre.xml" />
       </list>
     </option>
   </component>
@@ -786,6 +306,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -836,37 +357,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GerenciadorDeRequisitos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReqDroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="316" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="ExportedApkPath" value="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\ReqDroid.apk" />
-    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="true" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="true" />
+    <property name="ExportedApkPath" value="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\ReqDroid.apk" />
     <property name="ExportedModule" value="ReqDroid" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libraries/actionbarsherlock" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5558" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="120dpi" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="316" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5556" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -876,15 +416,15 @@
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\layout-large" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\drawable-xhdpi" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.vrs.reqmanager" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\libraries" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\drawable-hdpi" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\drawable" />
       <recent name="C:\Users\Vinicius\Desktop" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\layout" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.vrs.reqmanager" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.GerenciadorDeRequisitos">
@@ -1070,7 +610,11 @@
       <created>1375385301761</created>
       <updated>1375385301761</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Improved action bars with Sherlock library.">
+      <created>1375668095229</created>
+      <updated>1375668095229</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1098,12 +642,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13939394" sideWeight="0.67291313" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25757575" sideWeight="0.67291313" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25757575" sideWeight="0.67291313" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
@@ -1114,16 +659,15 @@
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5621806" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21969697" sideWeight="0.6984668" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21969697" sideWeight="0.6984668" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1139,18 +683,18 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56388414" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21969697" sideWeight="0.18739353" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21969697" sideWeight="0.18739353" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30664396" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5621806" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21969697" sideWeight="0.67291313" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1216,34 +760,37 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaCaracteristicasUsuarioActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaVisaoGeralActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="68" selection-start="6019" selection-end="6019" vertical-scroll-proportion="0.37956205" vertical-offset="2716" max-vertical-offset="3264">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/HipoteseDetalhadaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0" vertical-offset="3923" max-vertical-offset="4471">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="816">
+        <state line="97" column="6" selection-start="3052" selection-end="3052" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="2635">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TabsHipotesesEDependenciasActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaPrincipalActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="91" selection-start="3678" selection-end="3678" vertical-scroll-proportion="0.0" vertical-offset="1288" max-vertical-offset="1836">
+        <state line="150" column="19" selection-start="5154" selection-end="5154" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="2482">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/DependenciasFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="2" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3536">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#951#999#0" expanded="true" />
+            <element signature="e#4541#4578#0" expanded="true" />
+            <element signature="e#5374#5447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/HipotesesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="55" selection-start="1189" selection-end="1205" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="5610">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1252,95 +799,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaAbrirProjetoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="54" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1955">
+        <state line="114" column="68" selection-start="3784" selection-end="3811" vertical-scroll-proportion="0.3939394" vertical-offset="1326" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-land-mdpi/descricaogeral.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2601">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-hdpi/descricaogeral.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2788">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-land-ldpi/descricaogeral.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-ldpi/descricaogeral.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-mdpi/descricaogeral.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaSobreActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="396" selection-end="396" vertical-scroll-proportion="0.36363637" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/hipoteses.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/sobre.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/requisitosatrasados.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TabsHipotesesEDependenciasActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="15" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="2227">
           <folding>
-            <element signature="e#2877#2916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEditarEscopoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="943" max-vertical-offset="2873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEscopoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="2499">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaPrincipalActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="35" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2516">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitoAtrasadoDetalhadoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="4552" max-vertical-offset="5100">
-          <folding>
+            <element signature="e#0#4884#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#1296#1354#0" expanded="true" />
+            <element signature="e#1603#1664#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitoDetalhadoActivity.java">
+    <entry file="file://$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragmentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="4369" max-vertical-offset="4930">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="333" column="9" selection-start="11308" selection-end="11308" vertical-scroll-proportion="0.0" vertical-offset="4998" max-vertical-offset="5576">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaRequisitosAtrasadosActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="0" selection-start="12095" selection-end="12095" vertical-scroll-proportion="0.0" vertical-offset="4641" max-vertical-offset="5202">
+        <state line="117" column="8" selection-start="3699" selection-end="3699" vertical-scroll-proportion="0.22816399" vertical-offset="1606" max-vertical-offset="5083">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/view/menu/MenuView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="85" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.6666667" vertical-offset="0" max-vertical-offset="1904">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/view/CollapsibleActionView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="679" selection-end="679" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/actionbarsherlock/src/com/actionbarsherlock/internal/widget/IcsView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="357" selection-end="357" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaVisaoGeralActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="47" selection-start="5209" selection-end="5209" vertical-scroll-proportion="4.121212" vertical-offset="0" max-vertical-offset="2839">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

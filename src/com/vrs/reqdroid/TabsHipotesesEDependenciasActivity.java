@@ -5,20 +5,15 @@
 
 package com.vrs.reqdroid;
 
-import android.os.Bundle;
-import android.app.ActivityGroup;
-import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.NavUtils;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.LinearLayout.LayoutParams;
-import android.widget.TabHost;
-import android.widget.TextView;
-
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
 
 
 /**
@@ -27,78 +22,102 @@ import android.widget.TextView;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class TabsHipotesesEDependenciasActivity extends ActivityGroup {
-    
-    private static TabHost tabHost;
+public class TabsHipotesesEDependenciasActivity extends SherlockFragmentActivity {
+
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-        setContentView(R.layout.tabshipotesesedependencias);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-        tabHost = (TabHost)findViewById(R.id.tabshd);
-        tabHost.setup(this.getLocalActivityManager());
-        TabHost.TabSpec spec;
-        Intent intent;
-        
-        View viewHipoteses = constroiTabView(this, getResources().getString(R.string.tela_tabs_hed_hipoteses));
-        View viewDependencias = constroiTabView(this, getResources().getString(R.string.tela_tabs_hed_dependencias));
-             
-        /*
-         * Cada Tab adicionada tem sua propria Activity, que por sua vez , tem seu proprio .xml(layout) e tambem tem um elemento Drawable. Esse elemento eu usei para mudar o icone da Tab.         
-         * Quando ela nao esta ativa, o icone e cinza. Quando ela esta ativa, o icone fica colorido e indica pro usuario que ele esta naquela Tab.
-         *  Nesse meu exemplo, eu tenho 2 Tabs, 4 Activities, 2 Layouts, 2 drawable que faz a mudanca de icone, 1 para cada Tab.
-        */                 
-        //Adiciona Tab #1
-        intent = new Intent().setClass(TabsHipotesesEDependenciasActivity.this, HipotesesActivity.class);
-        spec = tabHost.newTabSpec("0").setIndicator(viewHipoteses).setContent(intent);
-        tabHost.addTab(spec);
- 
-        // Adiciona Tab #2
-        intent = new Intent().setClass(TabsHipotesesEDependenciasActivity.this, DependenciasActivity.class);
-        spec = tabHost.newTabSpec("1").setIndicator(viewDependencias).setContent(intent);
-        tabHost.addTab(spec);
- 
-        tabHost.setCurrentTab(0);
+        ActionBar bar = getSupportActionBar();
+        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_TITLE);
+        bar.setDisplayHomeAsUpEnabled(true);
+        bar.setDisplayShowTitleEnabled(true);
+        bar.addTab(bar
+                .newTab()
+                .setText(getResources().getString(R.string.tela_tabs_hed_hipoteses))
+                .setTabListener(
+                        new TabListener<HipotesesFragment>(this, "tab1",
+                                HipotesesFragment.class, null)));
+
+        bar.addTab(bar
+                .newTab()
+                .setText(getResources().getString(R.string.tela_tabs_hed_dependencias))
+                .setTabListener(
+                        new TabListener<DependenciasFragment>(this, "tab2",
+                                DependenciasFragment.class, null)));
+
+        if (savedInstanceState != null) {
+            bar.setSelectedNavigationItem(savedInstanceState.getInt("tab", 0));
+        }
     }
-    
-    /**
-     * Constroi as abas conforme parametros de layouts customizados.
-     * 
-     * @param context O contexto de onde as abas ficarao
-     * @param label  O titulo das abas
-     * @return Um layout com o titulo personalizado da aba
-     */
-    private static LinearLayout constroiTabView(Context context, String label){
 
-        LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        public class TabListener<T extends SherlockFragment> implements ActionBar.TabListener {
+            private final SherlockFragmentActivity mActivity;
+            private final String mTag;
+            private final Class<T> mClass;
+            private final Bundle mArgs;
+            private SherlockFragment mFragment;
 
-        final LinearLayout ll = (LinearLayout)li.inflate(R.layout.tab, null);
+            public TabListener(SherlockFragmentActivity activity, String tag, Class<T> clz,
+                               Bundle args) {
+                mActivity = activity;
+                mTag = tag;
+                mClass = clz;
+                mArgs = args;
+                FragmentTransaction ft = mActivity.getSupportFragmentManager()
+                        .beginTransaction();
 
+                // Check to see if we already have a fragment for this tab, probably
+                // from a previously saved state. If so, deactivate it, because our
+                // initial state is that a tab isn't shown.
+                mFragment = (SherlockFragment) mActivity.getSupportFragmentManager().findFragmentByTag(mTag);
+                if (mFragment != null && !mFragment.isDetached()) {
+                    ft.detach(mFragment);
+                }
+            }
+            @Override
+            public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
+                ft = mActivity.getSupportFragmentManager()
+                        .beginTransaction();
 
-        LinearLayout.LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, label.length() + 1);
-        ll.setLayoutParams(layoutParams);
-      
-        final TextView tv = (TextView)ll.findViewById(R.id.tab_modelo);
+                if (mFragment == null) {
+                    mFragment = (SherlockFragment) SherlockFragment.instantiate(mActivity, mClass.getName(), mArgs);
+                    ft.add(android.R.id.content, mFragment, mTag);
+                    ft.commit();
+                } else {
+                    ft.attach(mFragment);
+                    ft.commit();
+                }
+            }
+            @Override
+            public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
+            }
 
-        tv.setText(label);
-
-        return ll;
+            @Override
+            public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
+                ft = mActivity.getSupportFragmentManager().beginTransaction();
+                if (mFragment != null) {
+                    ft.detach(mFragment);
+                    ft.commitAllowingStateLoss();
+                }
+            }
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
+        MenuInflater inflater = getSupportMenuInflater();
         inflater.inflate(R.menu.menusobre, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(android.view.MenuItem item) { //MUDAR pro Sherlock
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button
             case android.R.id.home:
-                NavUtils.navigateUpTo(this,new Intent(this, TelaVisaoGeralActivity.class));
+                NavUtils.navigateUpTo(this, new Intent(this, TelaVisaoGeralActivity.class));
                 return true;
         }
         return super.onOptionsItemSelected(item);

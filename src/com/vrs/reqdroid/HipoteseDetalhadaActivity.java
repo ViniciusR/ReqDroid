@@ -10,8 +10,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -57,7 +55,7 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
      */
     void recebeHipotese()
     {
-        String texto = HipotesesActivity.getHipoteseSelecionada();
+        String texto = HipotesesFragment.getHipoteseSelecionada();
         int idProj = TelaVisaoGeralActivity.getIdProjeto();
         String dataHipotese;
         String autorHipotese;
@@ -120,8 +118,8 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
                 alertBoxConfirmaExclusao.setMessage(R.string.alert_remover_hipotese_msg);
                 alertBoxConfirmaExclusao.setPositiveButton(R.string.alert_sim, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
-                        String hipotese = HipotesesActivity.getHipoteseSelecionada();
-                        HipotesesActivity.atualizaListaRemovido(HipotesesActivity.getPosicaoHipoteseSelecionada());
+                        String hipotese = HipotesesFragment.getHipoteseSelecionada();
+                        HipotesesFragment.atualizaListaRemovido(HipotesesFragment.getPosicaoHipoteseSelecionada());
                         OperacoesHipoteses.removeHipoteseBD(HipoteseDetalhadaActivity.this, hipotese,
                                                             TelaVisaoGeralActivity.getIdProjeto());
                         finish();
@@ -150,8 +148,8 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
                 alertbox.setMessage(R.string.alert_validar_hipotese_msg);
                 alertbox.setPositiveButton(R.string.alert_sim, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
-                        String hipotese = HipotesesActivity.getHipoteseSelecionada();
-                        HipotesesActivity.atualizaListaRemovido(HipotesesActivity.getPosicaoHipoteseSelecionada());
+                        String hipotese = HipotesesFragment.getHipoteseSelecionada();
+                        HipotesesFragment.atualizaListaRemovido(HipotesesFragment.getPosicaoHipoteseSelecionada());
                         OperacoesHipoteses.removeHipoteseBD(HipoteseDetalhadaActivity.this, hipotese,
                                                             TelaVisaoGeralActivity.getIdProjeto());
                         OperacoesHipoteses.validaHipoteseBD(HipoteseDetalhadaActivity.this, hipotese, data.getText().toString(),
@@ -188,8 +186,8 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
                     String descricaoAtual = hipotese.getText().toString();
                     hipotese.setText(entrada.getText().toString());
                     versao.setText(versaoHipotese + ".0");
-                    HipotesesActivity.atualizaLista(HipotesesActivity.getPosicaoHipoteseSelecionada(),
-                                                    entrada.getText().toString());
+                    HipotesesFragment.atualizaLista(HipotesesFragment.getPosicaoHipoteseSelecionada(),
+                            entrada.getText().toString());
 
                     OperacoesHipoteses.editaHipoteseBD(HipoteseDetalhadaActivity.this, descricaoAtual, entrada.getText().toString(),
                                                        versaoHipotese, TelaVisaoGeralActivity.getIdProjeto());
@@ -254,8 +252,8 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
+    public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu) {
+        com.actionbarsherlock.view.MenuInflater inflater = getSupportMenuInflater();
         inflater.inflate(R.menu.menusobre, menu);
         return true;
     }

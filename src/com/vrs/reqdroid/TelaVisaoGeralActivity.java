@@ -5,15 +5,11 @@
 
 package com.vrs.reqdroid;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import com.actionbarsherlock.app.SherlockActivity;
@@ -145,31 +141,9 @@ public class TelaVisaoGeralActivity extends SherlockActivity {
         final Intent i = new Intent(TelaVisaoGeralActivity.this, TelaPrincipalActivity.class);  
         startActivity(i);
         return false; // this avoids passing to super
+        }
+        return super.onKeyDown(keyCode, event);
     }
-    return super.onKeyDown(keyCode, event);
-}
-   
-   @Override
-   public boolean onCreateOptionsMenu(Menu menu) {
-       MenuInflater inflater = getMenuInflater();
-       inflater.inflate(R.menu.menusobre, menu);
-       return true;
-   }
-   
-   @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-   @Override
-   public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
-       switch (item.getItemId()) {
-           case R.id.menusobre:     
-           					Intent i = new Intent(TelaVisaoGeralActivity.this, TelaSobreActivity.class);  
-           					startActivity(i);  
-                             break;
-           // Respond to the action bar's Up/Home button
-           case android.R.id.home:
-               NavUtils.navigateUpTo(this,new Intent(this, TelaPrincipalActivity.class));
-       }
-       return true;
-   }
 
     public static int getIdProjeto() {
         return idProjeto;
@@ -185,5 +159,26 @@ public class TelaVisaoGeralActivity extends SherlockActivity {
 
     public static void setTituloProjeto(String tituloProjeto) {
         TelaVisaoGeralActivity.tituloProjeto = tituloProjeto;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu) {
+        com.actionbarsherlock.view.MenuInflater inflater = getSupportMenuInflater();
+        inflater.inflate(R.menu.menusobre, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menusobre:
+                Intent i = new Intent(TelaVisaoGeralActivity.this, TelaSobreActivity.class);
+                startActivity(i);
+                break;
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this,new Intent(this, TelaPrincipalActivity.class));
+        }
+        return true;
     }
 }

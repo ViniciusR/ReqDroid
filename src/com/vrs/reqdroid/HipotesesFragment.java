@@ -6,16 +6,16 @@
 package com.vrs.reqdroid;
 
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.ContextMenu;
-import android.view.Menu;
+import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,13 +24,13 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
-
+import com.actionbarsherlock.app.SherlockFragment;
 import com.vrs.reqdroid.util.ListViewHipotesesAdapter;
 import com.vrs.reqdroid.util.OperacoesHipoteses;
-
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+
 
 /**
  * Implementa a tela de listas de hipoteses.
@@ -38,7 +38,7 @@ import java.util.Date;
  * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
  * @version 1.0
  */
-public class HipotesesActivity extends Activity {
+public class HipotesesFragment extends SherlockFragment {
 
     private static ArrayList<String> hipoteses;
     private static ListViewHipotesesAdapter lvHipotesesAdapter;
@@ -50,9 +50,15 @@ public class HipotesesActivity extends Activity {
     private int posicao; //Util para a o menu de opcoes.
     private String descricao; //Util para o menu de opcoes.
 
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.hipoteses);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        return inflater.inflate(R.layout.hipoteses, container, false);
+    }
+
+    public void onStart() {
+        super.onStart();
+        //setContentView(R.layout.hipoteses);
         init();
         carregaHipoteses();
         adicionaHipotese();
@@ -64,10 +70,10 @@ public class HipotesesActivity extends Activity {
      */
     private void carregaHipoteses()
     {
-        hipoteses = OperacoesHipoteses.carregaHipotesesBD(HipotesesActivity.this, idProjeto);
+        hipoteses = OperacoesHipoteses.carregaHipotesesBD(getActivity(), idProjeto);
         lvHipoteses.setCacheColorHint(Color.TRANSPARENT);
         lvHipoteses.setSelectionAfterHeaderView();
-        lvHipotesesAdapter = new ListViewHipotesesAdapter(this, hipoteses, botaoOpcoesListener);
+        lvHipotesesAdapter = new ListViewHipotesesAdapter(getActivity(), hipoteses, botaoOpcoesListener);
         lvHipoteses.setAdapter(lvHipotesesAdapter);
     }
 
@@ -76,7 +82,7 @@ public class HipotesesActivity extends Activity {
      */
     private void adicionaHipotese()
     {
-        final Button botaoAdicionarHipotese = (Button) findViewById(R.id.botaoAdicionarHipotese);
+        final Button botaoAdicionarHipotese = (Button) getView().findViewById(R.id.botaoAdicionarHipotese);
 
         botaoAdicionarHipotese.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -96,7 +102,7 @@ public class HipotesesActivity extends Activity {
      */
     private void exibeDetalhesHipotese()
     {
-        final Intent i = new Intent(HipotesesActivity.this, HipoteseDetalhadaActivity.class);
+        final Intent i = new Intent(getActivity(), HipoteseDetalhadaActivity.class);
 
         lvHipoteses.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -129,7 +135,7 @@ public class HipotesesActivity extends Activity {
             else{
                 ImageButton bOpcoes = (ImageButton)caixaHipotese.getChildAt(1); //O botao de opcoes.
                 registerForContextMenu(bOpcoes);
-                HipotesesActivity.this.openContextMenu(bOpcoes);
+                getActivity().openContextMenu(bOpcoes);
             }
         }
     };
@@ -145,7 +151,7 @@ public class HipotesesActivity extends Activity {
     @TargetApi(Build.VERSION_CODES.ECLAIR)
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        MenuInflater inflater = getMenuInflater();
+        MenuInflater inflater = getActivity().getMenuInflater();
         inflater.inflate(R.menu.menuopcoeshipotese, menu);
     }
 
@@ -182,7 +188,7 @@ public class HipotesesActivity extends Activity {
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     void exibePopupMenuOpcoes(final View v){
-        PopupMenu popupMenu = new PopupMenu(this, v);
+        PopupMenu popupMenu = new PopupMenu(getActivity(), v);
         popupMenu.getMenuInflater().inflate(R.menu.menuopcoeshipotese, popupMenu.getMenu());
 
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -210,7 +216,7 @@ public class HipotesesActivity extends Activity {
      */
     private void menuEdita()
     {
-        OperacoesHipoteses.editaHipotese(HipotesesActivity.this, hipoteses, descricao,
+        OperacoesHipoteses.editaHipotese(getActivity(), hipoteses, descricao,
                 posicao, idProjeto, lvHipotesesAdapter);
     }
 
@@ -219,7 +225,7 @@ public class HipotesesActivity extends Activity {
      */
     private void menuValida()
     {
-        OperacoesHipoteses.validaHipotese(HipotesesActivity.this, hipoteses, descricao,
+        OperacoesHipoteses.validaHipotese(getActivity(), hipoteses, descricao,
                 posicao, idProjeto, lvHipotesesAdapter);
     }
 
@@ -228,7 +234,7 @@ public class HipotesesActivity extends Activity {
      */
     private void menuDeleta()
     {
-        OperacoesHipoteses.removeHipotese(HipotesesActivity.this, hipoteses, descricao,
+        OperacoesHipoteses.removeHipotese(getActivity(), hipoteses, descricao,
                 posicao, idProjeto, lvHipotesesAdapter);
     }
 
@@ -237,7 +243,7 @@ public class HipotesesActivity extends Activity {
      */
     private void salvaHipotese(String descricaoHipotese)
     {
-        OperacoesHipoteses.salvaHipoteseBD(this, descricaoHipotese, getDataATual(), idProjeto);
+        OperacoesHipoteses.salvaHipoteseBD(getActivity(), descricaoHipotese, getDataATual(), idProjeto);
     }
 
     /**
@@ -308,12 +314,12 @@ public class HipotesesActivity extends Activity {
     private void init()
     {
         idProjeto = TelaVisaoGeralActivity.getIdProjeto();
-        lvHipoteses = (ListView) findViewById(R.id.lvHipoteses);
+        lvHipoteses = (ListView) getView().findViewById(R.id.lvHipoteses);
         hipoteses = new ArrayList<String>();
-        editTextHipotese = (EditText) findViewById(R.id.etHipotese);
+        editTextHipotese = (EditText) getView().findViewById(R.id.etHipotese);
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menusobre, menu);
@@ -324,10 +330,10 @@ public class HipotesesActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menusobre:
-                Intent i = new Intent(HipotesesActivity.this, TelaSobreActivity.class);
+                Intent i = new Intent(HipotesesFragment.this, TelaSobreActivity.class);
                 startActivity(i);
                 break;
         }
         return true;
-    }
+    }*/
 }

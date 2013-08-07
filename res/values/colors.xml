@@ -1,3 +1,8 @@
+<!--
+  Este arquivo esta sujeito aos termos e condicoes definidos
+  no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
+ -->
+
 <resources>
         <color name="cinza">#FF909090</color>
         <color name="branco">#FFFFFF</color>
@@ -6,5 +11,5 @@
         <color name="preto">#000000</color>
         <color name="cinzaclaro">#d9d9d9ff</color>
         <color name="cinzamedio">#E6E6E6</color>
-        <color name="azulholo">#FF33B5E5</color>
+        <color name="azulpersonalizado">#FF33B5E5</color>
 </resources>

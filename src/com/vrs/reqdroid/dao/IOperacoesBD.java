@@ -1,6 +1,6 @@
 /*
  * Este arquivo esta sujeito aos termos e condicoes definidos
- * no arquivo 'LICENCA.txt, o qual e parte deste pacote de codigo fonte.
+ * no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
  */
 
 package com.vrs.reqdroid.dao;

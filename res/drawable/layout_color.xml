@@ -1,5 +1,10 @@
+<!--
+  Este arquivo esta sujeito aos termos e condicoes definidos
+  no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
+ -->
+
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
             android:state_pressed="true"
-            android:drawable="@color/azulholo" />
+            android:drawable="@color/azulpersonalizado" />
 </selector>

@@ -132,7 +132,8 @@ public class TelaEscopoActivity extends SherlockActivity {
             					removeProjeto();
                                 break;
             case android.R.id.home:
-                NavUtils.navigateUpTo(this,new Intent(this, TelaVisaoGeralActivity.class));
+                                NavUtils.navigateUpTo(this,new Intent(this, TelaVisaoGeralActivity.class));
+                                break;
         }
         return true;
     }

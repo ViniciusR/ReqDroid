@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Este arquivo esta sujeito aos termos e condicoes definidos
+  no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
+ -->
+
 <resources>
 
     <string name="app_name">ReqDroid</string>
@@ -57,7 +61,7 @@
     <string name="tela_escopo_botao_salvar">Salvar</string>
     <string name="tela_escopo_botao_descartar">Descartar</string>
 
-    <string name="tela_editar_escopo_titulo">Editar o escopo do projeto.</string>
+    <string name="tela_editar_escopo_titulo">Editar o escopo do projeto</string>
     <string name="tela_editar_escopo_botao_descartar_alteracoes">Descartar</string>
 
     <string name="tela_requisitos_msg_movido">O requisito foi atrasado.</string>

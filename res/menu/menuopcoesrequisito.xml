@@ -1,3 +1,8 @@
+<!--
+  Este arquivo esta sujeito aos termos e condicoes definidos
+  no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
+ -->
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:id="@+id/group_popupmenu">
         <item android:id="@+id/opcaoEditarRequisito"

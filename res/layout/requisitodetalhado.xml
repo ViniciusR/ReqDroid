@@ -182,7 +182,7 @@
                     android:numStars="5"
                     android:rating="3"
                     android:stepSize="1.0"
-                    android:layout_marginLeft="30dp"/>
+                        />
             </LinearLayout>
 
             <LinearLayout

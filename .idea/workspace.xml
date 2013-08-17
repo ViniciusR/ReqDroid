@@ -27,28 +27,28 @@
     <layouts>
       <layout url="file://$PROJECT_DIR$/res/layout-hdpi/descricaogeral.xml">
         <config>
-          <device>3.7in WVGA (Nexus One)</device>
+          <device>Nexus One</device>
           <theme>@style/Theme.Sherlock.Light</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/res/layout-land-hdpi/descricaogeral.xml">
         <config>
-          <device>3.7in WVGA (Nexus One)</device>
+          <device>Nexus S</device>
           <state>Landscape</state>
           <theme>@style/Theme.Sherlock.Light</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/res/layout-land-ldpi/descricaogeral.xml">
         <config>
-          <device>2.7in QVGA</device>
+          <device>3.4in WQVGA</device>
           <state>Landscape</state>
           <theme>@style/Theme.Sherlock.Light</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/res/layout-land-mdpi/descricaogeral.xml">
         <config>
-          <device>3.2in HVGA slider (ADP1)</device>
-          <state>Landscape, open</state>
+          <device>3.2in QVGA (ADP2)</device>
+          <state>Landscape</state>
           <theme>@style/Theme.Sherlock.Light</theme>
         </config>
       </layout>
@@ -77,106 +77,19 @@
           <theme>@style/Theme.Sherlock.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout/requisitodetalhado.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/Theme.Sherlock.Light</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57eb6955-7d00-42ba-81db-c15b7edfd98a" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\drawable\tabs_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\values\themes.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/dao/BDGerenciador.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/dao/BDGerenciador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/modelo/Dependencia.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/modelo/Dependencia.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/dao/IOperacoesBD.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/dao/IOperacoesBD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/IRequisito.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/IRequisito.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewDependenciasAdapter.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewDependenciasAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewHipotesesAdapter.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewHipotesesAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewProjetosAdapter.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewProjetosAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewRequisitosAdapter.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewRequisitosAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewRequisitosAtrasadosAdapter.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewRequisitosAtrasadosAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/MsgAlerta.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/MsgAlerta.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesDependencias.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesDependencias.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesHipoteses.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesHipoteses.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesRequisitos.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesRequisitos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesRequisitosAtrasados.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesRequisitosAtrasados.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/modelo/Projeto.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/modelo/Projeto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEscopoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/TelaEscopoActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/bordalayout.xml" afterPath="$PROJECT_DIR$/res/drawable/bordalayout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/botao_quadrado.xml" afterPath="$PROJECT_DIR$/res/drawable/botao_quadrado.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/botaoazul.xml" afterPath="$PROJECT_DIR$/res/drawable/botaoazul.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/botaocinza.xml" afterPath="$PROJECT_DIR$/res/drawable/botaocinza.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/botaocinzacancelar.xml" afterPath="$PROJECT_DIR$/res/drawable/botaocinzacancelar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/botaocinzasalvar.xml" afterPath="$PROJECT_DIR$/res/drawable/botaocinzasalvar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/botaoverde.xml" afterPath="$PROJECT_DIR$/res/drawable/botaoverde.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/caracteristicasusuario.xml" afterPath="$PROJECT_DIR$/res/layout/caracteristicasusuario.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/dataprojeto.xml" afterPath="$PROJECT_DIR$/res/layout/dataprojeto.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/dependenciaitem.xml" afterPath="$PROJECT_DIR$/res/layout/dependenciaitem.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/dependencias.xml" afterPath="$PROJECT_DIR$/res/layout/dependencias.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-hdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-hdpi/descricaogeral.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-hdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-land-hdpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-ldpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-land-ldpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-mdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-land-mdpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-xhdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-land-xhdpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-ldpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-ldpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-mdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-mdpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xhdpi/descricaogeral.xml" afterPath="$PROJECT_DIR$/res/layout-xhdpi/descricaogeral.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimens.xml" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/editarescopo.xml" afterPath="$PROJECT_DIR$/res/layout/editarescopo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/escopo.xml" afterPath="$PROJECT_DIR$/res/layout/escopo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/hipotesedetalhada.xml" afterPath="$PROJECT_DIR$/res/layout/hipotesedetalhada.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/hipoteseitem.xml" afterPath="$PROJECT_DIR$/res/layout/hipoteseitem.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/hipoteses.xml" afterPath="$PROJECT_DIR$/res/layout/hipoteses.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/hipotesesedependencias.xml" afterPath="$PROJECT_DIR$/res/layout/hipotesesedependencias.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/ic_adicionar.xml" afterPath="$PROJECT_DIR$/res/drawable/ic_adicionar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/ic_botaoeditar.xml" afterPath="$PROJECT_DIR$/res/drawable/ic_botaoeditar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_caracteristicas_usuario.xml" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_caracteristicas_usuario.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ldpi/ic_caracteristicas_usuario.xml" afterPath="$PROJECT_DIR$/res/drawable-ldpi/ic_caracteristicas_usuario.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_caracteristicas_usuario.xml" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_caracteristicas_usuario.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_caracteristicas_usuario.xml" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_caracteristicas_usuario.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_escopo.xml" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_escopo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ldpi/ic_escopo.xml" afterPath="$PROJECT_DIR$/res/drawable-ldpi/ic_escopo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_escopo.xml" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_escopo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_escopo.xml" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_escopo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_hipoteses.xml" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_hipoteses.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ldpi/ic_hipoteses.xml" afterPath="$PROJECT_DIR$/res/drawable-ldpi/ic_hipoteses.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_hipoteses.xml" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_hipoteses.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_hipoteses.xml" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_hipoteses.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/ic_menu_detalhes.xml" afterPath="$PROJECT_DIR$/res/drawable/ic_menu_detalhes.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_requisitos.xml" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_requisitos.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ldpi/ic_requisitos.xml" afterPath="$PROJECT_DIR$/res/drawable-ldpi/ic_requisitos.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_requisitos.xml" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_requisitos.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_requisitos.xml" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_requisitos.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_requisitosatrasados.xml" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_requisitosatrasados.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ldpi/ic_requisitosatrasados.xml" afterPath="$PROJECT_DIR$/res/drawable-ldpi/ic_requisitosatrasados.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_requisitosatrasados.xml" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_requisitosatrasados.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_requisitosatrasados.xml" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_requisitosatrasados.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/itemspinnerdependencia.xml" afterPath="$PROJECT_DIR$/res/layout/itemspinnerdependencia.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/layout_color.xml" afterPath="$PROJECT_DIR$/res/drawable/layout_color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-hdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-hdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-hdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-land-hdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-ldpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-land-ldpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-mdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-land-mdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land-xhdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-land-xhdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-ldpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-ldpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-mdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-mdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xhdpi/main.xml" afterPath="$PROJECT_DIR$/res/layout-xhdpi/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/menuopcoeshipotese.xml" afterPath="$PROJECT_DIR$/res/menu/menuopcoeshipotese.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/menuopcoesprojeto.xml" afterPath="$PROJECT_DIR$/res/menu/menuopcoesprojeto.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/menuopcoesrequisito.xml" afterPath="$PROJECT_DIR$/res/menu/menuopcoesrequisito.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/menuopcoesrequisitoatrasado.xml" afterPath="$PROJECT_DIR$/res/menu/menuopcoesrequisitoatrasado.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/menusobre.xml" afterPath="$PROJECT_DIR$/res/menu/menusobre.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/novaespecificacao.xml" afterPath="$PROJECT_DIR$/res/layout/novaespecificacao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/projetoitem.xml" afterPath="$PROJECT_DIR$/res/layout/projetoitem.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/ratingstars.xml" afterPath="$PROJECT_DIR$/res/drawable/ratingstars.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/requisitoatrasadodetalhado.xml" afterPath="$PROJECT_DIR$/res/layout/requisitoatrasadodetalhado.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/requisitoatrasadoitem.xml" afterPath="$PROJECT_DIR$/res/layout/requisitoatrasadoitem.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/requisitodetalhado.xml" afterPath="$PROJECT_DIR$/res/layout/requisitodetalhado.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/requisitoitem.xml" afterPath="$PROJECT_DIR$/res/layout/requisitoitem.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/requisitos.xml" afterPath="$PROJECT_DIR$/res/layout/requisitos.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/requisitosatrasados.xml" afterPath="$PROJECT_DIR$/res/layout/requisitosatrasados.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/sobre.xml" afterPath="$PROJECT_DIR$/res/layout/sobre.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-pt-rBR/strings.xml" afterPath="$PROJECT_DIR$/res/values-pt-rBR/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -201,6 +114,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -237,7 +151,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -247,25 +160,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TelaVisaoGeralActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaVisaoGeralActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="25" selection-start="996" selection-end="996" vertical-scroll-proportion="0.8484849" vertical-offset="0" max-vertical-offset="2686">
-              <folding>
-                <element signature="e#0#5722#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="requisitodetalhado.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/requisitodetalhado.xml">
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3995">
+              <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperacoesRequisitos.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesRequisitos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="13" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="3672">
-              <folding>
-                <element signature="e#0#10005#0" expanded="true" />
-              </folding>
-            </state>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -293,10 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout-ldpi/main.xml" />
-        <option value="$PROJECT_DIR$/res/layout-mdpi/descricaogeral.xml" />
-        <option value="$PROJECT_DIR$/res/layout-mdpi/main.xml" />
-        <option value="$PROJECT_DIR$/res/layout-xhdpi/descricaogeral.xml" />
         <option value="$PROJECT_DIR$/res/layout-xhdpi/main.xml" />
         <option value="$PROJECT_DIR$/res/menu/menuopcoeshipotese.xml" />
         <option value="$PROJECT_DIR$/res/menu/menuopcoesprojeto.xml" />
@@ -306,9 +205,13 @@
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/res/values-pt-rBR/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesRequisitos.java" />
+        <option value="$PROJECT_DIR$/res/layout/requisitoatrasadodetalhado.xml" />
+        <option value="$PROJECT_DIR$/res/layout-land-480x800/descricaogeral.xml" />
+        <option value="$PROJECT_DIR$/res/layout-land-hdpi/descricaogeral.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/res/layout/requisitodetalhado.xml" />
       </list>
     </option>
   </component>
@@ -370,6 +273,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -406,24 +310,91 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GerenciadorDeRequisitos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReqDroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GerenciadorDeRequisitos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReqDroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GerenciadorDeRequisitos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReqDroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GerenciadorDeRequisitos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReqDroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="ExportedApkPath" value="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\ReqDroid.apk" />
-    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="true" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="true" />
+    <property name="ExportedApkPath" value="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\ReqDroid.apk" />
     <property name="ExportedModule" value="ReqDroid" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libraries/actionbarsherlock" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="120dpi" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="160dpi" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
@@ -433,7 +404,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="316" />
     <property name="options.lastSelected" value="Errors" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5556" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -441,21 +412,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\layout-land-480x800" />
+      <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\layout-w480dp-h800dp-land" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\libraries" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\layout-land-xhdpi" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\layout-xhdpi" />
-      <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\layout-large" />
-      <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\drawable-xhdpi" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.vrs.reqmanager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\res\layout-w480dp-h800dp-land" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\ReqDroid\libraries" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\drawable-hdpi" />
       <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\drawable" />
       <recent name="C:\Users\Vinicius\Desktop" />
-      <recent name="D:\Meus Documentos\Dropbox\GerenciadorDeRequisitos-Eclipse\GerenciadorDeRequisitos\res\layout" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.vrs.reqmanager" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.GerenciadorDeRequisitos">
@@ -657,7 +628,11 @@
       <created>1375744866278</created>
       <updated>1375744866278</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Improved action bars with Sherlock library.">
+      <created>1375902536392</created>
+      <updated>1375902536392</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -692,184 +667,44 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25757575" sideWeight="0.67291313" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21969697" sideWeight="0.26064736" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21969697" sideWeight="0.26064736" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30153322" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3006536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5621806" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21969697" sideWeight="0.6013629" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21961933" sideWeight="0.67320263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved action bars with Sherlock library." />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Layouts improved." />
     <MESSAGE value="Improved action bars with Sherlock library." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved action bars with Sherlock library." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout-mdpi/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="151" selection-end="151" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="1632">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-xhdpi/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="151" selection-end="151" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="1649">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-xhdpi/descricaogeral.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="151" selection-end="151" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="3060">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/menuopcoeshipotese.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/menuopcoesprojeto.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/menuopcoesrequisito.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/menuopcoesrequisitoatrasado.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values-pt-rBR/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.124087594" vertical-offset="0" max-vertical-offset="2397">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.121212125" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.121212125" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.121212125" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/menusobre.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.121212125" vertical-offset="0" max-vertical-offset="561">
@@ -878,31 +713,137 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/actionbarsherlock/res/layout/abs__action_bar_tab.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="4" selection-start="113" selection-end="113" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="204">
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/util/OperacoesRequisitos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="3672">
-          <folding>
-            <element signature="e#0#10005#0" expanded="true" />
-          </folding>
+        <state line="25" column="13" selection-start="650" selection-end="650" vertical-scroll-proportion="-2.0474453" vertical-offset="1377" max-vertical-offset="3672" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/requisitoatrasadoitem.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/requisitoatrasadodetalhado.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4216">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-land-ldpi/descricaogeral.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2584">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-land-mdpi/descricaogeral.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2669">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-xhdpi/descricaogeral.xml">
+      <provider editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-land-hdpi/descricaogeral.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-hdpi/descricaogeral.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2856">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-hdpi/main.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/TelaVisaoGeralActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="25" selection-start="996" selection-end="996" vertical-scroll-proportion="0.8484849" vertical-offset="0" max-vertical-offset="2686">
-          <folding>
-            <element signature="e#0#5722#0" expanded="true" />
-          </folding>
+        <state line="35" column="25" selection-start="996" selection-end="996" vertical-scroll-proportion="0.72525597" vertical-offset="0" max-vertical-offset="2635">
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-land-xhdpi/descricaogeral.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/ic_estrela_normal.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="41" selection-start="452" selection-end="452" vertical-scroll-proportion="0.26109216" vertical-offset="0" max-vertical-offset="586">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/requisitodetalhado.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3961">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

@@ -35,7 +35,7 @@ public class OperacoesRequisitos extends Activity {
      */
     public static void salvaRequisitoBD(Context context, String descricao, String data, int idProjeto)
     {
-        String autor = context.getResources().getString(R.string.msg_adicionar_autor);
+        String autor = "";
         BDGerenciador.getInstance(context).
                       insertRequisito(descricao, data, 3, 1, autor, idProjeto);
         int idRequisito = BDGerenciador.getInstance(context).getIdUltimoRequisito();

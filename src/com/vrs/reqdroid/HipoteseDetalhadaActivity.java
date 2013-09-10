@@ -10,6 +10,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,7 +35,6 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
     private TextView autor;
     private TextView titulo;
     private int versaoHipotese;
-    private Button botaoEditarAutorHipotese;
 
     /**
      * Called when the activity is first created.
@@ -63,8 +64,6 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
         hipotese = (TextView)findViewById(R.id.textohipotesedetalhada);
         hipotese.setText(texto);
 
-        botaoEditarAutorHipotese = (Button)findViewById(R.id.botaoEditarAutorHipotese);
-
         data = (TextView)findViewById(R.id.campoDataHipotese);
         dataHipotese = BDGerenciador.getInstance(this).selectDataHipotese(texto, idProj);
         data.setText(dataHipotese);
@@ -73,7 +72,7 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
         versaoHipotese = BDGerenciador.getInstance(this).selectVersaoHipotese(texto, idProj);
         versao.setText(versaoHipotese + ".0");
 
-        autor = (TextView)findViewById(R.id.campoAutorHipotese);
+        autor = (EditText)findViewById(R.id.campoAutorHipotese);
         autorHipotese = BDGerenciador.getInstance(this).selectAutorHipotese(texto, idProj);
         autor.setText(autorHipotese);
     }
@@ -93,13 +92,24 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
     }
 
     /**
-     * Edita o autor da hipotese ao clicar no botao "Editar autor".
+     * Edita o autor da hipotese.
      */
-    void editaAutorHipotese()
+    private void editaAutorHipotese()
     {
-        botaoEditarAutorHipotese.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                exibeJanelaEditarAutorHipotese();
+        autor.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+                editaAutorHipoteseBD(hipotese.getText().toString(), autor.getText().toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
             }
         });
     }
@@ -202,41 +212,6 @@ public class HipoteseDetalhadaActivity extends SherlockActivity {
         alert.show();
     }
 
-    /**
-     * Exibe a janela para editar o autor da hipotese.
-     */
-    void exibeJanelaEditarAutorHipotese()
-    {
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle(R.string.alert_editar_autor_hipotese_titulo);
-
-        final EditText entrada = new EditText(this);
-        if (autor.getText().toString().equals(getResources().getString(R.string.msg_adicionar_autor)))
-        {
-            entrada.setHint(autor.getText().toString());
-        }
-        else
-        {
-            entrada.setText(autor.getText().toString());
-        }
-        alert.setView(entrada);
-
-        alert.setPositiveButton(R.string.alert_salvar, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                if (!entrada.getText().toString().equals(""))
-                {
-                    autor.setText(entrada.getText().toString());
-                    editaAutorHipoteseBD(hipotese.getText().toString(),entrada.getText().toString());
-                }
-            }
-        });
-
-        alert.setNegativeButton(R.string.alert_cancelar, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-            }
-        });
-        alert.show();
-    }
 
     /**
      * Atualiza o autor da hipotese no banco de dados do aplicativo.

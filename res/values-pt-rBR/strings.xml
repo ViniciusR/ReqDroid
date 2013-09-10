@@ -72,7 +72,8 @@
     <string name="tela_caractetisticas_usuario_experiencia_texto">Nível de experiência\ndo usuário com\nsistemas parecidos.</string>
     <string name="tela_caractetisticas_usuario_pericia_titulo">Perícia:</string>
     <string name="tela_caractetisticas_usuario_pericia_texto">Nível de conhecimento\ndo usuário sobre as\nfuncionalidades do sistema.</string>
-    <string name="tela_caractetisticas_usuario_treinamento_titulo">Treinamento\npara o usuário</string>
+    <string name="tela_caractetisticas_usuario_treinamento_titulo">Treinamento</string>
+    <string name="tela_caractetisticas_usuario_treinamento_texto">O usuário necessita\nde treinamento especial?</string>
     <string name="tela_caractetisticas_usuario_radio_button_alto">Alto</string>
     <string name="tela_caractetisticas_usuario_radio_button_medio">Médio</string>
     <string name="tela_caractetisticas_usuario_radio_button_baixo">Baixo</string>

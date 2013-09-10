@@ -34,7 +34,7 @@ public class OperacoesHipoteses extends Activity {
      */
     public static void salvaHipoteseBD(Context context, String descricao, String data, int idProjeto)
     {
-        String autor = context.getResources().getString(R.string.msg_adicionar_autor);
+        String autor = "";
         BDGerenciador.getInstance(context).insertHipotese(descricao, data, 1, autor, idProjeto);
     }
 

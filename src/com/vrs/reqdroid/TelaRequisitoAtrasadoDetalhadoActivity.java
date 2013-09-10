@@ -10,6 +10,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,7 +37,6 @@ public class TelaRequisitoAtrasadoDetalhadoActivity extends SherlockActivity {
     private TextView titulo;
     private RatingBar prioridade;
     private int versaoRequisito;
-    private Button botaoEditarAutorRequisito;
 
     /**
      * Called when the activity is first created.
@@ -68,8 +69,6 @@ public class TelaRequisitoAtrasadoDetalhadoActivity extends SherlockActivity {
         requisito = (TextView)findViewById(R.id.textoRequisitoAtrasadoDetalhado);
         requisito.setText(texto);
 
-        botaoEditarAutorRequisito = (Button)findViewById(R.id.botaoEditarAutorRequisitoAtrasado);
-
         data = (TextView)findViewById(R.id.campoDataRequisitoAtrasado);
         dataRequisito = BDGerenciador.getInstance(this).selectDataRequisitoAtrasado(texto, idProj);
         data.setText(dataRequisito);
@@ -82,7 +81,7 @@ public class TelaRequisitoAtrasadoDetalhadoActivity extends SherlockActivity {
         prioridadeRequisito = BDGerenciador.getInstance(this).selectPrioridadeRequisitoAtrasado(texto, idProj);
         prioridade.setRating(prioridadeRequisito);
 
-        autor = (TextView)findViewById(R.id.campoAutorRequisitoAtrasado);
+        autor = (EditText)findViewById(R.id.campoAutorRequisitoAtrasado);
         autorRequisito = BDGerenciador.getInstance(this).selectAutorRequisitoAtrasado(texto, idProj);
         autor.setText(autorRequisito);
 
@@ -129,13 +128,24 @@ public class TelaRequisitoAtrasadoDetalhadoActivity extends SherlockActivity {
     }
 
     /**
-     * Edita o autor do requisito ao clicar no botao "Editar autor".
+     * Edita o autor do requisito.
      */
     private void editaAutorRequisito()
     {
-        botaoEditarAutorRequisito.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                exibeJanelaEditarAutorRequisito();
+        autor.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+                editaAutorRequisitoBD(requisito.getText().toString(), autor.getText().toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
             }
         });
     }
@@ -230,42 +240,6 @@ public class TelaRequisitoAtrasadoDetalhadoActivity extends SherlockActivity {
                     OperacoesRequisitosAtrasados.editaRequisitoBD(TelaRequisitoAtrasadoDetalhadoActivity.this, descricaoAtual,
                                                                   entrada.getText().toString(), versaoRequisito,
                                                                   TelaVisaoGeralActivity.getIdProjeto());
-                }
-            }
-        });
-
-        alert.setNegativeButton(R.string.alert_cancelar, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-            }
-        });
-        alert.show();
-    }
-
-    /**
-     * Exibe a janela para editar o autor do requisito.
-     */
-    private void exibeJanelaEditarAutorRequisito()
-    {
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle(R.string.alert_editar_autor_requisito_titulo);
-
-        final EditText entrada = new EditText(this);
-        if (autor.getText().toString().equals(getResources().getString(R.string.msg_adicionar_autor)))
-        {
-            entrada.setHint(autor.getText().toString());
-        }
-        else
-        {
-            entrada.setText(autor.getText().toString());
-        }
-        alert.setView(entrada);
-
-        alert.setPositiveButton(R.string.alert_salvar, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                if (!entrada.getText().toString().equals(""))
-                {
-                    autor.setText(entrada.getText().toString());
-                    editaAutorRequisitoBD(requisito.getText().toString(),entrada.getText().toString());
                 }
             }
         });

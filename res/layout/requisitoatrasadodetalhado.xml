@@ -187,13 +187,12 @@
 
                 <RatingBar
                     android:id="@+id/ratingBarPrioridadeRequisitoAtrasado"
-                    style="@style/ratingBar"
+                    style="@style/ratingBarPrioridade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:indeterminate="false"
-                    android:isIndicator="false"
-                    android:maxHeight="35dp"
-                    android:minHeight="35dp"
+                    android:maxHeight="22dp"
+                    android:minHeight="22dp"
                     android:numStars="5"
                     android:rating="3"
                     android:stepSize="1.0" />
@@ -219,23 +218,18 @@
                         android:text="@string/tela_detalhes_requisito_autor"
                         android:textColor="@color/cinza"
                         android:textSize="16sp" />
-                    <Button
-                        android:id="@+id/botaoEditarAutorRequisitoAtrasado"
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:background="@drawable/ic_botaoeditar"
-                        android:textColor="@color/branco"
-                            />
                 </LinearLayout>
-                <TextView
+                <EditText
                     android:id="@+id/campoAutorRequisitoAtrasado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="35dp"
                     android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:ems="10"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

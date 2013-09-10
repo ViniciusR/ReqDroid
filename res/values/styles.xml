@@ -4,10 +4,10 @@
  -->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <style name="ratingBar" parent="@android:style/Widget.RatingBar">
+    <style name="ratingBarPrioridade" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/ratingstars</item>
-        <item name="android:minHeight">30dp</item>
-        <item name="android:maxHeight">30dp</item>
+        <item name="android:minHeight">22dp</item>
+        <item name="android:maxHeight">22dp</item>
     </style>
     
     <style name="BotaoAzul">

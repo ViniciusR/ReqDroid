@@ -52,7 +52,7 @@ public class ListViewRequisitosAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         final ViewHolderRequisitos holder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.requisitoitem, null);
+            convertView = mInflater.inflate(R.layout.requisito_item, null);
             holder = new ViewHolderRequisitos();
             holder.descricaoRequisitos = (TextView) convertView.findViewById(R.id.txtRequisito);
             holder.botaoOpcoes = (ImageButton) convertView.findViewById(R.id.bOpcoesRequisito);

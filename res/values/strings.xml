@@ -7,6 +7,24 @@
 
     <string name="app_name">ReqDroid</string>
 
+
+    <string-array name="titulos_funcionalidades_array">
+        <item>Requirements</item>
+        <item>User\'s characteristics</item>
+        <item>Assumptions and dependencies</item>
+        <item>Delayed requirements</item>
+    </string-array>
+
+    <array name="icones_funcionalidades_array">
+        <item>ic_requisitos</item>
+        <item>ic_caracteristicas_usuario</item>
+        <item>ic_hipoteses_e_dependencias</item>
+        <item>ic_requisitos_atrasados</item>
+    </array>
+
+    <string name="drawer_detalhes">Details...</string>
+
+
     <string name="tela_sobre">About</string>
     <string name="tela_sobre_titulo">About ReqDroid</string>
     <string name="tela_sobre_versao">Version:</string>

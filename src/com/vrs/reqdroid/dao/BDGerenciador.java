@@ -15,8 +15,8 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.vrs.reqdroid.modelo.Dependencia;
-import com.vrs.reqdroid.modelo.Projeto;
+import com.vrs.reqdroid.models.Dependencia;
+import com.vrs.reqdroid.models.Projeto;
 
 
 /**
@@ -32,8 +32,8 @@ public class BDGerenciador implements IOperacoesBD{
        private static final int DATABASE_VERSION = 29;
        private static final String TABLE_PROJETOS  = "projetos";
        private static final String TABLE_REQUISITOS  = "requisitos";
-       private static final String TABLE_REQUISITOS_ATRASADOS  = "requisitosatrasados";
-       private static final String TABLE_CARACTERISTICAS_USUARIO  = "caracteristicasusuario";
+       private static final String TABLE_REQUISITOS_ATRASADOS  = "requisitos_atrasados";
+       private static final String TABLE_CARACTERISTICAS_USUARIO  = "caracteristicas_usuario";
        private static final String TABLE_HIPOTESES  = "hipoteses";
        private static final String TABLE_PROJETO_REQUISITOS  = "projeto_requisitos";
        private static final String TABLE_PROJETO_REQUISITOS_ATRASADOS  = "projeto_requisitos_atr";

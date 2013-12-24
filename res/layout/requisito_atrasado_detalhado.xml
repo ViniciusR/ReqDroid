@@ -1,0 +1,237 @@
+<!--
+  Este arquivo esta sujeito aos termos e condicoes definidos
+  no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+            >
+              
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize" >
+            
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="3dp" >
+                
+              <TextView
+                android:id="@+id/campoTituloRequisitoAtrasado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/cinza"
+                android:textSize="16sp"
+                android:visibility="visible" />
+                    
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/borda_layout"
+                android:minHeight="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textoRequisitoAtrasadoDetalhado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/tela_detalhes_requisito_criado_em"
+                    android:textColor="@color/cinza"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/campoDataRequisitoAtrasado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/cinza"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/tela_detalhes_requisito_versao"
+                    android:textColor="@color/cinza"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/campoVersaoRequisitoAtrasado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/cinza"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+
+
+
+
+                <Button
+                    android:id="@+id/botaoEditarRequisitoAtrasado"
+                    style="@style/BotaoAzul"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/botao_azul"
+                    android:text="@string/tela_detalhes_requisito_botao_editar"
+                    android:textColor="@color/branco"
+                    android:textSize="13sp" />
+
+
+
+
+
+                <Button
+                    android:id="@+id/botaoRemoverRequisitoAtrasado"
+                    style="@style/BotaoAzul"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/botao_azul"
+                    android:text="@string/tela_detalhes_requisito_botao_remover"
+                    android:textColor="@color/branco"
+                    android:textSize="13sp" />
+
+
+
+
+
+                <Button
+                    android:id="@+id/botaoMoverRequisitoAtrasado"
+                    style="@style/BotaoAzul"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/botao_azul"
+                    android:text="@string/tela_detalhes_requisito_atrasado_botao_mover"
+                    android:textColor="@color/branco"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/tela_detalhes_requisito_prioridade"
+                    android:textColor="@color/cinza"
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarPrioridadeRequisitoAtrasado"
+                    style="@style/ratingBarPrioridade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:maxHeight="22dp"
+                    android:minHeight="22dp"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:stepSize="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal" >
+
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/tela_detalhes_requisito_autor"
+                        android:textColor="@color/cinza"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/campoAutorRequisitoAtrasado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:ems="10"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

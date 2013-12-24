@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.vrs.reqdroid.R;
-import com.vrs.reqdroid.modelo.Dependencia;
+import com.vrs.reqdroid.models.Dependencia;
 
 import java.util.ArrayList;
 
@@ -55,7 +55,7 @@ public class ListViewDependenciasAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolderDependencia holder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.dependenciaitem, null);
+            convertView = mInflater.inflate(R.layout.dependencia_item, null);
             holder = new ViewHolderDependencia();
             holder.textoRequisitoDependente1 = (TextView) convertView.findViewById(R.id.txtRequisitoDependente1);
             holder.imageSetaDependencia = (ImageView) convertView.findViewById(R.id.imgSetaDependencia);

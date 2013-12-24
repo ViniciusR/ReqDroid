@@ -7,8 +7,8 @@ package com.vrs.reqdroid.dao;
 
 import java.util.List;
 
-import com.vrs.reqdroid.modelo.Dependencia;
-import com.vrs.reqdroid.modelo.Projeto;
+import com.vrs.reqdroid.models.Dependencia;
+import com.vrs.reqdroid.models.Projeto;
 
 
 /**

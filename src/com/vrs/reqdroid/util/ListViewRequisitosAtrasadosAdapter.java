@@ -53,7 +53,7 @@ public class ListViewRequisitosAtrasadosAdapter extends BaseAdapter {
         final ViewHolderRequisitosAtrasados holder;
 
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.requisitoatrasadoitem, null);
+            convertView = mInflater.inflate(R.layout.requisitoatrasado_item, null);
             holder = new ViewHolderRequisitosAtrasados();
             holder.descricaoRequisito = (TextView) convertView.findViewById(R.id.txtRequisitoAtrasado);
             holder.botaoOpcoes = (ImageButton) convertView.findViewById(R.id.bOpcoesRequisitoAtrasado);

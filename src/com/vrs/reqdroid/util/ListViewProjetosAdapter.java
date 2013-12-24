@@ -13,7 +13,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.vrs.reqdroid.R;
-import com.vrs.reqdroid.modelo.Projeto;
+import com.vrs.reqdroid.models.Projeto;
 
 import java.util.ArrayList;
 
@@ -49,7 +49,7 @@ public class ListViewProjetosAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolderProjetos holder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.projetoitem, null);
+            convertView = mInflater.inflate(R.layout.projeto_item, null);
             holder = new ViewHolderProjetos();
             holder.textoTitulo = (TextView) convertView.findViewById(R.id.tituloProjeto);
             holder.textoData = (TextView) convertView.findViewById(R.id.dataProjeto);

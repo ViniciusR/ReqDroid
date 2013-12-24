@@ -1,0 +1,295 @@
+/*
+ * Este arquivo esta sujeito aos termos e condicoes definidos
+ * no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
+ */
+
+package com.vrs.reqdroid.activities;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBarActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RatingBar;
+import android.widget.RatingBar.OnRatingBarChangeListener;
+import android.widget.TextView;
+import com.vrs.reqdroid.R;
+import com.vrs.reqdroid.dao.BDGerenciador;
+import com.vrs.reqdroid.fragments.RequisitosAtrasadosFragment;
+import com.vrs.reqdroid.util.ProjetoUtils;
+import com.vrs.reqdroid.util.RequisitosAtrasadosUtils;
+
+/**
+ * Implementa a tela de requisito detalhado.
+ *
+ * @author Vinicius Rodrigues Silva <vinicius.rodsilva@gmail.com>
+ * @version 1.0
+ */
+public class TelaRequisitoAtrasadoDetalhadoActivity extends ActionBarActivity {
+
+    private TextView requisito;
+    private TextView data;
+    private TextView versao;
+    private TextView autor;
+    private TextView titulo;
+    private RatingBar prioridade;
+    private int versaoRequisito;
+
+    /**
+     * Called when the activity is first created.
+     */
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        setContentView(R.layout.requisito_atrasado_detalhado);
+        recebeRequisito();
+        editaRequisito();
+        removeRequisito();
+        moveRequisito();
+        atualizaPrioridade();
+        editaAutorRequisito();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    /**
+     * Carrega o requisito selecionado na lista de requisitos atraves do banco de dados do aplicativo.
+     */
+    private void recebeRequisito()
+    {
+        String texto = RequisitosAtrasadosFragment.getRequisitoSelecionado();
+        int idProj = ProjetoUtils.getIdProjeto();
+        String dataRequisito;
+        int prioridadeRequisito;
+        String autorRequisito;
+        int tituloRequisito;
+
+        requisito = (TextView)findViewById(R.id.textoRequisitoAtrasadoDetalhado);
+        requisito.setText(texto);
+
+        data = (TextView)findViewById(R.id.campoDataRequisitoAtrasado);
+        dataRequisito = BDGerenciador.getInstance(this).selectDataRequisitoAtrasado(texto, idProj);
+        data.setText(dataRequisito);
+
+        versao = (TextView)findViewById(R.id.campoVersaoRequisitoAtrasado);
+        versaoRequisito = BDGerenciador.getInstance(this).selectVersaoRequisitoAtrasado(texto, idProj);
+        versao.setText(versaoRequisito + ".0");
+
+        prioridade = (RatingBar)findViewById(R.id.ratingBarPrioridadeRequisitoAtrasado);
+        prioridadeRequisito = BDGerenciador.getInstance(this).selectPrioridadeRequisitoAtrasado(texto, idProj);
+        prioridade.setRating(prioridadeRequisito);
+
+        autor = (EditText)findViewById(R.id.campoAutorRequisitoAtrasado);
+        autorRequisito = BDGerenciador.getInstance(this).selectAutorRequisitoAtrasado(texto, idProj);
+        autor.setText(autorRequisito);
+
+        titulo = (TextView)findViewById(R.id.campoTituloRequisitoAtrasado);
+        tituloRequisito = BDGerenciador.getInstance(this).selectNumeroRequisitoAtrasado(texto, idProj);
+        titulo.setText(getResources().getString(R.string.tela_detalhes_requisito_atrasado_nome_requisito) + tituloRequisito);
+
+    }
+
+    /**
+     * Atualiza o RatingBar de prioridade do requisito ao clicar em uma das estrelas.
+     * A atualizacao tambem e feita no banco de dados do aplicativo.
+     */
+    private void atualizaPrioridade()
+    {
+
+        prioridade = (RatingBar)findViewById(R.id.ratingBarPrioridadeRequisitoAtrasado);
+
+        //Listener para a RatingBar da prioridade.
+        prioridade.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
+            public void onRatingChanged(RatingBar ratingBar, float rating,
+                                        boolean fromUser) {
+                int idRequisito;
+                idRequisito = BDGerenciador.getInstance(TelaRequisitoAtrasadoDetalhadoActivity.this).
+                        selectRequisitoAtrasadoPorDescricao(requisito.getText().toString(),
+                                ProjetoUtils.getIdProjeto());
+                BDGerenciador.getInstance(TelaRequisitoAtrasadoDetalhadoActivity.this).updatePrioridadeRequisitoAtrasado(idRequisito, (int) prioridade.getRating());
+            }
+        });
+    }
+
+    /**
+     * Edita o requisito ao clicar no botao "Editar".
+     */
+    private void editaRequisito()
+    {
+        Button bEditarRequisito = (Button)findViewById(R.id.botaoEditarRequisitoAtrasado);
+
+        bEditarRequisito.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                exibeJanelaEditarRequisito();
+            }
+        });
+    }
+
+    /**
+     * Edita o autor do requisito.
+     */
+    private void editaAutorRequisito()
+    {
+        autor.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+                editaAutorRequisitoBD(requisito.getText().toString(), autor.getText().toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+    }
+
+    /**
+     * Remove o requisito da lista e do banco de dados do aplicativo.
+     */
+    private void removeRequisito()
+    {
+        Button bRemoverRequisito = (Button)findViewById(R.id.botaoRemoverRequisitoAtrasado);
+        final AlertDialog.Builder alertBoxConfirmaExclusao = new AlertDialog.Builder(this);
+
+        bRemoverRequisito.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                alertBoxConfirmaExclusao.setTitle(R.string.alert_remover_requisito_titulo);
+                alertBoxConfirmaExclusao.setMessage(R.string.alert_remover_requisito_msg);
+                alertBoxConfirmaExclusao.setPositiveButton(R.string.alert_sim, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        String requisito = RequisitosAtrasadosFragment.getRequisitoSelecionado();
+                        RequisitosAtrasadosFragment.atualizaListaRemovido(RequisitosAtrasadosFragment.getPosicaoRequisitoSelecionado());
+                        RequisitosAtrasadosUtils.removeRequisitoBD(TelaRequisitoAtrasadoDetalhadoActivity.this, requisito,
+                                ProjetoUtils.getIdProjeto());
+                        finish();
+                    }
+                });
+                alertBoxConfirmaExclusao.setNegativeButton(R.string.alert_cancelar, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                    }
+                });
+                alertBoxConfirmaExclusao.show();
+            }
+        });
+    }
+
+    /**
+     * Move o requisito para a lista de requisitos atrasados do aplicativo.
+     */
+    private void moveRequisito()
+    {
+        Button bMoverRequisito = (Button)findViewById(R.id.botaoMoverRequisitoAtrasado);
+        final AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
+
+        bMoverRequisito.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                alertbox.setTitle(R.string.alert_mover_requisito_atrasado_titulo);
+                alertbox.setMessage(R.string.alert_mover_requisito_atrasado_msg);
+                alertbox.setPositiveButton(R.string.alert_sim, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        String requisito = RequisitosAtrasadosFragment.getRequisitoSelecionado();
+                        RequisitosAtrasadosFragment.atualizaListaRemovido(RequisitosAtrasadosFragment.getPosicaoRequisitoSelecionado());
+                        RequisitosAtrasadosUtils.removeRequisitoBD(TelaRequisitoAtrasadoDetalhadoActivity.this, requisito,
+                                ProjetoUtils.getIdProjeto());
+                        RequisitosAtrasadosUtils.moveRequisitoBD(TelaRequisitoAtrasadoDetalhadoActivity.this, requisito,
+                                data.getText().toString(), (int) prioridade.getRating(),
+                                versaoRequisito, autor.getText().toString(),
+                                ProjetoUtils.getIdProjeto());
+                        finish();
+                    }
+                });
+                alertbox.setNegativeButton(R.string.alert_cancelar, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                    }
+                });
+                alertbox.show();
+            }
+        });
+    }
+
+    /**
+     * Exibe a janela para editar a descricao do requisito.
+     */
+    private void exibeJanelaEditarRequisito()
+    {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle(R.string.alert_editar_requisito_titulo);
+
+        final EditText entrada = new EditText(this);
+        entrada.setText(requisito.getText().toString());
+        alert.setView(entrada);
+
+        alert.setPositiveButton(R.string.alert_salvar, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                if (!entrada.getText().toString().equals(""))
+                {
+                    versaoRequisito++;
+                    String descricaoAtual = requisito.getText().toString();
+                    requisito.setText(entrada.getText().toString());
+                    versao.setText(versaoRequisito + ".0");
+                    RequisitosAtrasadosFragment.atualizaLista(RequisitosAtrasadosFragment.getPosicaoRequisitoSelecionado(),
+                            entrada.getText().toString());
+
+                    RequisitosAtrasadosUtils.editaRequisitoBD(TelaRequisitoAtrasadoDetalhadoActivity.this, descricaoAtual,
+                            entrada.getText().toString(), versaoRequisito,
+                            ProjetoUtils.getIdProjeto());
+                }
+            }
+        });
+
+        alert.setNegativeButton(R.string.alert_cancelar, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+            }
+        });
+        alert.show();
+    }
+
+    /**
+     * Atualiza o autor do requisito no banco de dados do aplicativo.
+     *
+     * @param descricaoAtual A descricao atual do requisito
+     * @param autorNovo O novo autor do requisito
+     */
+    private void editaAutorRequisitoBD(String descricaoAtual, String autorNovo)
+    {
+        int idRequisito;
+        idRequisito = BDGerenciador.getInstance(this).selectRequisitoAtrasadoPorDescricao(descricaoAtual,
+                ProjetoUtils.getIdProjeto());
+        BDGerenciador.getInstance(this).updateAutorRequisitoAtrasado(idRequisito, autorNovo);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_aplicativo, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menusobre:
+                Intent i = new Intent(TelaRequisitoAtrasadoDetalhadoActivity.this, TelaSobreActivity.class);
+                startActivity(i);
+                break;
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpTo(this,new Intent(this, DrawerPrincipalActivity.class));
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}

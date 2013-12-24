@@ -1,0 +1,209 @@
+<!--
+  Este arquivo esta sujeito aos termos e condicoes definidos
+  no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="20dp">
+        
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >          
+    
+			 <RelativeLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:paddingBottom="10dp">
+       
+					   <LinearLayout 
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical" 
+					    android:layout_alignParentLeft="true">  
+    
+							    <TextView
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:layout_marginBottom="5dp"
+							        android:layout_marginLeft="25dp"							        
+							        android:text="@string/tela_caractetisticas_usuario_experiencia_titulo"
+							        android:textColor="@color/Black"
+							        android:textSize="18sp" />
+							
+							    <TextView
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:layout_marginBottom="5dp"
+							        android:layout_marginLeft="25dp"
+							        android:text="@string/tela_caractetisticas_usuario_experiencia_texto"
+							        android:textColor="@color/Gray"
+							        android:textSize="15sp" />
+				       </LinearLayout>
+       
+					    <RadioGroup
+					        android:id="@+id/radioGroupExperiencia"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content" 
+					        android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentTop="true">
+					
+					        <RadioButton
+					            android:id="@+id/radioExperienciaAlto"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:textColor="@color/Black"
+					            android:text="@string/tela_caractetisticas_usuario_radio_button_alto" 
+					            android:textSize="16sp"/>
+					
+					        <RadioButton
+					            android:id="@+id/radioExperienciaMedio"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:checked="true"
+					            android:textColor="@color/Black"
+					            android:text="@string/tela_caractetisticas_usuario_radio_button_medio" 
+					            android:textSize="16sp"/>
+					
+					        <RadioButton
+					            android:id="@+id/radioExperienciaBaixo"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:textColor="@color/Black"
+					            android:text="@string/tela_caractetisticas_usuario_radio_button_baixo" 
+					            android:textSize="16sp"/>
+					    </RadioGroup>   
+   		 </RelativeLayout>
+   		 
+			 <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="10dp"
+                android:background="#ffcccccc" />
+
+			 <RelativeLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:paddingBottom="20dp">
+       
+					   <LinearLayout 
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical" 
+					    android:layout_alignParentLeft="true">  
+    
+							    <TextView
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:layout_marginBottom="5dp"
+							        android:layout_marginLeft="25dp"							        
+							        android:text="@string/tela_caractetisticas_usuario_pericia_titulo"
+							        android:textColor="@color/Black"
+							        android:textSize="18sp" />
+							
+							    <TextView
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:layout_marginBottom="5dp"
+							        android:layout_marginLeft="25dp"
+							        android:text="@string/tela_caractetisticas_usuario_pericia_texto"
+							        android:textColor="@color/Gray"
+							        android:textSize="15sp" />
+				       </LinearLayout>
+       
+					    <RadioGroup
+					        android:id="@+id/radioGroupPericia"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content" 
+					        android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_alignParentTop="true">
+					
+					        <RadioButton
+					            android:id="@+id/radioPericiaAlto"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:textColor="@color/Black"
+					            android:text="@string/tela_caractetisticas_usuario_radio_button_alto" 
+					            android:textSize="16sp"/>
+					
+					        <RadioButton
+					            android:id="@+id/radioPericiaMedio"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:checked="true"
+					            android:textColor="@color/Black"
+					            android:text="@string/tela_caractetisticas_usuario_radio_button_medio" 
+					            android:textSize="16sp"/>
+					
+					        <RadioButton
+					            android:id="@+id/radioPericiaBaixo"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:textColor="@color/Black"
+					            android:text="@string/tela_caractetisticas_usuario_radio_button_baixo" 
+					            android:textSize="16sp"/>
+					    </RadioGroup>   
+   		 </RelativeLayout>
+   		 
+			 <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="10dp"
+                android:background="#ffcccccc" />
+   		 
+		 <RelativeLayout
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:paddingBottom="5dp" >
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_alignParentLeft="true">
+
+                             <TextView
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_marginLeft="25dp"
+                                 android:layout_marginBottom="5dp"
+                                android:text="@string/tela_caractetisticas_usuario_treinamento_titulo"
+						        android:textColor="@color/Black"
+						        android:textSize="18sp" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginBottom="5dp"
+                                 android:layout_marginLeft="25dp"
+                                 android:text="@string/tela_caractetisticas_usuario_treinamento_texto"
+                                 android:textColor="@color/Gray"
+                                 android:textSize="15sp" />
+                 </LinearLayout>
+
+		    				 <CheckBox
+		    				     android:id="@+id/checkBoxTreinamentoUsuario"
+                                 android:layout_width="wrap_content"
+		    				     android:layout_height="wrap_content"
+                                 android:layout_alignParentTop="true"
+                                 android:layout_alignParentRight="true"
+                                 android:layout_marginRight="60dp"
+                                 android:singleLine="false" />
+  		</RelativeLayout>
+			 
+		 
+ 	</LinearLayout>  
+ </ScrollView> 
+
+ 
+</LinearLayout>

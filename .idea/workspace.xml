@@ -163,584 +163,38 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57eb6955-7d00-42ba-81db-c15b7edfd98a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/HipotesesEDependenciasFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaEscopoActivity.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/IRequisito.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewDependenciasAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewHipotesesAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewProjetosAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewRequisitosAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ListViewRequisitosAtrasadosAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/MsgAlerta.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\actionbarsherlock.iml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\lint.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\color\abs__primary_text_disable_only_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\color\abs__primary_text_disable_only_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\color\abs__primary_text_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\color\abs__primary_text_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_bottom_solid_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_bottom_solid_inverse_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_bottom_solid_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_bottom_transparent_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_bottom_transparent_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_share_pack_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_share_pack_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_solid_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_solid_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_solid_shadow_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_stacked_solid_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_stacked_solid_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_stacked_transparent_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_stacked_transparent_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_transparent_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ab_transparent_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__btn_cab_done_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__btn_cab_done_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__btn_cab_done_focused_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__btn_cab_done_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__btn_cab_done_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__btn_cab_done_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__cab_background_bottom_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__cab_background_bottom_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__cab_background_top_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__cab_background_top_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_ab_back_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_ab_back_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_cab_done_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_cab_done_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_clear_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_clear_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_clear_search_api_disabled_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_clear_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_commit_search_api_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_commit_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_go.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_go_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_menu_moreoverflow_normal_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_menu_moreoverflow_normal_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_menu_share_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_menu_share_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_voice_search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__ic_voice_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__list_activated_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__list_divider_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__list_divider_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__list_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__list_longpressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__list_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__list_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__list_selector_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__list_selector_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__menu_dropdown_panel_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__menu_dropdown_panel_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__progress_bg_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__progress_bg_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__progress_primary_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__progress_primary_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__progress_secondary_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__progress_secondary_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_48_inner_holo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_48_outer_holo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_ab_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_ab_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_ab_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_ab_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_ab_focused_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_ab_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_ab_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__spinner_ab_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__tab_selected_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__tab_selected_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__tab_selected_pressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__tab_unselected_pressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__textfield_search_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__textfield_search_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__textfield_search_right_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__textfield_search_right_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__textfield_search_right_selected_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__textfield_search_right_selected_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__textfield_search_selected_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__textfield_search_selected_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-hdpi\abs__toast_frame.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_bottom_solid_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_bottom_solid_inverse_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_bottom_solid_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_bottom_transparent_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_bottom_transparent_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_share_pack_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_share_pack_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_solid_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_solid_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_solid_shadow_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_stacked_solid_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_stacked_solid_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_stacked_transparent_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_stacked_transparent_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_transparent_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ab_transparent_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__btn_cab_done_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__btn_cab_done_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__btn_cab_done_focused_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__btn_cab_done_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__btn_cab_done_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__btn_cab_done_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__cab_background_bottom_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__cab_background_bottom_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__cab_background_top_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__cab_background_top_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_ab_back_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_ab_back_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_cab_done_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_cab_done_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_clear_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_clear_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_clear_search_api_disabled_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_clear_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_commit_search_api_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_commit_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_go.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_go_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_menu_moreoverflow_normal_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_menu_moreoverflow_normal_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_menu_share_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_menu_share_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_voice_search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__ic_voice_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__list_activated_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__list_divider_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__list_divider_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__list_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__list_longpressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__list_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__list_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__list_selector_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__list_selector_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__menu_dropdown_panel_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__menu_dropdown_panel_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__progress_bg_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__progress_bg_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__progress_primary_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__progress_primary_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__progress_secondary_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__progress_secondary_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_48_inner_holo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_48_outer_holo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_ab_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_ab_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_ab_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_ab_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_ab_focused_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_ab_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_ab_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__spinner_ab_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__tab_selected_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__tab_selected_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__tab_selected_pressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__tab_unselected_pressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__textfield_search_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__textfield_search_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__textfield_search_right_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__textfield_search_right_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__textfield_search_right_selected_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__textfield_search_right_selected_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__textfield_search_selected_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__textfield_search_selected_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-mdpi\abs__toast_frame.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-v11\abs__progress_medium_holo.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_bottom_solid_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_bottom_solid_inverse_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_bottom_solid_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_bottom_transparent_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_bottom_transparent_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_share_pack_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_share_pack_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_solid_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_solid_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_solid_shadow_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_stacked_solid_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_stacked_solid_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_stacked_transparent_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_stacked_transparent_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_transparent_dark_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ab_transparent_light_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__btn_cab_done_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__btn_cab_done_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__btn_cab_done_focused_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__btn_cab_done_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__btn_cab_done_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__btn_cab_done_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__cab_background_bottom_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__cab_background_bottom_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__cab_background_top_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__cab_background_top_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_ab_back_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_ab_back_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_cab_done_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_cab_done_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_clear_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_clear_search_api_disabled_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_clear_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_commit_search_api_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_commit_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_go.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_go_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_menu_moreoverflow_normal_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_menu_moreoverflow_normal_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_menu_share_holo_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_menu_share_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_voice_search.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__ic_voice_search_api_holo_light.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__list_activated_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__list_divider_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__list_divider_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__list_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__list_longpressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__list_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__list_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__list_selector_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__list_selector_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__menu_dropdown_panel_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__menu_dropdown_panel_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__progress_bg_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__progress_bg_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__progress_primary_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__progress_primary_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__progress_secondary_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__progress_secondary_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_48_inner_holo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_48_outer_holo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_ab_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_ab_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_ab_disabled_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_ab_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_ab_focused_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_ab_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_ab_pressed_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__spinner_ab_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__tab_selected_focused_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__tab_selected_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__tab_selected_pressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__tab_unselected_pressed_holo.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__textfield_search_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__textfield_search_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__textfield_search_right_default_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__textfield_search_right_default_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__textfield_search_right_selected_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__textfield_search_right_selected_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__textfield_search_selected_holo_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__textfield_search_selected_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable-xhdpi\abs__toast_frame.9.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__activated_background_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__activated_background_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__btn_cab_done_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__btn_cab_done_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__ic_clear.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__ic_clear_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__ic_menu_moreoverflow_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__ic_menu_moreoverflow_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__item_background_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__item_background_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__list_selector_background_transition_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__list_selector_background_transition_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__list_selector_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__list_selector_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__progress_horizontal_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__progress_horizontal_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__progress_medium_holo.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__search_dropdown_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__search_dropdown_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__spinner_ab_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__spinner_ab_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__tab_indicator_ab_holo.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__textfield_searchview_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__textfield_searchview_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__textfield_searchview_right_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\drawable\abs__textfield_searchview_right_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout-large\abs__action_mode_close_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout-v14\sherlock_spinner_dropdown_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout-v14\sherlock_spinner_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout-xlarge\abs__screen_action_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout-xlarge\abs__screen_action_bar_overlay.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__action_bar_home.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__action_bar_tab.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__action_bar_tab_bar_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__action_bar_title_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__action_menu_item_layout.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__action_menu_layout.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__action_mode_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__action_mode_close_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__activity_chooser_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__activity_chooser_view_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__list_menu_item_checkbox.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__list_menu_item_icon.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__list_menu_item_radio.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__popup_menu_item_layout.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__screen_action_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__screen_action_bar_overlay.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__screen_simple.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__screen_simple_overlay_action_mode.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__search_dropdown_item_icons_2line.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__search_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\abs__simple_dropdown_hint.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\sherlock_spinner_dropdown_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\layout\sherlock_spinner_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-land\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-large-hdpi-1024x600\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-large-land-hdpi-1024x600\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-large-land-mdpi-1024x600\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-large-mdpi-1024x600\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-sw600dp\abs__bools.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-sw600dp\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-v11\abs__themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-v14\abs__styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-v14\abs__themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-w360dp\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-w480dp\abs__bools.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-w480dp\abs__config.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-w500dp\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-w600dp\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values-xlarge\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values\abs__attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values\abs__bools.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values\abs__colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values\abs__config.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values\abs__dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values\abs__ids.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values\abs__strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values\abs__styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\res\values\abs__themes.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\android\support\v4\app\Watson.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\ActionBarSherlock.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\app\ActionBar.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\app\SherlockActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\app\SherlockDialogFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\app\SherlockExpandableListActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\app\SherlockFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\app\SherlockFragmentActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\app\SherlockListActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\app\SherlockListFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\app\SherlockPreferenceActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\ActionBarSherlockCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\ActionBarSherlockNative.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\ResourcesCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\app\ActionBarImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\app\ActionBarWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\Animator.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorListenerAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\AnimatorSet.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\FloatEvaluator.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\FloatKeyframeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\IntEvaluator.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\IntKeyframeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\Keyframe.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\KeyframeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\ObjectAnimator.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\PropertyValuesHolder.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\TypeEvaluator.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\animation\ValueAnimator.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\view\NineViewGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\view\animation\AnimatorProxy.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\widget\NineFrameLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\widget\NineHorizontalScrollView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\nineoldandroids\widget\NineLinearLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\ActionProviderWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\StandaloneActionMode.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\View_HasStateListenerSupport.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\View_OnAttachStateChangeListener.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\ActionMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\ActionMenuItem.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\ActionMenuItemView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\ActionMenuPresenter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\ActionMenuView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\BaseMenuPresenter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\ListMenuItemView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\MenuBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\MenuItemImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\MenuItemWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\MenuPopupHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\MenuPresenter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\MenuView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\MenuWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\SubMenuBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\view\menu\SubMenuWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\AbsActionBarView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\ActionBarContainer.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\ActionBarContextView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\ActionBarView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\CapitalizingButton.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\CapitalizingTextView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\CollapsibleActionViewWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\IcsAbsSpinner.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\IcsAdapterView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\IcsColorDrawable.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\IcsLinearLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\IcsListPopupWindow.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\IcsProgressBar.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\IcsSpinner.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\IcsToast.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\IcsView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\PopupWindowCompat.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\ScrollingTabContainerView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\internal\widget\TabsLinearLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\view\ActionMode.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\view\ActionProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\view\CollapsibleActionView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\view\Menu.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\view\MenuInflater.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\view\MenuItem.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\view\SubMenu.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\view\Window.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\widget\ActivityChooserModel.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\widget\ActivityChooserView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\widget\SearchView.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\widget\ShareActionProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\libraries\actionbarsherlock\src\com\actionbarsherlock\widget\SuggestionsAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_caracteristicas_usuario.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_caracteristicas_usuario_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_caracteristicas_usuario_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_escopo.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_escopo_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_escopo_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_hipoteses.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_hipoteses_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_hipoteses_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_requisitos.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_requisitos_atrasados.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_requisitos_atrasados_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_requisitos_atrasados_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_requisitos_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_requisitos_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_caracteristicas_usuario.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_caracteristicas_usuario_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_caracteristicas_usuario_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_escopo.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_escopo_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_escopo_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_hipoteses.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_hipoteses_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_hipoteses_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_requisitos.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_requisitos_atrasados.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_requisitos_atrasados_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_requisitos_atrasados_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_requisitos_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_requisitos_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_caracteristicas_usuario.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_caracteristicas_usuario_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_caracteristicas_usuario_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_escopo.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_escopo_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_hipoteses.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_hipoteses_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_hipoteses_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_requisitos.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_requisitos_atrasados.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_requisitos_atrasados_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_requisitos_atrasados_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_requisitos_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_requisitos_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_caracteristicas_usuario.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_caracteristicas_usuario_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_caracteristicas_usuario_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_escopo.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_escopo_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_escopo_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_hipoteses.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_hipoteses_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_hipoteses_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_requisitos.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_requisitos_atrasados.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_requisitos_atrasados_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_requisitos_atrasados_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_requisitos_clicado.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_requisitos_normal.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout-hdpi\descricao_geral.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout-land-hdpi\descricao_geral.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout-land-ldpi\descricao_geral.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout-land-mdpi\descricao_geral.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout-land-xhdpi\descricao_geral.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout-ldpi\descricao_geral.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout-mdpi\descricao_geral.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout-xhdpi\descricao_geral.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TabsHipotesesEDependenciasActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaEscopoActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\activities\TelaRequisitosActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\activities\TelaVisaoGeralActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\util\OperacoesDependencias.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\util\OperacoesHipoteses.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\util\OperacoesRequisitos.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\util\OperacoesRequisitosAtrasados.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReqDroid.apk" afterPath="$PROJECT_DIR$/ReqDroid.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/dao/BDGerenciador.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/dao/BDGerenciador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vrs/reqdroid/dao/IOperacoesBD.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/dao/IOperacoesBD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReqDroid.iml" afterPath="$PROJECT_DIR$/ReqDroid.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-pt-rBR/strings.xml" afterPath="$PROJECT_DIR$/res/values-pt-rBR/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
+    <list default="true" id="57eb6955-7d00-42ba-81db-c15b7edfd98a" name="Default" comment="Totally new UI using the Drawer Navigation. Removed ActionBarSherlock library, using android.support.v7.appcompat instead.&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/action_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/action_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/action_search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/drawer_shadow.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/drawer_shadow.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/drawer_shadow.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/ic_caracteristicas_usuario.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_drawer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_drawer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_drawer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/ic_hipoteses_e_dependencias.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/ic_requisitos.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/ic_requisitos_atrasados.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/DependenciasUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/DrawerPrincipalActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/DrawerPrincipalAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/HipotesesUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ProjetoUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/RequisitosAtrasadosUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/RequisitosFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/util/RequisitosUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaAbrirProjetoActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/drawer_principal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/drawer_principal_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/listview_projetos.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/tabs_hipoteses_e_dependencias.xml" />
+      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-hdpi\ic_requisitosatrasados.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-ldpi\ic_requisitosatrasados.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_requisitosatrasados.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-xhdpi\ic_requisitosatrasados.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable-mdpi\ic_escopo_normal.png" afterPath="$PROJECT_DIR$/res/drawable/ic_escopo.png" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable\bordalayout.xml" afterPath="$PROJECT_DIR$/res/drawable/borda_layout.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable\botaoazul.xml" afterPath="$PROJECT_DIR$/res/drawable/botao_azul.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable\botaocinza.xml" afterPath="$PROJECT_DIR$/res/drawable/botao_cinza.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable\botaocinzacancelar.xml" afterPath="$PROJECT_DIR$/res/drawable/botao_cancelar.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable\botaocinzasalvar.xml" afterPath="$PROJECT_DIR$/res/drawable/botao_salvar.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable\botaoverde.xml" afterPath="$PROJECT_DIR$/res/drawable/botao_verde.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable\ic_botaoeditar.xml" afterPath="$PROJECT_DIR$/res/drawable/ic_botao_editar.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\drawable\ratingstars.xml" afterPath="$PROJECT_DIR$/res/drawable/rating_stars.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\caracteristicasusuario.xml" afterPath="$PROJECT_DIR$/res/layout/caracteristicas_usuario.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\dataprojeto.xml" afterPath="$PROJECT_DIR$/res/layout/data_projeto.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\dependenciaitem.xml" afterPath="$PROJECT_DIR$/res/layout/dependencia_item.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\editarescopo.xml" afterPath="$PROJECT_DIR$/res/layout/editar_escopo.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\hipotesedetalhada.xml" afterPath="$PROJECT_DIR$/res/layout/hipotese_detalhada.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\hipoteseitem.xml" afterPath="$PROJECT_DIR$/res/layout/hipotese_item.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\hipotesesedependencias.xml" afterPath="$PROJECT_DIR$/res/layout/hipoteses_e_dependencias.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\itemspinnerdependencia.xml" afterPath="$PROJECT_DIR$/res/layout/item_spinner_dependencia.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\novaespecificacao.xml" afterPath="$PROJECT_DIR$/res/layout/novo_projeto.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\projetoitem.xml" afterPath="$PROJECT_DIR$/res/layout/projeto_item.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\requisitoatrasadodetalhado.xml" afterPath="$PROJECT_DIR$/res/layout/requisito_atrasado_detalhado.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\requisitoatrasadoitem.xml" afterPath="$PROJECT_DIR$/res/layout/requisitoatrasado_item.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\requisitodetalhado.xml" afterPath="$PROJECT_DIR$/res/layout/requisito_detalhado.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\requisitoitem.xml" afterPath="$PROJECT_DIR$/res/layout/requisito_item.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\requisitosatrasados.xml" afterPath="$PROJECT_DIR$/res/layout/requisitos_atrasados.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\menu\menuopcoeshipotese.xml" afterPath="$PROJECT_DIR$/res/menu/menu_opcoes_hipotese.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\menu\menuopcoesprojeto.xml" afterPath="$PROJECT_DIR$/res/menu/menu_opcoes_projeto.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\menu\menuopcoesrequisito.xml" afterPath="$PROJECT_DIR$/res/menu/menu_opcoes_requisito.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\menu\menuopcoesrequisitoatrasado.xml" afterPath="$PROJECT_DIR$/res/menu/menu_opcoes_requisito_atrasado.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\menu\menusobre.xml" afterPath="$PROJECT_DIR$/res/menu/menu_aplicativo.xml" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\DependenciasFragment.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/DependenciasFragment.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\HipoteseDetalhadaActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaHipoteseDetalhadaActivity.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\HipotesesFragment.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/HipotesesFragment.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\MainActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/MainActivity.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaAbrirProjetoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/ProjetosListFragment.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaCaracteristicasUsuarioActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/CaracteristicasUsuarioFragment.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaEditarEscopoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaEditarEscopoActivity.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaNovaEspecificacaoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaNovoProjetoActivity.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaPrincipalActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaPrincipalActivity.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaRequisitoAtrasadoDetalhadoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaRequisitoAtrasadoDetalhadoActivity.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaRequisitoDetalhadoActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaRequisitoDetalhadoActivity.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaRequisitosAtrasadosActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/RequisitosAtrasadosFragment.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\TelaSobreActivity.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaSobreActivity.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\modelo\Dependencia.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/models/Dependencia.java" />
-      <change type="MOVED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\modelo\Projeto.java" afterPath="$PROJECT_DIR$/src/com/vrs/reqdroid/models/Projeto.java" />
     </list>
     <ignored path="GerenciadorDeRequisitos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -812,10 +266,29 @@
       <file leaf-file-name="DrawerPrincipalActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/activities/DrawerPrincipalActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="33" selection-start="7219" selection-end="7219" vertical-scroll-proportion="0.0" vertical-offset="2058" max-vertical-offset="3723">
+            <state line="205" column="0" selection-start="7632" selection-end="7632" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="3672">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjetoUtils.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/util/ProjetoUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="70" selection-start="248" selection-end="248" vertical-scroll-proportion="0.19508196" vertical-offset="0" max-vertical-offset="629">
               <folding>
-                <element signature="e#7008#7243#0" expanded="true" />
-                <element signature="e#7232#7233#0" expanded="true" />
+                <element signature="e#0#1011#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HipotesesUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/util/HipotesesUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3519">
+              <folding>
+                <element signature="e#0#9228#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -824,11 +297,8 @@
       <file leaf-file-name="TelaEscopoActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaEscopoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="83" selection-start="4811" selection-end="4811" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2567">
-              <folding>
-                <element signature="e#0#4958#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="140" column="83" selection-start="4811" selection-end="4811" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="2652">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -836,10 +306,8 @@
       <file leaf-file-name="drawer_principal.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/drawer_principal.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="31" selection-start="906" selection-end="906" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="1258">
-              <folding>
-                <element signature="e#1890#1915#0" expanded="true" />
-              </folding>
+            <state line="25" column="31" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1258">
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -850,16 +318,16 @@
       <file leaf-file-name="HipotesesFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/HipotesesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="327" column="70" selection-start="11182" selection-end="11182" vertical-scroll-proportion="0.0" vertical-offset="3972" max-vertical-offset="5049">
+            <state line="327" column="70" selection-start="11182" selection-end="11182" vertical-scroll-proportion="0.0" vertical-offset="5559" max-vertical-offset="5967">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="915" selection-end="915" vertical-scroll-proportion="0.5452463" vertical-offset="0" max-vertical-offset="4063">
+            <state line="28" column="0" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="4063">
               <folding />
             </state>
           </provider>
@@ -868,12 +336,8 @@
       <file leaf-file-name="HipotesesEDependenciasFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/HipotesesEDependenciasFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="45" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1340#1398#0" expanded="true" />
-                <element signature="e#1568#1629#0" expanded="true" />
-              </folding>
+            <state line="64" column="45" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="1445">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -903,7 +367,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/drawerActivity.java" />
         <option value="$USER_HOME$/Desktop/NavigationDrawer/NavigationDrawer/src/com/example/android/navigationdrawerexample/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/drawer_item.xml" />
         <option value="$PROJECT_DIR$/res/layout/drawer_layout.xml" />
@@ -954,6 +417,7 @@
         <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/activities/DrawerPrincipalActivity.java" />
         <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/HipotesesFragment.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/vrs/reqdroid/util/ProjetoUtils.java" />
       </list>
     </option>
   </component>
@@ -1018,7 +482,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1185,13 +648,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
+              <option name="myItemId" value="drawable-xhdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1498,7 +962,11 @@
       <created>1386082607849</created>
       <updated>1386082607849</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Totally new UI using the Drawer Navigation. Removed ActionBarSherlock library, using android.support.v7.appcompat instead.&#10;">
+      <created>1387847534018</created>
+      <updated>1387847534018</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1529,18 +997,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13939394" sideWeight="0.67291313" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33502537" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33481646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25757575" sideWeight="0.67291313" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263041" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39822024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3192436" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21969697" sideWeight="0.26064736" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21969697" sideWeight="0.26064736" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2925473" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2925473" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50945497" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1554,7 +1020,9 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263041" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1575,31 +1043,23 @@
     <MESSAGE value="Fixed layouts." />
     <MESSAGE value="Layouts improvements." />
     <MESSAGE value="Android 4.4 KitKat support.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Android 4.4 KitKat support.&#10;" />
+    <MESSAGE value="Totally new UI using the Drawer Navigation. Removed ActionBarSherlock library, using android.support.v7.appcompat instead.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Totally new UI using the Drawer Navigation. Removed ActionBarSherlock library, using android.support.v7.appcompat instead.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/HipotesesEDependenciasFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="45" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/ic_escopo.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/util/ProjetoUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="216" selection-end="216" vertical-scroll-proportion="0.15542857" vertical-offset="0" max-vertical-offset="875">
-          <folding>
-            <element signature="e#402#403#0" expanded="false" />
-            <element signature="e#434#435#0" expanded="false" />
-            <element signature="e#488#489#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#585#586#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#686#687#0" expanded="false" />
-            <element signature="e#744#745#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/editar_escopo.xml">
@@ -1615,13 +1075,6 @@
     <entry file="file://$USER_HOME$/Desktop/NavigationDrawer/NavigationDrawer/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/util/HipotesesUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3468">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Backups/Backup - Tela Visão Geral/TelaVisaoGeralActivity.java">
@@ -1803,7 +1256,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="5" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.63085717" vertical-offset="485" max-vertical-offset="1360">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1885,7 +1338,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="39" selection-end="176" vertical-scroll-proportion="0.02" vertical-offset="0" max-vertical-offset="850">
           <folding>
-            <element signature="e#1034#1074#0" expanded="true" />
+            <element signature="e#1034#1074#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1896,11 +1349,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/fragments/HipotesesEDependenciasFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="45" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1340#1398#0" expanded="true" />
-            <element signature="e#1568#1629#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1977,29 +1426,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/activities/TelaEscopoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="140" column="83" selection-start="4811" selection-end="4811" vertical-scroll-proportion="0.0" vertical-offset="1694" max-vertical-offset="2567">
-          <folding>
-            <element signature="e#0#4958#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/activities/DrawerPrincipalActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="33" selection-start="7219" selection-end="7219" vertical-scroll-proportion="0.0" vertical-offset="2058" max-vertical-offset="3723">
-          <folding>
-            <element signature="e#7008#7243#0" expanded="true" />
-            <element signature="e#7232#7233#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/drawer_principal.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="31" selection-start="906" selection-end="906" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="1258">
-          <folding>
-            <element signature="e#1890#1915#0" expanded="true" />
-          </folding>
+        <state line="25" column="31" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1258">
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2015,8 +1449,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="915" selection-end="915" vertical-scroll-proportion="0.5452463" vertical-offset="0" max-vertical-offset="4063">
+        <state line="28" column="0" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4063">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/activities/DrawerPrincipalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="0" selection-start="7632" selection-end="7632" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="3672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/util/HipotesesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3519">
+          <folding>
+            <element signature="e#0#9228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vrs/reqdroid/util/ProjetoUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="70" selection-start="248" selection-end="248" vertical-scroll-proportion="0.19508196" vertical-offset="0" max-vertical-offset="629">
+          <folding>
+            <element signature="e#0#1011#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

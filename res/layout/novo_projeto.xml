@@ -90,7 +90,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/tela_escopo_botao_salvar" />
+                android:text="@string/tela_escopo_botao_salvar"
+                android:background="@android:drawable/btn_default" />
 
             <Button
                 android:id="@+id/botaoDescartarProjeto"
@@ -98,7 +99,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/tela_escopo_botao_descartar" />
+                android:text="@string/tela_escopo_botao_descartar"
+                android:background="@android:drawable/btn_default" />
             </LinearLayout>
 </RelativeLayout>
     

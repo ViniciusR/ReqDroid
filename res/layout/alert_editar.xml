@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/alert_editar_descricao"/>
+
+    <EditText
+        android:id="@+id/descricao_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:inputType="textMultiLine"
+        android:singleLine="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/LightGrey"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_editar_versao"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+                <NumberPicker
+                    android:id="@+id/versao_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </NumberPicker>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/alert_editar_ponto"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <NumberPicker
+                android:id="@+id/subversao_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </NumberPicker>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

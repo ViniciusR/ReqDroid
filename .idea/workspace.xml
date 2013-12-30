@@ -172,19 +172,10 @@
       <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\requisito_atrasado_detalhado.xml" afterPath="" />
       <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\res\layout\requisitoatrasado_item.xml" afterPath="" />
       <change type="DELETED" beforePath="D:\Meus Documentos\Dropbox\ReqDroid\ReqDroid\src\com\vrs\reqdroid\util\MsgAlerta.java" afterPath="" />
-    </list>
-    <list id="c4db1b11-f322-4756-8c93-8092fbdd4ae8" name="Rejected commit: Default" comment="Totally new UI using the Drawer Navigation. Removed ActionBarSherlock library, using android.support.v7.appcompat instead.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/ic_inverter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/alert_editar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/card_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/drawer_header.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/ic_estrela_clicada.png" afterPath="$PROJECT_DIR$/res/drawable/ic_estrela_clicada.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GerenciadorDeRequisitos.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/res/drawable/drawer_header.xml" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,10 +313,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawer_header.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="drawer_header.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/drawable/drawer_header.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="11" selection-start="322" selection-end="322" vertical-scroll-proportion="0.11971831" vertical-offset="0" max-vertical-offset="852">
+            <state line="6" column="11" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout_color.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/drawable/layout_color.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="11" selection-start="329" selection-end="329" vertical-scroll-proportion="0.17445838" vertical-offset="0" max-vertical-offset="877">
               <folding />
             </state>
           </provider>
@@ -1021,7 +1021,11 @@
       <created>1388431594677</created>
       <updated>1388431594677</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Totally new UI using the Drawer Navigation. Removed ActionBarSherlock library, using android.support.v7.appcompat instead.&#10;">
+      <created>1388431930188</created>
+      <updated>1388431930188</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1049,7 +1053,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13939394" sideWeight="0.67291313" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1070,7 +1074,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924226" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23265742" sideWeight="0.67402375" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23265742" sideWeight="0.67402375" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3156146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="338" height="244" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1135,11 +1139,6 @@
         <state line="10" column="35" selection-start="371" selection-end="371" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="306">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/layout_color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="329" selection-end="329" vertical-scroll-proportion="0.17485714" vertical-offset="0" max-vertical-offset="875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/projeto_item.xml">
@@ -1579,7 +1578,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/drawer_header.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="322" selection-end="322" vertical-scroll-proportion="0.11971831" vertical-offset="0" max-vertical-offset="852">
+        <state line="6" column="11" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/layout_color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="329" selection-end="329" vertical-scroll-proportion="0.17445838" vertical-offset="0" max-vertical-offset="877">
           <folding />
         </state>
       </provider>

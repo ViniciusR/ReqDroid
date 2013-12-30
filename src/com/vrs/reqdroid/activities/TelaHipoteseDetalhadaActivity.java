@@ -9,18 +9,19 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.NumberPicker;
 import android.widget.TextView;
-
 import com.vrs.reqdroid.R;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.fragments.HipotesesFragment;
@@ -35,12 +36,13 @@ import com.vrs.reqdroid.util.ProjetoUtils;
  */
 public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
 
-    private TextView hipotese;
-    private TextView data;
-    private TextView versao;
-    private TextView autor;
+    private TextView descricaoHipoteseTV;
+    private TextView dataTV;
+    private TextView versaoTV;
+    private TextView autorTV;
     private TextView titulo;
     private int versaoHipotese;
+    private int subversaoHipotese;
 
     /**
      * Called when the activity is first created.
@@ -58,33 +60,34 @@ public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
     }
 
     /**
-     * Carrega a hipotese selecionado na lista de hipoteses atraves do banco de dados do aplicativo.
+     * Carrega a descricaoHipoteseTV selecionado na lista de hipoteses atraves do banco de dados do aplicativo.
      */
     void recebeHipotese()
     {
-        String texto = HipotesesFragment.getHipoteseSelecionada();
-        int idProj = ProjetoUtils.getIdProjeto();
+        String descricaoHipotese = HipotesesFragment.getHipoteseSelecionada();
+        int idProjeto = ProjetoUtils.getIdProjeto();
         String dataHipotese;
         String autorHipotese;
 
-        hipotese = (TextView)findViewById(R.id.textohipotesedetalhada);
-        hipotese.setText(texto);
+        descricaoHipoteseTV = (TextView)findViewById(R.id.textohipotesedetalhada);
+        descricaoHipoteseTV.setText(descricaoHipotese);
 
-        data = (TextView)findViewById(R.id.campoDataHipotese);
-        dataHipotese = BDGerenciador.getInstance(this).selectDataHipotese(texto, idProj);
-        data.setText(dataHipotese);
+        dataTV = (TextView)findViewById(R.id.campoDataHipotese);
+        dataHipotese = BDGerenciador.getInstance(this).selectDataHipotese(descricaoHipotese, idProjeto);
+        dataTV.setText(dataHipotese);
 
-        versao = (TextView)findViewById(R.id.campoVersaoHipotese);
-        versaoHipotese = BDGerenciador.getInstance(this).selectVersaoHipotese(texto, idProj);
-        versao.setText(versaoHipotese + ".0");
+        versaoTV = (TextView)findViewById(R.id.campoVersaoHipotese);
+        versaoHipotese = BDGerenciador.getInstance(this).selectVersaoHipotese(descricaoHipotese, idProjeto);
+        subversaoHipotese = BDGerenciador.getInstance(this).selectSubversaoHipotese(descricaoHipotese, idProjeto);
+        versaoTV.setText(versaoHipotese + "." + subversaoHipotese);
 
-        autor = (EditText)findViewById(R.id.campoAutorHipotese);
-        autorHipotese = BDGerenciador.getInstance(this).selectAutorHipotese(texto, idProj);
-        autor.setText(autorHipotese);
+        autorTV = (EditText)findViewById(R.id.campoAutorHipotese);
+        autorHipotese = BDGerenciador.getInstance(this).selectAutorHipotese(descricaoHipotese, idProjeto);
+        autorTV.setText(autorHipotese);
     }
 
     /**
-     * Edita a hipotese ao clicar no botao "Editar".
+     * Edita a descricaoHipoteseTV ao clicar no botao "Editar".
      */
     void editaHipotese()
     {
@@ -98,11 +101,11 @@ public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
     }
 
     /**
-     * Edita o autor da hipotese.
+     * Edita o autorTV da descricaoHipoteseTV.
      */
     private void editaAutorHipotese()
     {
-        autor.addTextChangedListener(new TextWatcher() {
+        autorTV.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
 
@@ -110,7 +113,7 @@ public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-                editaAutorHipoteseBD(hipotese.getText().toString(), autor.getText().toString());
+                editaAutorHipoteseBD(descricaoHipoteseTV.getText().toString(), autorTV.getText().toString());
             }
 
             @Override
@@ -121,7 +124,7 @@ public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
     }
 
     /**
-     * Remove a hipotese da lista e do banco de dados do aplicativo.
+     * Remove a descricaoHipoteseTV da lista e do banco de dados do aplicativo.
      */
     void removeHipotese()
     {
@@ -151,7 +154,7 @@ public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
     }
 
     /**
-     * Valida a hipotese movendo-a para a lista de requisitos do aplicativo.
+     * Valida a descricaoHipoteseTV movendo-a para a lista de requisitos do aplicativo.
      */
     void validaHipotese()
     {
@@ -168,8 +171,8 @@ public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
                         HipotesesFragment.atualizaListaRemovido(HipotesesFragment.getPosicaoHipoteseSelecionada());
                         HipotesesUtils.removeHipoteseBD(TelaHipoteseDetalhadaActivity.this, hipotese,
                                 ProjetoUtils.getIdProjeto());
-                        HipotesesUtils.validaHipoteseBD(TelaHipoteseDetalhadaActivity.this, hipotese, data.getText().toString(),
-                                versaoHipotese, autor.getText().toString(), ProjetoUtils.getIdProjeto());
+                        HipotesesUtils.validaHipoteseBD(TelaHipoteseDetalhadaActivity.this, hipotese, dataTV.getText().toString(),
+                                versaoHipotese, subversaoHipotese, autorTV.getText().toString(), ProjetoUtils.getIdProjeto());
                         finish();
                     }
                 });
@@ -183,30 +186,40 @@ public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
     }
 
     /**
-     * Exibe a janela para editar a descricao da hipotese.
+     * Exibe a janela para editar a descricao da descricaoHipoteseTV.
      */
     void exibeJanelaEditarHipotese()
     {
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        final AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle(R.string.alert_editar_hipotese);
+        LayoutInflater inflater = getLayoutInflater();
+        LinearLayout layoutEditar = (LinearLayout)inflater.inflate(R.layout.alert_editar, null);
 
-        final EditText entrada = new EditText(this);
-        entrada.setText(hipotese.getText().toString());
-        alert.setView(entrada);
+        final EditText entrada = (EditText) layoutEditar.findViewById(R.id.descricao_item);
+        final NumberPicker npVersao = (NumberPicker) layoutEditar.findViewById(R.id.versao_item);
+        final NumberPicker npSubversao = (NumberPicker) layoutEditar.findViewById(R.id.subversao_item);
+        npVersao.setMinValue(1);
+        npVersao.setMaxValue(10);
+        npSubversao.setMinValue(0);
+        npSubversao.setMaxValue(9);
+
+        entrada.setText(descricaoHipoteseTV.getText().toString());
+        npVersao.setValue(versaoHipotese);
+        npSubversao.setValue(subversaoHipotese);
+        final String descricaoAtual = entrada.getText().toString();
+
+        alert.setView(layoutEditar);
+        alert.create();
 
         alert.setPositiveButton(R.string.alert_salvar, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 if (!entrada.getText().toString().equals(""))
                 {
-                    versaoHipotese++;
-                    String descricaoAtual = hipotese.getText().toString();
-                    hipotese.setText(entrada.getText().toString());
-                    versao.setText(versaoHipotese + ".0");
-                    HipotesesFragment.atualizaLista(HipotesesFragment.getPosicaoHipoteseSelecionada(),
-                            entrada.getText().toString());
-
-                    HipotesesUtils.editaHipoteseBD(TelaHipoteseDetalhadaActivity.this, descricaoAtual, entrada.getText().toString(),
-                            versaoHipotese, ProjetoUtils.getIdProjeto());
+                    HipotesesUtils.editaHipotese(TelaHipoteseDetalhadaActivity.this, descricaoAtual, entrada.getText().toString(),
+                                                 npVersao.getValue(), npSubversao.getValue(),
+                                                 HipotesesFragment.getPosicaoHipoteseSelecionada(), ProjetoUtils.getIdProjeto());
+                    descricaoHipoteseTV.setText(entrada.getText());
+                    versaoTV.setText(npVersao.getValue() + "." + npSubversao.getValue());
                 }
             }
         });
@@ -220,10 +233,10 @@ public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
 
 
     /**
-     * Atualiza o autor da hipotese no banco de dados do aplicativo.
+     * Atualiza o autorTV da descricaoHipoteseTV no banco de dados do aplicativo.
      *
-     * @param descricaoAtual A descricao atual da hipotese
-     * @param autorNovo O novo autor da hipotese
+     * @param descricaoAtual A descricao atual da descricaoHipoteseTV
+     * @param autorNovo O novo autorTV da descricaoHipoteseTV
      */
     void editaAutorHipoteseBD(String descricaoAtual, String autorNovo)
     {
@@ -246,10 +259,7 @@ public class TelaHipoteseDetalhadaActivity extends ActionBarActivity {
                 Intent i = new Intent(TelaHipoteseDetalhadaActivity.this, TelaSobreActivity.class);
                 startActivity(i);
                 break;
-            // Respond to the action bar's Up/Home button
-            case android.R.id.home:
-                NavUtils.navigateUpTo(this,new Intent(this, DrawerPrincipalActivity.class));
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
 }

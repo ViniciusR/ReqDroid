@@ -5,31 +5,35 @@
 
 <!--suppress AndroidLintOverdraw, AndroidLintOverdraw, AndroidLintOverdraw -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:background="#fff2f2f2"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
               android:gravity="bottom"
               android:orientation="vertical">
 
     <RelativeLayout
 
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:background="@android:color/background_light"
-            >
+            android:background="@drawable/card_layout"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp">
 
         <EditText
                 android:id="@+id/etHipotese"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:hint="@string/tela_hipoteses_e_dependencias_hint_adicionar_hipotese"
                 android:maxLines="1"
-                android:layout_toLeftOf="@+id/botaoAdicionarHipotese"/>
+                android:layout_toLeftOf="@+id/botaoAdicionarHipotese"
+                android:textSize="15sp" />
 
         <Button
                 android:id="@+id/botaoAdicionarHipotese"
@@ -42,14 +46,15 @@
     </RelativeLayout>
 
     <ListView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/lvHipoteses"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:dividerHeight="5dp"
+            android:scrollbarStyle="outsideInset"
+            android:dividerHeight="10dp"
             android:clickable="true"
             android:divider="@android:color/transparent"
-            android:choiceMode="singleChoice"/>
+            android:choiceMode="singleChoice"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp" />
 
 </LinearLayout>

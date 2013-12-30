@@ -52,10 +52,10 @@ public class ListViewHipotesesAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         final ViewHolderHipoteses holder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.hipotese_item, null);
+            convertView = mInflater.inflate(R.layout.lista_item, null);
             holder = new ViewHolderHipoteses();
-            holder.descricaoHipotese = (TextView) convertView.findViewById(R.id.txtHipotese);
-            holder.botaoOpcoes = (ImageButton) convertView.findViewById(R.id.bOpcoesHipotese);
+            holder.descricaoHipotese = (TextView) convertView.findViewById(R.id.txt_item);
+            holder.botaoOpcoes = (ImageButton) convertView.findViewById(R.id.b_opcoes_item);
 
             convertView.setTag(holder);
         } else {

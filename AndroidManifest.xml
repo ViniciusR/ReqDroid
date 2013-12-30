@@ -30,6 +30,7 @@
              <category android:name="android.intent.category.DEFAULT" />
          </intent-filter>
      </activity>
+
      <activity
          android:name=".activities.TelaPrincipalActivity"
          android:configChanges="orientation|keyboardHidden"
@@ -41,6 +42,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
     </intent-filter>
 </activity>
+
 <activity
     android:name=".activities.TelaNovoProjetoActivity"
     android:label="@string/tela_principal_novo_projeto"
@@ -52,6 +54,7 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".activities.TelaAbrirProjetoActivity"
         android:label="@string/tela_principal_abrir_projeto"
@@ -64,10 +67,11 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
         <activity
          android:name=".activities.TelaRequisitoDetalhadoActivity"
          android:label="@string/tela_detalhes_requisito_titulo"
-         android:parentActivityName="com.vrs.fragments.RequisitosFragment"
+         android:parentActivityName="com.vrs.reqdroid.fragments.RequisitosFragment"
          android:configChanges="orientation|keyboardHidden"
         android:windowSoftInputMode="adjustResize" >
         <intent-filter>
@@ -76,10 +80,11 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".activities.TelaEscopoActivity"
         android:label="@string/tela_escopo_titulo"
-        android:parentActivityName="com.vrs.reqdroid.activities.TelaPrincipalActivity"
+        android:parentActivityName="com.vrs.reqdroid.activities.DrawerPrincipalActivity"
         android:configChanges="orientation|keyboardHidden"
         android:windowSoftInputMode="adjustResize" >
         <intent-filter>
@@ -88,9 +93,11 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".activities.TelaEditarEscopoActivity"
         android:label="@string/tela_editar_escopo_titulo"
+        android:parentActivityName="com.vrs.reqdroid.activities.TelaEscopoActivity"
         android:configChanges="orientation|keyboardHidden"
         android:windowSoftInputMode="adjustResize" >
         <intent-filter>
@@ -99,6 +106,7 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
         <activity
                 android:name=".fragments.RequisitosFragment"
                 android:label="@string/tela_visao_geral_requisitos"
@@ -111,6 +119,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
     <activity
         android:name=".fragments.RequisitosAtrasadosFragment"
         android:label="@string/tela_visao_geral_requisitos_atrasados"
@@ -123,6 +132,7 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".activities.TelaRequisitoAtrasadoDetalhadoActivity"
         android:label="@string/tela_detalhes_requisito_titulo"
@@ -135,6 +145,7 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".activities.TelaSobreActivity"
         android:label="@string/tela_sobre_titulo"
@@ -146,6 +157,7 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".fragments.CaracteristicasUsuarioFragment"
         android:label="@string/tela_caractetisticas_usuario_titulo"
@@ -158,6 +170,7 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".fragments.HipotesesEDependenciasFragment"
         android:label="@string/tela_visao_geral_hipoteses_e_dependencias"
@@ -170,8 +183,10 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".fragments.HipotesesFragment"
+        android:parentActivityName="com.vrs.reqdroid.activities.TelaPrincipalActivity"
         android:label="@string/tela_tabs_hed_hipoteses"
         android:configChanges="orientation|keyboardHidden"
         android:windowSoftInputMode="adjustResize" >
@@ -181,9 +196,11 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".fragments.DependenciasFragment"
         android:label="@string/tela_tabs_hed_dependencias"
+        android:parentActivityName="com.vrs.reqdroid.activities.TelaPrincipalActivity"
         android:windowSoftInputMode="adjustResize"
         android:screenOrientation="portrait" >
         <intent-filter>
@@ -192,20 +209,18 @@
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
+
     <activity
         android:name=".activities.TelaHipoteseDetalhadaActivity"
         android:label="@string/tela_detalhes_hipotese_titulo"
-        android:parentActivityName="com.vrs.TabsHipotesesEDependenciasActivity"
+        android:parentActivityName="com.vrs.reqdroid.fragments.HipotesesEDependenciasFragment"
         android:configChanges="orientation|keyboardHidden"
         android:windowSoftInputMode="adjustResize" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
     </activity>
-
-
 
         <activity
             android:name=".activities.DrawerPrincipalActivity"
@@ -215,11 +230,9 @@
             android:windowSoftInputMode="adjustResize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
 
 
         <activity android:name=".util.ListViewRequisitosAdapter"/>

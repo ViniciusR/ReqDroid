@@ -13,11 +13,6 @@ package com.vrs.reqdroid.util;
  */
 public interface IRequisito {
 
-	//void configuraItensLinha();
-	//void adicionaRequisitoCampoDeTexto();
-	//void adicionaLinhaNaTabela(TableRow.LayoutParams linhaLayoutParams, TableRow.LayoutParams campoRequisitoLayoutParams, TableRow.LayoutParams botaoRemoverMembroLayoutParams, String texto);
-	//void removeRequisitoAtalho();
-   //void selecionaLinha();
 	void salvaRequisitoBD();
 	void adicionaRequisito(String descricao, String data, int idprojeto);
 	void removeRequisitoBD(String descricao);

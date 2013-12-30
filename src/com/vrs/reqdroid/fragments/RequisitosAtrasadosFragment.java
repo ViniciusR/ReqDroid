@@ -30,6 +30,7 @@ import android.widget.TextView;
 import com.vrs.reqdroid.R;
 import com.vrs.reqdroid.activities.TelaPrincipalActivity;
 import com.vrs.reqdroid.activities.TelaRequisitoAtrasadoDetalhadoActivity;
+import com.vrs.reqdroid.util.AlertsUtil;
 import com.vrs.reqdroid.util.ListViewRequisitosAtrasadosAdapter;
 import com.vrs.reqdroid.util.ProjetoUtils;
 import com.vrs.reqdroid.util.RequisitosAtrasadosUtils;
@@ -54,8 +55,6 @@ public class RequisitosAtrasadosFragment extends Fragment {
     private static EditText editTextRequisitoAtrasado;
     private static String requisitoSelecionado; //Util pra quando o requisito e selecionado para exibir detalhes.
     private static int posicaoRequisitoSelecionado; //Util pra quando o requisito e selecionado para exibir detalhes.
-    private int posicao; //Util para a o menu de opcoes.
-    private String descricao; //Util para o menu de opcoes.
     private View rootView;
 
 
@@ -99,7 +98,7 @@ public class RequisitosAtrasadosFragment extends Fragment {
                 if (RequisitosUtils.requisitoPreenchido(editTextRequisitoAtrasado.getText().toString()))
                 {
                     salvaRequisito(editTextRequisitoAtrasado.getText().toString());
-                    requisitosAtrasados.add(lvRequisitosAtrasados.getChildCount(), editTextRequisitoAtrasado.getText().toString());
+                    requisitosAtrasados.add(editTextRequisitoAtrasado.getText().toString());
                     editTextRequisitoAtrasado.setText("");
                     lvRequisitosAtrasadosAdapter.notifyDataSetChanged();
                 }
@@ -134,8 +133,8 @@ public class RequisitosAtrasadosFragment extends Fragment {
         public void onClick(View view) {
             LinearLayout caixaRequisito = (LinearLayout)view.getParent();
             TextView txtRequisito = (TextView)caixaRequisito.getChildAt(0);
-            posicao = lvRequisitosAtrasados.getPositionForView(caixaRequisito);
-            descricao = txtRequisito.getText().toString();
+            posicaoRequisitoSelecionado = lvRequisitosAtrasados.getPositionForView(caixaRequisito);
+            requisitoSelecionado = txtRequisito.getText().toString();
 
             //Se a versao do Android e 3.0 ou superior, exibe o PopUpMenu, senao, o ContextMenu.
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
@@ -226,8 +225,10 @@ public class RequisitosAtrasadosFragment extends Fragment {
      */
     private void menuEdita()
     {
-        RequisitosAtrasadosUtils.editaRequisito(getActivity(), requisitosAtrasados, descricao,
-                posicao, idProjeto, lvRequisitosAtrasadosAdapter);
+        int versaoRequisito = RequisitosUtils.getVersaoRequisito(getActivity(), requisitoSelecionado, idProjeto);
+        int subversaoRequisito = RequisitosUtils.getSubversaoRequisito(getActivity(), requisitoSelecionado, idProjeto);
+
+        AlertsUtil.exibeAlertaEditar(getActivity(), requisitoSelecionado, versaoRequisito, subversaoRequisito, posicaoRequisitoSelecionado, 2);
     }
 
     /**
@@ -235,8 +236,8 @@ public class RequisitosAtrasadosFragment extends Fragment {
      */
     private void menuMove()
     {
-        RequisitosAtrasadosUtils.moveRequisito(getActivity(), requisitosAtrasados, descricao,
-                posicao, idProjeto, lvRequisitosAtrasadosAdapter);
+        RequisitosAtrasadosUtils.moveRequisito(getActivity(), requisitosAtrasados, requisitoSelecionado,
+                posicaoRequisitoSelecionado, idProjeto, lvRequisitosAtrasadosAdapter);
     }
 
     /**
@@ -244,8 +245,8 @@ public class RequisitosAtrasadosFragment extends Fragment {
      */
     private void menuDeleta()
     {
-        RequisitosAtrasadosUtils.removeRequisito(getActivity(), requisitosAtrasados, descricao,
-                posicao, idProjeto, lvRequisitosAtrasadosAdapter);
+        RequisitosAtrasadosUtils.removeRequisito(getActivity(), requisitosAtrasados, requisitoSelecionado,
+                posicaoRequisitoSelecionado, idProjeto, lvRequisitosAtrasadosAdapter);
     }
 
     /**

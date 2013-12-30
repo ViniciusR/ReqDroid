@@ -22,7 +22,7 @@ import android.widget.Toast;
 import com.vrs.reqdroid.R;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.models.Projeto;
-import com.vrs.reqdroid.util.MsgAlerta;
+import com.vrs.reqdroid.util.AlertsUtil;
 import com.vrs.reqdroid.util.ProjetoUtils;
 
 /**
@@ -94,10 +94,10 @@ public class TelaNovoProjetoActivity extends ActionBarActivity {
                     finish();
                   }
                   else
-                    MsgAlerta.exibeAlertaProjetoExistente(TelaNovoProjetoActivity.this);
+                    AlertsUtil.exibeAlertaProjetoExistente(TelaNovoProjetoActivity.this);
               }
               else 
-               MsgAlerta.exibeAlertaCamposNaoPreenchidos(TelaNovoProjetoActivity.this);
+               AlertsUtil.exibeAlertaCamposNaoPreenchidos(TelaNovoProjetoActivity.this);
             }  
         });  
     }

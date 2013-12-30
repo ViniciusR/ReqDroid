@@ -3,28 +3,25 @@
   no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
  -->
 
-<LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:orientation="vertical"
+<RelativeLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"
-                android:gravity="bottom"
-            >
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
     <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:fillViewport="true"
-        android:layout_marginTop="70dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-            >
+                android:orientation="vertical">
 
                   <EditText
                    android:id="@+id/textotitulosistema"
-                   android:layout_width="fill_parent"
+                   android:layout_width="match_parent"
                    android:layout_height="wrap_content"
                    android:layout_marginTop="10dp"
                    android:layout_marginBottom="10dp"
@@ -32,23 +29,22 @@
                    android:layout_marginRight="10dp"
                    android:textSize="15sp"
                    android:hint="@string/tela_escopo_hint_titulo_sistema"
-                   />
+                      android:minLines="2" />
 
                     <EditText
                     android:id="@+id/textodescricao"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/tela_escopo_hint_descricao"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textSize="15sp"
-                    android:minLines="2"
-                    />
+                    android:minLines="2"/>
 
                     <EditText
                     android:id="@+id/textobenefícios"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/tela_escopo_hint_beneficios"
                     android:layout_marginBottom="10dp"
@@ -60,59 +56,49 @@
 
                     <EditText
                     android:id="@+id/textoobjetivos"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/tela_escopo_hint_objetivos"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textSize="15sp"
-                    android:minLines="2"
-                    />
+                    android:minLines="2" />
 
 
                     <EditText
                     android:id="@+id/textopublicoalvo"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/tela_escopo_hint_publico_alvo"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textSize="15sp"
-                    />
+                        android:minLines="2" />
         </LinearLayout>
     </ScrollView>
 
         <LinearLayout
-                android:layout_gravity="bottom"
-                android:layout_width="fill_parent"
-                android:layout_height="64dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                >
-<Button
-	android:id="@+id/botaoSalvarProjeto"
-	android:layout_width="fill_parent"
-	android:layout_height="54dp"
-	android:layout_weight="1"
-	android:layout_marginTop="8dp"
-	android:layout_marginLeft="5dp"
-	android:layout_marginRight="2dp"
-	android:gravity="center"
-    android:text="@string/tela_escopo_botao_salvar"
-        />
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/botaoSalvarProjeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tela_escopo_botao_salvar" />
 
-<Button
-	android:id="@+id/botaoDescartarProjeto"
-	android:layout_width="fill_parent"
-	android:layout_height="54dp"
-	android:layout_weight="1"
-	android:layout_marginRight="5dp"
-	android:layout_marginLeft="2dp"
-	android:layout_marginTop="8dp"
-	android:gravity="center"
-    android:text="@string/tela_escopo_botao_descartar"
-        />
-</LinearLayout>
-</LinearLayout>
+            <Button
+                android:id="@+id/botaoDescartarProjeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/tela_escopo_botao_descartar" />
+            </LinearLayout>
+</RelativeLayout>
     

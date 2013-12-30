@@ -23,7 +23,6 @@ import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import com.vrs.reqdroid.R;
 import com.vrs.reqdroid.fragments.CaracteristicasUsuarioFragment;
 import com.vrs.reqdroid.fragments.HipotesesEDependenciasFragment;
@@ -47,9 +46,8 @@ public class DrawerPrincipalActivity extends ActionBarActivity {
     private CharSequence tituloActivity;
     private String[] titulosFuncionalidades;
     private DrawerPrincipalAdapter drawerAdapter;
-    private int ultimaOpcaoSelecionada = 0;
     private TextView tituloProjeto;
-    private LinearLayout funcionalidadeEscopo;
+    private LinearLayout funcionalidadeEscopoLayout;
 
 
     @Override
@@ -82,7 +80,7 @@ public class DrawerPrincipalActivity extends ActionBarActivity {
         drawerLayout.setDrawerListener(drawerToggle);
 
         if (savedInstanceState == null) {
-            selectItem(ultimaOpcaoSelecionada);
+            selectItem(0);
         }
     }
 
@@ -114,7 +112,7 @@ public class DrawerPrincipalActivity extends ActionBarActivity {
            case R.id.menusobre:
                Intent i = new Intent(this, TelaSobreActivity.class);
                startActivity(i);
-                return true;
+               return true;
 
             /*case R.id.action_websearch: //BOTAO DE BUSCA
                 // create intent to perform web search for this planet
@@ -148,19 +146,15 @@ public class DrawerPrincipalActivity extends ActionBarActivity {
         {
             case 0:
                 fragment = new RequisitosFragment();
-                ultimaOpcaoSelecionada = 0;
                 break;
             case 1:
                 fragment = new CaracteristicasUsuarioFragment();
-                ultimaOpcaoSelecionada = 1;
                 break;
             case 2:
-                fragment = new HipotesesEDependenciasFragment(); //Talvez Fazer uma tela pra hipoteses e outra pra dependencias.
-                ultimaOpcaoSelecionada = 2;
+                fragment = new HipotesesEDependenciasFragment();
                 break;
             case 3:
                 fragment = new RequisitosAtrasadosFragment();
-                ultimaOpcaoSelecionada = 3;
                 break;
             default:
                break;
@@ -183,9 +177,8 @@ public class DrawerPrincipalActivity extends ActionBarActivity {
 
     public void exibeEscopo()
     {
-        funcionalidadeEscopo.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
+        funcionalidadeEscopoLayout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent i = new Intent(DrawerPrincipalActivity.this, TelaEscopoActivity.class);
                 startActivity(i);
             }
@@ -220,7 +213,7 @@ public class DrawerPrincipalActivity extends ActionBarActivity {
         drawerLinear = (LinearLayout) findViewById(R.id.left_drawer);
         drawerList = (ListView) findViewById(R.id.left_drawer_list);
         tituloProjeto = (TextView) findViewById(R.id.tituloProjetoDrawer);
-        funcionalidadeEscopo = (LinearLayout) findViewById(R.id.llEscopoDrawer);
+        funcionalidadeEscopoLayout = (LinearLayout) findViewById(R.id.llEscopoDrawer);
         titulosFuncionalidades = getResources().getStringArray(R.array.titulos_funcionalidades_array);
         drawerAdapter = new DrawerPrincipalAdapter(this, titulosFuncionalidades);
 

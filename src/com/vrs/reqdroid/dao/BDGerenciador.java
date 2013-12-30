@@ -52,10 +52,10 @@ public class BDGerenciador implements IOperacoesBD{
        private final SQLiteStatement insertStmtDependencia;
        
        private static final String INSERT_PROJETOS = "insert into " + TABLE_PROJETOS  + "(titulo, descricao, beneficios, objetivos, publicoalvo, data) values (?,?,?,?,?,?)";
-       private static final String INSERT_REQUISITOS = "insert into " + TABLE_REQUISITOS  + "(descricao, data, prioridade, versao, autor, idprojeto) values (?,?,?,?,?,?)";
-       private static final String INSERT_REQUISITOS_ATRASADOS = "insert into " + TABLE_REQUISITOS_ATRASADOS  + "(descricao,  data, prioridade, versao, autor, idprojeto) values (?,?,?,?,?,?)";
+       private static final String INSERT_REQUISITOS = "insert into " + TABLE_REQUISITOS  + "(descricao, data, prioridade, versao, subversao, autor, idprojeto) values (?,?,?,?,?,?,?)";
+       private static final String INSERT_REQUISITOS_ATRASADOS = "insert into " + TABLE_REQUISITOS_ATRASADOS  + "(descricao,  data, prioridade, versao, subversao, autor, idprojeto) values (?,?,?,?,?,?,?)";
        private static final String INSERT_CARACTERISTICAS_USUARIO = "insert into " + TABLE_CARACTERISTICAS_USUARIO  + "(experiencia,  pericia, treinamento, idprojeto) values (?,?,?,?)";
-       private static final String INSERT_HIPOTESE = "insert into " + TABLE_HIPOTESES  + "(descricao,  data, versao, autor, idprojeto) values (?,?,?,?,?)";
+       private static final String INSERT_HIPOTESE = "insert into " + TABLE_HIPOTESES  + "(descricao,  data, versao, subversao, autor, idprojeto) values (?,?,?,?,?,?)";
        private static final String INSERT_PROJETO_REQUISITOS = "insert into " + TABLE_PROJETO_REQUISITOS  + "(idprojeto, idrequisito, numero) values (?,?,?)";
        private static final String INSERT_PROJETO_REQUISITOS_ATRASADOS = "insert into " + TABLE_PROJETO_REQUISITOS_ATRASADOS  + "(idprojeto, idrequisito, numero) values (?,?,?)";
        private static final String INSERT_DEPENDENCIA = "insert into " + TABLE_DEPENDENCIAS  + "(idprojeto, idprimeirorequisito, idsegundorequisito) values (?,?,?)";
@@ -114,14 +114,15 @@ public class BDGerenciador implements IOperacoesBD{
     * @param autor O autor do requisito
     * @param idprojeto O id do projeto
     */
-   public long insertRequisito(String descricao, String data, int prioridade, int versao, String autor, int idprojeto) { 
+   public long insertRequisito(String descricao, String data, int prioridade, int versao, int subversao, String autor, int idprojeto) {
     	  try {
             this.insertStmtRequisitos.bindString(1, descricao);
             this.insertStmtRequisitos.bindString(2, data);
             this.insertStmtRequisitos.bindLong(3, prioridade);
             this.insertStmtRequisitos.bindLong(4, versao);
-            this.insertStmtRequisitos.bindString(5, autor);
-            this.insertStmtRequisitos.bindLong(6, idprojeto);
+            this.insertStmtRequisitos.bindLong(5, subversao);
+            this.insertStmtRequisitos.bindString(6, autor);
+            this.insertStmtRequisitos.bindLong(7, idprojeto);
     	  }
     	  catch (Exception e) {
               Log.v("Insert requisito", e.getMessage(), e);
@@ -140,14 +141,15 @@ public class BDGerenciador implements IOperacoesBD{
     * @param autor O autor do requisito atrasado
     * @param idprojeto O id do projeto atrasado
     */
-   public long insertRequisitoAtrasado(String descricao, String data, int prioridade, int versao, String autor, int idprojeto) { 
+   public long insertRequisitoAtrasado(String descricao, String data, int prioridade, int versao, int subversao, String autor, int idprojeto) {
  	  try {
  		 this.insertStmtRequisitosAtrasados.bindString(1, descricao);
          this.insertStmtRequisitosAtrasados.bindString(2, data);
          this.insertStmtRequisitosAtrasados.bindLong(3, prioridade);
          this.insertStmtRequisitosAtrasados.bindLong(4, versao);
-         this.insertStmtRequisitosAtrasados.bindString(5, autor);
-         this.insertStmtRequisitosAtrasados.bindLong(6, idprojeto);
+          this.insertStmtRequisitosAtrasados.bindLong(5, subversao);
+         this.insertStmtRequisitosAtrasados.bindString(6, autor);
+         this.insertStmtRequisitosAtrasados.bindLong(7, idprojeto);
  	  }
  	  catch (Exception e) {
            Log.v("Insert requisito atrasado", e.getMessage(), e);
@@ -187,13 +189,14 @@ public class BDGerenciador implements IOperacoesBD{
     * @param autor O autor da hipotese
     * @param idProjeto O id do projeto
     */
-   public long insertHipotese(String descricao, String data, int versao, String autor, int idProjeto) { 
+   public long insertHipotese(String descricao, String data, int versao, int subversao, String autor, int idProjeto) {
 	 	  try {
 	 		 this.insertStmtHipoteses.bindString(1, descricao);
 	 		 this.insertStmtHipoteses.bindString(2, data);
 	 		 this.insertStmtHipoteses.bindLong(3, versao);
-	 		 this.insertStmtHipoteses.bindString(4, autor);
-	         this.insertStmtHipoteses.bindLong(5, idProjeto);
+              this.insertStmtHipoteses.bindLong(4, subversao);
+	 		 this.insertStmtHipoteses.bindString(5, autor);
+	         this.insertStmtHipoteses.bindLong(6, idProjeto);
 	 	  }
 	 	  catch (Exception e) {
 	           Log.v("Insert hipotese", e.getMessage(), e);
@@ -410,18 +413,22 @@ public class BDGerenciador implements IOperacoesBD{
     * @param id O id do requisito
     * @param descricaoNova A nova descricao do requisito
     * @param versaoNova A nova versao do requisito
+    * @param subversaoNova A nova subversao do requisito
     */
-   public void updateRequisito(int id, String descricaoNova, int versaoNova) {
+   public void updateRequisito(int id, String descricaoNova, int versaoNova, int subversaoNova) {
       ContentValues novaDescricao = new ContentValues();
       novaDescricao.put("descricao", descricaoNova); 
       ContentValues novaVersao = new ContentValues();
-      novaVersao.put("versao", versaoNova); 
-      String where = "id = ?"; 
+      novaVersao.put("versao", versaoNova);
+      ContentValues novaSubversao = new ContentValues();
+      novaSubversao.put("subversao", subversaoNova);
+      String where = "id = ?";
       String idString = String.valueOf(id);
       String[] whereArgs = {idString};
       try {
     	  this.db.update(TABLE_REQUISITOS, novaDescricao, where, whereArgs);
     	  this.db.update(TABLE_REQUISITOS, novaVersao, where, whereArgs);
+          this.db.update(TABLE_REQUISITOS, novaSubversao, where, whereArgs);
       }
       catch (Exception e) {
           Log.v("Update requisito", e.getMessage(), e);
@@ -435,19 +442,23 @@ public class BDGerenciador implements IOperacoesBD{
     * @param id O id do requisito atrasado
     * @param descricaoNova A nova descricao do requisito atrasado
     * @param versaoNova A nova versao do requisito atrasado
+    * @param subversaoNova A nova subversao do requisito atrasado
     */
-   public void updateRequisitoAtrasado(int id, String descricaoNova, int versaoNova)
+   public void updateRequisitoAtrasado(int id, String descricaoNova, int versaoNova, int subversaoNova)
    {
 	   ContentValues novaDescricao = new ContentValues();
 	      novaDescricao.put("descricao", descricaoNova); 
 	      ContentValues novaVersao = new ContentValues();
-	      novaVersao.put("versao", versaoNova); 
-	      String where = "id = ?"; 
+	      novaVersao.put("versao", versaoNova);
+          ContentValues novaSubversao = new ContentValues();
+          novaVersao.put("subversao", subversaoNova);
+          String where = "id = ?";
 	      String idString = String.valueOf(id);
 	      String[] whereArgs = {idString};
 	      try {
 	    	  this.db.update(TABLE_REQUISITOS_ATRASADOS, novaDescricao, where, whereArgs);
 	    	  this.db.update(TABLE_REQUISITOS_ATRASADOS, novaVersao, where, whereArgs);
+              this.db.update(TABLE_REQUISITOS_ATRASADOS, novaSubversao, where, whereArgs);
 	      }
 	      catch (Exception e) {
 	          Log.v("Update requisito", e.getMessage(), e);
@@ -645,19 +656,23 @@ public class BDGerenciador implements IOperacoesBD{
     * @param id O id da hipotese
     * @param descricaoNova A nova descricao da hipotese
     * @param versaoNova A nova versao da hipotese
+    * @param subversaoNova A nova subversao da hipotese
     */
-   public void updateHipotese(int id, String descricaoNova, int versaoNova)
+   public void updateHipotese(int id, String descricaoNova, int versaoNova, int subversaoNova)
    {
 	   ContentValues novaDescricao = new ContentValues();
 	      novaDescricao.put("descricao", descricaoNova); 
 	      ContentValues novaVersao = new ContentValues();
-	      novaVersao.put("versao", versaoNova); 
-	      String where = "id = ?"; 
+	      novaVersao.put("versao", versaoNova);
+          ContentValues novaSubversao = new ContentValues();
+          novaSubversao.put("subversao", versaoNova);
+       String where = "id = ?";
 	      String idString = String.valueOf(id);
 	      String[] whereArgs = {idString};
 	      try {
 	    	  this.db.update(TABLE_HIPOTESES, novaDescricao, where, whereArgs);
 	    	  this.db.update(TABLE_HIPOTESES, novaVersao, where, whereArgs);
+              this.db.update(TABLE_HIPOTESES, novaSubversao, where, whereArgs);
 	      }
 	      catch (Exception e) {
 	          Log.v("Update hipotese", e.getMessage(), e);
@@ -994,6 +1009,36 @@ public class BDGerenciador implements IOperacoesBD{
 	      }
 	      return versaoRequisito;  	   
    }
+
+    /**
+     * Select da subversao de um requisito.
+     *
+     * @param descricao A descricao do requisito
+     * @param idProjeto O id do projeto
+     * @return A subversao do requisito
+     */
+    public int selectSubversaoRequisito(String descricao, int idProjeto)
+    {
+        String select = "SELECT subversao FROM " + TABLE_REQUISITOS + " WHERE (descricao = '" + descricao + "' AND idprojeto = " + idProjeto + ")";
+        Cursor cursor = null;
+        int subversaoRequisito = 0;
+
+        try {
+            cursor = this.db.rawQuery(select, null);
+            if (cursor.moveToFirst())
+            {
+                subversaoRequisito = cursor.getInt(0);
+            }
+        }
+        catch (Exception e) {
+            Log.v(select, e.getMessage(), e);
+            e.printStackTrace();
+        } finally {
+            if (cursor != null && !cursor.isClosed())
+                cursor.close();
+        }
+        return subversaoRequisito;
+    }
    
    /**
     * Select da versao de um requisito atrasado.
@@ -1024,6 +1069,36 @@ public class BDGerenciador implements IOperacoesBD{
 	      }
 	      return versaoRequisito;
    }
+
+    /**
+     * Select da subversao de um requisito atrasado.
+     *
+     * @param descricao A descricao do requisito atrasado
+     * @param idProjeto O id do projeto
+     * @return A subversao do requisito atrasado
+     */
+    public int selectSubversaoRequisitoAtrasado(String descricao, int idProjeto)
+    {
+        String select = "SELECT subversao FROM " + TABLE_REQUISITOS_ATRASADOS + " WHERE (descricao = '" + descricao + "' AND idprojeto = " + idProjeto + ")";
+        Cursor cursor = null;
+        int subversaoRequisito = 0;
+
+        try {
+            cursor = this.db.rawQuery(select, null);
+            if (cursor.moveToFirst())
+            {
+                subversaoRequisito = cursor.getInt(0);
+            }
+        }
+        catch (Exception e) {
+            Log.v(select, e.getMessage(), e);
+            e.printStackTrace();
+        } finally {
+            if (cursor != null && !cursor.isClosed())
+                cursor.close();
+        }
+        return subversaoRequisito;
+    }
    
    /**
     * Select da prioridade de um requisito.
@@ -1471,6 +1546,36 @@ public class BDGerenciador implements IOperacoesBD{
 	      return versaoHipotese;  	   
    }
 
+    /**
+     * Select da subversao de uma hipotese.
+     *
+     * @param descricao A descricao da hipotese
+     * @param idProjeto O id do projeto
+     * @return A subversao da hipotese
+     */
+    public int selectSubversaoHipotese(String descricao, int idProjeto)
+    {
+        String select = "SELECT subversao FROM " + TABLE_HIPOTESES + " WHERE (descricao = '" + descricao + "' AND idprojeto = " + idProjeto + ")";
+        Cursor cursor = null;
+        int subversaoHipotese = 0;
+
+        try {
+            cursor = this.db.rawQuery(select, null);
+            if (cursor.moveToFirst())
+            {
+                subversaoHipotese = cursor.getInt(0);
+            }
+        }
+        catch (Exception e) {
+            Log.v(select, e.getMessage(), e);
+            e.printStackTrace();
+        } finally {
+            if (cursor != null && !cursor.isClosed())
+                cursor.close();
+        }
+        return subversaoHipotese;
+    }
+
    /**
     * Select do autor de uma hipotese.
     * 
@@ -1857,10 +1962,10 @@ public class BDGerenciador implements IOperacoesBD{
       public void onCreate(SQLiteDatabase db) {
     	 try{ 
          db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_PROJETOS  + "(id INTEGER PRIMARY KEY autoincrement, titulo TEXT, descricao TEXT, beneficios TEXT, objetivos TEXT, publicoalvo TEXT, data TEXT)");
-         db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_REQUISITOS  + "(id INTEGER PRIMARY KEY autoincrement, descricao TEXT, data TEXT, prioridade INTEGER, versao INTEGER, autor TEXT, idprojeto INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE)");   
-         db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_REQUISITOS_ATRASADOS  + "(id INTEGER PRIMARY KEY autoincrement, descricao TEXT,  data TEXT, prioridade INTEGER, versao INTEGER, autor TEXT, idprojeto INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE)");
+         db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_REQUISITOS  + "(id INTEGER PRIMARY KEY autoincrement, descricao TEXT, data TEXT, prioridade INTEGER, versao INTEGER, subversao INTEGER, autor TEXT, idprojeto INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE)");
+         db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_REQUISITOS_ATRASADOS  + "(id INTEGER PRIMARY KEY autoincrement, descricao TEXT,  data TEXT, prioridade INTEGER, versao INTEGER, subversao INTEGER, autor TEXT, idprojeto INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE)");
          db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_CARACTERISTICAS_USUARIO  + "(id INTEGER PRIMARY KEY autoincrement, experiencia INTEGER DEFAULT '2',  pericia INTEGER DEFAULT '2', treinamento INTEGER DEFAULT '0', idprojeto INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE)");
-         db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_HIPOTESES  + "(id INTEGER PRIMARY KEY autoincrement, descricao TEXT, data TEXT, versao INTEGER, autor TEXT, idprojeto INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE)");
+         db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_HIPOTESES  + "(id INTEGER PRIMARY KEY autoincrement, descricao TEXT, data TEXT, versao INTEGER, subversao INTEGER, autor TEXT, idprojeto INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE)");
          db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_PROJETO_REQUISITOS  + "(id INTEGER PRIMARY KEY autoincrement, numero INTEGER, idprojeto INTEGER, idrequisito INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE, FOREIGN KEY(idrequisito) REFERENCES " + TABLE_REQUISITOS + "(id) ON DELETE CASCADE)");
          db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_PROJETO_REQUISITOS_ATRASADOS  + "(id INTEGER PRIMARY KEY autoincrement, numero INTEGER, idprojeto INTEGER, idrequisito INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE, FOREIGN KEY(idrequisito) REFERENCES " + TABLE_REQUISITOS_ATRASADOS + "(id) ON DELETE CASCADE)");
          db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_DEPENDENCIAS  + "(id INTEGER PRIMARY KEY autoincrement, idprojeto INTEGER, idprimeirorequisito INTEGER, idsegundorequisito INTEGER, FOREIGN KEY(idprojeto) REFERENCES " + TABLE_PROJETOS + "(id) ON DELETE CASCADE, FOREIGN KEY(idprimeirorequisito) REFERENCES " + TABLE_REQUISITOS + "(id) ON DELETE CASCADE, FOREIGN KEY(idsegundorequisito) REFERENCES " + TABLE_REQUISITOS + "(id) ON DELETE CASCADE)");

@@ -30,6 +30,7 @@ import android.widget.TextView;
 import com.vrs.reqdroid.R;
 import com.vrs.reqdroid.activities.TelaPrincipalActivity;
 import com.vrs.reqdroid.activities.TelaRequisitoDetalhadoActivity;
+import com.vrs.reqdroid.util.AlertsUtil;
 import com.vrs.reqdroid.util.ListViewRequisitosAdapter;
 import com.vrs.reqdroid.util.ProjetoUtils;
 import com.vrs.reqdroid.util.RequisitosUtils;
@@ -53,8 +54,6 @@ public class RequisitosFragment extends Fragment {
     private static EditText editTextRequisito;
     private static String requisitoSelecionado; //Util pra quando o requisito e selecionado para exibir detalhes.
     private static int posicaoRequisitoSelecionado; //Util pra quando o requisito e selecionado para exibir detalhes.
-    private int posicao; //Util para a o menu de opcoes.
-    private String descricao; //Util para o menu de opcoes.
 
     private View rootView;
 
@@ -98,7 +97,7 @@ public class RequisitosFragment extends Fragment {
                 if (RequisitosUtils.requisitoPreenchido(editTextRequisito.getText().toString()))
                 {
                     salvaRequisito(editTextRequisito.getText().toString());
-                    requisitos.add(lvRequisitos.getChildCount(), editTextRequisito.getText().toString());
+                    requisitos.add(editTextRequisito.getText().toString());
                     editTextRequisito.setText("");
                     lvRequisitosAdapter.notifyDataSetChanged();
                 }
@@ -133,8 +132,8 @@ public class RequisitosFragment extends Fragment {
         public void onClick(View view) {
             LinearLayout caixaRequisito = (LinearLayout)view.getParent();
             TextView txtRequisito = (TextView)caixaRequisito.getChildAt(0);
-            posicao = lvRequisitos.getPositionForView(caixaRequisito);
-            descricao = txtRequisito.getText().toString();
+            posicaoRequisitoSelecionado = lvRequisitos.getPositionForView(caixaRequisito);
+            requisitoSelecionado = txtRequisito.getText().toString();
 
             //Se a versao do Android e 3.0 ou superior, exibe o PopUpMenu, senao, o ContextMenu.
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
@@ -225,8 +224,9 @@ public class RequisitosFragment extends Fragment {
      */
     private void menuEdita()
     {
-        RequisitosUtils.editaRequisito(getActivity(), requisitos, descricao,
-                posicao, idProjeto, lvRequisitosAdapter);
+        int versaoRequisito = RequisitosUtils.getVersaoRequisito(getActivity(), requisitoSelecionado, idProjeto);
+        int subversaoRequisito = RequisitosUtils.getSubversaoRequisito(getActivity(), requisitoSelecionado, idProjeto);
+        AlertsUtil.exibeAlertaEditar(getActivity(), requisitoSelecionado, versaoRequisito, subversaoRequisito, posicaoRequisitoSelecionado, 1);
     }
 
     /**
@@ -234,8 +234,8 @@ public class RequisitosFragment extends Fragment {
      */
     private void menuMove()
     {
-        RequisitosUtils.moveRequisito(getActivity(), requisitos, descricao,
-                posicao, idProjeto, lvRequisitosAdapter);
+        RequisitosUtils.moveRequisito(getActivity(), requisitos, requisitoSelecionado,
+                posicaoRequisitoSelecionado, idProjeto, lvRequisitosAdapter);
     }
 
     /**
@@ -243,8 +243,8 @@ public class RequisitosFragment extends Fragment {
      */
     private void menuDeleta()
     {
-        RequisitosUtils.removeRequisito(getActivity(), requisitos, descricao,
-                posicao, idProjeto, lvRequisitosAdapter);
+        RequisitosUtils.removeRequisito(getActivity(), requisitos, requisitoSelecionado,
+                posicaoRequisitoSelecionado, idProjeto, lvRequisitosAdapter);
     }
 
     /**
@@ -264,6 +264,7 @@ public class RequisitosFragment extends Fragment {
     {
         return DateFormat.getDateInstance().format(new Date());
     }
+
     /**
      * Retorna a descricao do requisito selecionado.
      *
@@ -275,9 +276,9 @@ public class RequisitosFragment extends Fragment {
     }
 
     /**
-     * Retorna a posicao do requisito selecionado na lista.
+     * Retorna a posicaoItem do requisito selecionado na lista.
      *
-     * @return a posicao do requisito
+     * @return a posicaoItem do requisito
      */
     public static int getPosicaoRequisitoSelecionado()
     {
@@ -287,7 +288,7 @@ public class RequisitosFragment extends Fragment {
     /**
      * Atualiza a lista de requisitos quando um requisito e editado na tela de detalhes.
      *
-     * @param posicao a posicao do requisito na lista
+     * @param posicao a posicaoItem do requisito na lista
      * @param descricao a descricao do requisito
      */
     public static void atualizaLista(int posicao, String descricao)
@@ -299,7 +300,7 @@ public class RequisitosFragment extends Fragment {
     /**
      * Atualiza a lista de requisitos quando um requisito e removido atraves da tela de detalhes.
      *
-     * @param posicao A posicao do requisito na lista
+     * @param posicao A posicaoItem do requisito na lista
      */
     public static void atualizaListaRemovido(int posicao)
     {

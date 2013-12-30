@@ -5,69 +5,89 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/background">
 
     <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:fillViewport="true" >
 
         <LinearLayout
 
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             tools:ignore="ScrollViewSize" >
 
-          <LinearLayout
-                android:layout_width="fill_parent"
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" 
-                android:layout_marginBottom="3dp">
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/card_layout"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp">
                 
               <TextView
                 android:id="@+id/campoTituloRequisito"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp"
-                android:textColor="@color/cinza"
-                android:textSize="16sp"
-                android:visibility="visible" />
+                  android:textColor="@color/Gray"
+                android:textSize="23sp"
+                android:visibility="visible"
+                  android:typeface="sans"
+                  android:layout_marginBottom="5dp" />
                     
                 </LinearLayout>
 
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/borda_layout"
                 android:minHeight="40dp"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:layout_gravity="center">
 
                 <TextView
-                    android:id="@+id/textorequisitodetalhado"
+                    android:id="@+id/textoRequisitoDetalhado"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="5dp"
                     android:textColor="#000000"
                     android:textSize="16sp" />
             </LinearLayout>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrey"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="3dp">
+                </View>
+
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="3dp"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -75,7 +95,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
                     android:text="@string/tela_detalhes_requisito_criado_em"
-                    android:textColor="@color/cinza"
+                    android:textColor="@color/Gray"
                     android:textSize="14sp" />
 
                 <TextView
@@ -84,7 +104,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
-                    android:textColor="@color/cinza"
+                    android:textColor="@color/Gray"
                     android:textSize="14sp" />
 
                 <TextView
@@ -94,7 +114,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="5dp"
                     android:text="@string/tela_detalhes_requisito_versao"
-                    android:textColor="@color/cinza"
+                    android:textColor="@color/Gray"
                     android:textSize="14sp" />
 
                 <TextView
@@ -103,71 +123,69 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_marginRight="5dp"
-                    android:textColor="@color/cinza"
+                    android:textColor="@color/Gray"
                     android:textSize="14sp" />
             </LinearLayout>
 
+
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="3dp"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
                 <Button
                     android:id="@+id/botaoEditarRequisito"
-                    style="@style/BotaoAzul"
-                    android:layout_width="81dp"
-                    android:layout_height="fill_parent"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/botao_azul"
                     android:text="@string/tela_detalhes_requisito_botao_editar"
-                    android:textColor="@color/branco"
-                    android:textSize="13sp" />
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="13sp"
+                    android:layout_gravity="center" />
 
                 <Button
                     android:id="@+id/botaoRemoverRequisito"
-                    style="@style/BotaoAzul"
-                    android:layout_width="81dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/botao_azul"
                     android:text="@string/tela_detalhes_requisito_botao_remover"
-                    android:textColor="@color/branco"
-                    android:textSize="13sp" />
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="13sp"
+                    android:layout_gravity="center" />
 
                 <Button
-                    android:id="@+id/botaoAtrasarRequisito"
-                    style="@style/BotaoAzul"
-                    android:layout_width="81dp"
-                    android:layout_height="match_parent"
+                    android:id="@+id/botaoMoverRequisito"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="0dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/botao_azul"
-                    android:text="@string/tela_detalhes_requisito_botao_atrasar"
-                    android:textColor="@color/branco"
-                    android:textSize="13sp" />
+                    android:text="@string/tela_detalhes_requisito_botao_mover"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="13sp"
+                    android:layout_gravity="center" />
+                </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal" >
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/card_layout"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="2dp"
                     android:text="@string/tela_detalhes_requisito_prioridade"
-                    android:textColor="@color/cinza"
+                    android:textColor="@color/Gray"
                     android:textSize="16sp" />
 
                 <RatingBar
@@ -175,52 +193,48 @@
                     style="@style/ratingBarPrioridade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:isIndicator="false"
-                    android:maxHeight="22dp"
-                    android:minHeight="22dp"
+                    android:indeterminate="false"
                     android:numStars="5"
                     android:rating="3"
                     android:stepSize="1.0"
-                        />
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="25dp"
-                android:orientation="horizontal" >
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/card_layout"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
 
-                <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginRight="20dp"
-                        android:text="@string/tela_detalhes_requisito_autor"
-                        android:textColor="@color/cinza"
-                        android:textSize="16sp" />
-                </LinearLayout>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tela_detalhes_requisito_autor"
+                    android:textColor="@color/Gray"
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/campoAutorRequisito"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
                     android:textSize="16sp"
-                    android:ems="10"/>
-
-
+                    android:ems="10"
+                    android:autoText="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

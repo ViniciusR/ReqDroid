@@ -23,7 +23,7 @@
 
 <TextView
         android:id="@+id/dataProjeto"
-        android:textColor="@color/cinza"
+        android:textColor="@color/Gray"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:paddingLeft="30dp"

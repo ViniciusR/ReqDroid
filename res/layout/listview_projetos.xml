@@ -21,7 +21,6 @@ no arquivo 'LICENSE.txt, o qual e parte deste pacote de codigo fonte.
         android:drawSelectorOnTop="false"
         android:cacheColorHint="@android:color/transparent"
         android:textFilterEnabled="true"
-
         />
 
     <TextView android:id="@id/android:empty"

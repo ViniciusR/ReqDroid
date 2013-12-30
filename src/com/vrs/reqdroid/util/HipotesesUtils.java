@@ -9,10 +9,9 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.widget.EditText;
-
 import com.vrs.reqdroid.R;
 import com.vrs.reqdroid.dao.BDGerenciador;
+import com.vrs.reqdroid.fragments.RequisitosAtrasadosFragment;
 
 import java.util.ArrayList;
 
@@ -35,7 +34,7 @@ public class HipotesesUtils extends Activity {
     public static void salvaHipoteseBD(Context context, String descricao, String data, int idProjeto)
     {
         String autor = "";
-        BDGerenciador.getInstance(context).insertHipotese(descricao, data, 1, autor, idProjeto);
+        BDGerenciador.getInstance(context).insertHipotese(descricao, data, 1, 0, autor, idProjeto);
     }
 
     /**
@@ -60,9 +59,9 @@ public class HipotesesUtils extends Activity {
      * @param autor O autor da hipotese
      * @param idProjeto O id do projeto
      */
-    public static void validaHipoteseBD(Context context, String descricao, String data, int versao, String autor, int idProjeto)
+    public static void validaHipoteseBD(Context context, String descricao, String data, int versao, int subversao, String autor, int idProjeto)
     {
-        BDGerenciador.getInstance(context).insertRequisito(descricao, data, 3, versao, autor, idProjeto);
+        BDGerenciador.getInstance(context).insertRequisito(descricao, data, 3, versao, subversao, autor, idProjeto);
         int idRequisito = BDGerenciador.getInstance(context).getIdUltimoRequisito();
         int numeroRequisitos = BDGerenciador.getInstance(context).getNumeroUltimoRequisito(idProjeto);
         BDGerenciador.getInstance(context).insertProjetoRequisito(idProjeto, idRequisito, numeroRequisitos + 1);
@@ -77,10 +76,10 @@ public class HipotesesUtils extends Activity {
      * @param versaoNova A versao nova da hipotese
      * @param idProjeto O id do projeto
      */
-    public static void editaHipoteseBD(Context context, String descricaoAtual, String descricaoNova, int versaoNova, int idProjeto)
+    public static void editaHipoteseBD(Context context, String descricaoAtual, String descricaoNova, int versaoNova, int subversaoNova, int idProjeto)
     {
         int idHipotese = BDGerenciador.getInstance(context).selectHipotesePorDescricao(descricaoAtual, idProjeto);
-        BDGerenciador.getInstance(context).updateHipotese(idHipotese, descricaoNova, versaoNova);
+        BDGerenciador.getInstance(context).updateHipotese(idHipotese, descricaoNova, versaoNova, subversaoNova);
     }
 
     /**
@@ -152,6 +151,7 @@ public class HipotesesUtils extends Activity {
     {
         final String data = BDGerenciador.getInstance(context).selectDataHipotese(descricao, idProjeto);
         final int versaoRequisito = BDGerenciador.getInstance(context).selectVersaoHipotese(descricao, idProjeto);
+        final int subversaoRequisito = BDGerenciador.getInstance(context).selectSubversaoHipotese(descricao, idProjeto);
         final String autor = BDGerenciador.getInstance(context).selectAutorHipotese(descricao,idProjeto);
 
         final AlertDialog.Builder alertbox = new AlertDialog.Builder(context);
@@ -162,7 +162,7 @@ public class HipotesesUtils extends Activity {
             public void onClick(DialogInterface dialog, int whichButton) {
                 removeHipoteseBD(context, descricao, idProjeto);
                 validaHipoteseBD(context, descricao, data,
-                        versaoRequisito, autor, idProjeto);
+                        versaoRequisito, subversaoRequisito, autor, idProjeto);
                 hipoteses.remove(posicao);
                 lvHipotesesAdapter.notifyDataSetChanged();
                 //Toast.makeText(context, R.string.tela_hipoteses_movida, Toast.LENGTH_SHORT).show();
@@ -179,39 +179,14 @@ public class HipotesesUtils extends Activity {
      * Edita uma hipotese da lista.
      *
      * @param context O contexto que sera utilizado
-     * @param hipoteses A lista de hipoteses
      * @param descricaoAtual A descricao atual da hipotese
      * @param posicao A posicao da hipotese na lista
      * @param idProjeto O id do projeto
-     * @param lvHipotesesAdapter O adapter da lista de hipoteses
      */
-    public static void editaHipotese(final Context context, final ArrayList<String> hipoteses, final String descricaoAtual,
-                                      final int posicao, final int idProjeto, final ListViewHipotesesAdapter lvHipotesesAdapter)
+    public static void editaHipotese(Context context, String descricaoAtual,String descricaoNova,
+                                     int versaoValor, int subversaoValor,  int posicao, int idProjeto)
     {
-        AlertDialog.Builder alert = new AlertDialog.Builder(context);
-        alert.setTitle(R.string.alert_editar_hipotese);
-
-        final int versaoHipotese = BDGerenciador.getInstance(context).selectVersaoHipotese(descricaoAtual, idProjeto);
-        final EditText entrada = new EditText(context);
-        entrada.setText(descricaoAtual);
-        alert.setView(entrada);
-
-        alert.setPositiveButton(R.string.alert_salvar, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                if (!entrada.getText().toString().equals(""))
-                {
-                    hipoteses.set(posicao, entrada.getText().toString());
-                    lvHipotesesAdapter.notifyDataSetChanged();
-                    editaHipoteseBD(context, descricaoAtual, entrada.getText().toString(),
-                                    versaoHipotese + 1, idProjeto);
-                }
-            }
-        });
-
-        alert.setNegativeButton(R.string.alert_cancelar, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-            }
-        });
-        alert.show();
+        editaHipoteseBD(context, descricaoAtual, descricaoNova, versaoValor, subversaoValor, idProjeto);
+        RequisitosAtrasadosFragment.atualizaLista(posicao, descricaoNova);
     }
 }

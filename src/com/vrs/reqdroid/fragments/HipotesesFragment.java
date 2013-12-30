@@ -30,9 +30,11 @@ import android.widget.TextView;
 import com.vrs.reqdroid.R;
 import com.vrs.reqdroid.activities.TelaHipoteseDetalhadaActivity;
 import com.vrs.reqdroid.activities.TelaPrincipalActivity;
+import com.vrs.reqdroid.util.AlertsUtil;
 import com.vrs.reqdroid.util.HipotesesUtils;
 import com.vrs.reqdroid.util.ListViewHipotesesAdapter;
 import com.vrs.reqdroid.util.ProjetoUtils;
+import com.vrs.reqdroid.util.RequisitosUtils;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -54,8 +56,6 @@ public class HipotesesFragment extends Fragment {
     private static EditText editTextHipotese;
     private static String hipoteseSelecionada; //Util pra quando a hipotese e selecionada para exibir detalhes.
     private static int posicaoHipoteseSelecionada; //Util pra quando a hipotese e selecionada para exibir detalhes.
-    private int posicao; //Util para a o menu de opcoes.
-    private String descricao; //Util para o menu de opcoes.
     private View rootView;
 
     public HipotesesFragment() {
@@ -98,7 +98,7 @@ public class HipotesesFragment extends Fragment {
                 if (HipotesesUtils.hipotesePreenchida(editTextHipotese.getText().toString()))
                 {
                     salvaHipotese(editTextHipotese.getText().toString());
-                    hipoteses.add(lvHipoteses.getChildCount(), editTextHipotese.getText().toString());
+                    hipoteses.add(editTextHipotese.getText().toString());
                     editTextHipotese.setText("");
                     lvHipotesesAdapter.notifyDataSetChanged();
                 }
@@ -133,8 +133,8 @@ public class HipotesesFragment extends Fragment {
         public void onClick(View view) {
             LinearLayout caixaHipotese = (LinearLayout)view.getParent();
             TextView txtHipotese = (TextView)caixaHipotese.getChildAt(0);
-            posicao = lvHipoteses.getPositionForView(caixaHipotese);
-            descricao = txtHipotese.getText().toString();
+            posicaoHipoteseSelecionada = lvHipoteses.getPositionForView(caixaHipotese);
+            hipoteseSelecionada = txtHipotese.getText().toString();
 
             //Se a versao do Android e 3.0 ou superior, exibe o PopUpMenu, senao, o ContextMenu.
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
@@ -225,8 +225,10 @@ public class HipotesesFragment extends Fragment {
      */
     private void menuEdita()
     {
-        HipotesesUtils.editaHipotese(getActivity(), hipoteses, descricao,
-                posicao, idProjeto, lvHipotesesAdapter);
+        int versaoRequisito = RequisitosUtils.getVersaoRequisito(getActivity(), hipoteseSelecionada, idProjeto);
+        int subversaoRequisito = RequisitosUtils.getSubversaoRequisito(getActivity(), hipoteseSelecionada, idProjeto);
+
+        AlertsUtil.exibeAlertaEditar(getActivity(), hipoteseSelecionada, versaoRequisito, subversaoRequisito, posicaoHipoteseSelecionada, 3);
     }
 
     /**
@@ -234,8 +236,8 @@ public class HipotesesFragment extends Fragment {
      */
     private void menuValida()
     {
-        HipotesesUtils.validaHipotese(getActivity(), hipoteses, descricao,
-                posicao, idProjeto, lvHipotesesAdapter);
+        HipotesesUtils.validaHipotese(getActivity(), hipoteses, hipoteseSelecionada,
+                posicaoHipoteseSelecionada, idProjeto, lvHipotesesAdapter);
     }
 
     /**
@@ -243,8 +245,8 @@ public class HipotesesFragment extends Fragment {
      */
     private void menuDeleta()
     {
-        HipotesesUtils.removeHipotese(getActivity(), hipoteses, descricao,
-                posicao, idProjeto, lvHipotesesAdapter);
+        HipotesesUtils.removeHipotese(getActivity(), hipoteses, hipoteseSelecionada,
+                posicaoHipoteseSelecionada, idProjeto, lvHipotesesAdapter);
     }
 
     /**
@@ -313,7 +315,6 @@ public class HipotesesFragment extends Fragment {
      */
     private void init()
     {
-
         idProjeto = ProjetoUtils.getIdProjeto();
         lvHipoteses = (ListView) rootView.findViewById(R.id.lvHipoteses);
         hipoteses = new ArrayList<String>();

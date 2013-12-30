@@ -29,7 +29,7 @@
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
         android:layout_gravity="start"
-        android:background="@color/DimGray"
+        android:background="@drawable/drawer_header"
         android:orientation="vertical">
 
         <TextView
@@ -54,13 +54,15 @@
             android:textStyle="italic" />
         </LinearLayout>
 
+        <!-- Aqui vem outro layout com outra secao, com funcionalidades de exportar, fechar projeto, etc-->
+
     <!-- The navigation drawer -->
     <ListView android:id="@+id/left_drawer_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:choiceMode="singleChoice"
-        android:divider="@color/cinzamedio"
+        android:divider="@color/LightGrey"
         android:dividerHeight="1dp"
         android:background="@android:color/background_light"/>
     </LinearLayout>

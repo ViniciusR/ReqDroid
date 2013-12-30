@@ -6,30 +6,29 @@
     <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-
             android:descendantFocusability="blocksDescendants"
-            android:minHeight="60dp"
-            android:background="@android:color/background_light">
+            android:minHeight="70dp"
+            android:background="@drawable/card_layout">
 
         <TextView
                 android:layout_width="0dip"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/txtRequisito"
+                android:id="@+id/txt_item"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
-                />
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+            android:textSize="15sp" />
 
         <ImageButton
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:id="@+id/bOpcoesRequisito"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/b_opcoes_item"
                 android:background="@drawable/ic_menu_detalhes"
                 android:layout_marginLeft="10dp"
                 android:focusable="false"

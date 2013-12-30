@@ -21,10 +21,10 @@ import com.vrs.reqdroid.models.Projeto;
 public interface IOperacoesBD {
 	
 	public long insertProjeto(String titulo, String descricao, String beneficios, String objetivos, String publicoalvo, String data);
-	public long insertRequisito(String descricao, String data, int prioridade, int versao, String autor, int idprojeto);
-	public long insertRequisitoAtrasado(String descricao, String data, int prioridade, int versao, String autor, int idprojeto);
+	public long insertRequisito(String descricao, String data, int prioridade, int versao, int subversao, String autor, int idprojeto);
+	public long insertRequisitoAtrasado(String descricao, String data, int prioridade, int versao, int subversao, String autor, int idprojeto);
 	public long insertCaracteristicasUsuario(int experiencia, int pericia, int treinamento, int idprojeto);
-	public long insertHipotese(String descricao, String data, int versao, String autor, int idProjeto);
+	public long insertHipotese(String descricao, String data, int versao, int subversao, String autor, int idProjeto);
 	public long insertProjetoRequisito(int idProjeto, int idRequisito, int numero);
 	public long insertProjetoRequisitoAtrasado(int idProjeto, int idRequisito, int numero);
 	public long insertDependencia(int idProjeto, int idPrimeiroRequisito, int idSegundoRequisito);
@@ -38,17 +38,17 @@ public interface IOperacoesBD {
 	public void deleteHipotese(int id);
 	public void deleteDependencia(int idProjeto, int idPrimeiroRequisito, int idSegundoRequisito);
 	
-	public void updateRequisito(int id, String descricaoNova, int versaoNova);
+	public void updateRequisito(int id, String descricaoNova, int versaoNova, int subversaoNova);
 	public void updatePrioridadeRequisito(int id, int prioridadeNova);
 	public void updatePrioridadeRequisitoAtrasado(int id, int prioridadeNova);
 	public void updateAutorRequisito(int id, String autorNovo);
 	public void updateAutorRequisitoAtrasado(int id, String autorNovo);
 	public void updateProjeto(int id, String tituloNovo, String descricaoNova, String beneficiosNovos, String objetivosNovos, String publicoAlvoNovo);
-	public void updateRequisitoAtrasado(int id, String descricaoNova, int versaoNova);
+	public void updateRequisitoAtrasado(int id, String descricaoNova, int versaoNova, int subversaoNova);
 	public void updateExperiencia(int idProjeto, int experienciaNova);
 	public void updatePericia(int idProjeto, int periciaNova);
 	public void updateTreinamento(int idProjeto, int treinamentoNovo);
-	public void updateHipotese(int id, String descricaoNova, int versaoNova);
+	public void updateHipotese(int id, String descricaoNova, int versaoNova, int subversaoNova);
 	public void updateAutorHipotese(int id, String autorNovo);
 	
 	public List<String> selectAllProjetos();
@@ -59,10 +59,12 @@ public interface IOperacoesBD {
 	public String selectDataRequisito(String descricao, int idProjeto);
 	public String selectAutorRequisito(String descricao, int idProjeto);
 	public int selectVersaoRequisito(String descricao, int idProjeto);
+    public int selectSubversaoRequisito(String descricao, int idProjeto);
 	public int selectPrioridadeRequisito(String descricao, int idProjeto);
 	public String selectDataRequisitoAtrasado(String descricao, int idProjeto);
 	public String selectAutorRequisitoAtrasado(String descricao, int idProjeto);
 	public int selectVersaoRequisitoAtrasado(String descricao, int idProjeto);
+    public int selectSubversaoRequisitoAtrasado(String descricao, int idProjeto);
 	public int selectPrioridadeRequisitoAtrasado(String descricao, int idProjeto);
 	public List<String> selectRequisito(int idProjeto);
 	public Projeto selectProjeto(String titulo);
@@ -76,6 +78,7 @@ public interface IOperacoesBD {
 	public int selectHipotesePorDescricao(String descricao, int idProjeto);
 	public String selectDataHipotese(String descricao, int idProjeto);
 	public int selectVersaoHipotese(String descricao, int idProjeto);
+    public int selectSubversaoHipotese(String descricao, int idProjeto);
 	public String selectAutorHipotese(String descricao, int idProjeto);
 	public int selectNumeroRequisito(int idProjeto, int idRequisito);
 	public int selectNumeroRequisito(String descricao, int idProjeto);

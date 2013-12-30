@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.vrs.reqdroid.R;
 import com.vrs.reqdroid.dao.BDGerenciador;
 import com.vrs.reqdroid.models.Projeto;
-import com.vrs.reqdroid.util.MsgAlerta;
+import com.vrs.reqdroid.util.AlertsUtil;
 import com.vrs.reqdroid.util.ProjetoUtils;
 
 
@@ -87,10 +87,10 @@ public class TelaEditarEscopoActivity extends ActionBarActivity{
                   }
                   else  if ((projetoExistente(eTitulo.getText().toString()))
                             && (!eTitulo.getText().toString().equals(tituloAtual)))
-                    MsgAlerta.exibeAlertaProjetoExistente(TelaEditarEscopoActivity.this);     
+                    AlertsUtil.exibeAlertaProjetoExistente(TelaEditarEscopoActivity.this);
               }
               else 
-               MsgAlerta.exibeAlertaCamposNaoPreenchidos(TelaEditarEscopoActivity.this);   
+               AlertsUtil.exibeAlertaCamposNaoPreenchidos(TelaEditarEscopoActivity.this);
             }  
         });  
     }

@@ -8,7 +8,7 @@
         <item android:id="@+id/opcaoEditarRequisito"
               android:title="@string/tela_detalhes_requisito_botao_editar"/>
         <item android:id="@+id/opcaoMoverRequisito"
-              android:title="@string/tela_detalhes_requisito_botao_atrasar"/>
+              android:title="@string/tela_detalhes_requisito_botao_mover"/>
         <item android:id="@+id/opcaoDeletarRequisito"
               android:title="@string/tela_detalhes_requisito_botao_remover"/>
     </group>

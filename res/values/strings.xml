@@ -51,14 +51,13 @@
     <string name="tela_detalhes_requisito_versao">Version:</string>
     <string name="tela_detalhes_requisito_botao_editar">Edit</string>
     <string name="tela_detalhes_requisito_botao_remover">Delete</string>
-    <string name="tela_detalhes_requisito_botao_atrasar">Delay</string>
+    <string name="tela_detalhes_requisito_botao_mover">Move</string>
     <string name="tela_detalhes_requisito_prioridade">Priority:</string>
     <string name="tela_detalhes_requisito_autor">Author:</string>
     <string name="tela_detalhes_requisito_botao_editar_autor">Edit author</string>
     <string name="tela_detalhes_requisito_nome_requisito">Requirement #</string>
 
     <string name="tela_detalhes_requisito_atrasado_nome_requisito">Delayed requirement #</string>
-    <string name="tela_detalhes_requisito_atrasado_botao_mover">Move</string>
 
     <string name="tela_principal_titulo">ReqDroid</string>
     <string name="tela_principal_novo_projeto">New project</string>
@@ -152,5 +151,9 @@
     <string name="toast_dependencia_igual">Select two different requirements.</string>
 
     <string name="msg_adicionar_autor">Tap edit to add the author.</string>
+
+    <string name="alert_editar_descricao">Description</string>
+    <string name="alert_editar_versao">Version</string>
+    <string name="alert_editar_ponto">.</string>
 
 </resources>

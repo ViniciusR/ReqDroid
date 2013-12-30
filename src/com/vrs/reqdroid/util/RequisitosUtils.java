@@ -9,11 +9,11 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.vrs.reqdroid.R;
 import com.vrs.reqdroid.dao.BDGerenciador;
+import com.vrs.reqdroid.fragments.RequisitosFragment;
 
 import java.util.ArrayList;
 
@@ -36,12 +36,10 @@ public class RequisitosUtils extends Activity {
     public static void salvaRequisitoBD(Context context, String descricao, String data, int idProjeto)
     {
         String autor = "";
-        BDGerenciador.getInstance(context).
-                      insertRequisito(descricao, data, 3, 1, autor, idProjeto);
+        BDGerenciador.getInstance(context). insertRequisito(descricao, data, 3, 1, 0, autor, idProjeto);
         int idRequisito = BDGerenciador.getInstance(context).getIdUltimoRequisito();
         int numeroRequisitos = BDGerenciador.getInstance(context).getNumeroUltimoRequisito(idProjeto);
         BDGerenciador.getInstance(context).insertProjetoRequisito(idProjeto, idRequisito, numeroRequisitos + 1);
-
     }
 
     /**
@@ -67,9 +65,9 @@ public class RequisitosUtils extends Activity {
      * @param autor O autor do requisito
      * @param idProjeto O id do projeto
      */
-    public static void moveRequisitoBD(Context context, String descricao, String data, int prioridade, int versao, String autor, int idProjeto)
+    public static void moveRequisitoBD(Context context, String descricao, String data, int prioridade, int versao, int subversao, String autor, int idProjeto)
     {
-        BDGerenciador.getInstance(context).insertRequisitoAtrasado(descricao, data, prioridade, versao, autor, idProjeto);
+        BDGerenciador.getInstance(context).insertRequisitoAtrasado(descricao, data, prioridade, versao, subversao, autor, idProjeto);
         int idRequisito = BDGerenciador.getInstance(context).getIdUltimoRequisitoAtrasado();
         int numeroRequisitos = BDGerenciador.getInstance(context).getNumeroUltimoRequisitoAtrasado(idProjeto);
         BDGerenciador.getInstance(context).insertProjetoRequisitoAtrasado(idProjeto, idRequisito, numeroRequisitos + 1);
@@ -84,11 +82,11 @@ public class RequisitosUtils extends Activity {
      * @param versaoNova A versao nova do requisito
      * @param idProjeto O id do projeto
      */
-    public static void editaRequisitoBD(Context context, String descricaoAtual, String descricaoNova, int versaoNova, int idProjeto)
+    public static void editaRequisitoBD(Context context, String descricaoAtual, String descricaoNova, int versaoNova, int subversaoNova, int idProjeto)
     {
         int idRequisito;
         idRequisito = BDGerenciador.getInstance(context).selectRequisitoPorDescricao(descricaoAtual, idProjeto);
-        BDGerenciador.getInstance(context).updateRequisito(idRequisito, descricaoNova, versaoNova);
+        BDGerenciador.getInstance(context).updateRequisito(idRequisito, descricaoNova, versaoNova, subversaoNova);
     }
 
     /**
@@ -161,6 +159,7 @@ public class RequisitosUtils extends Activity {
         final String data = BDGerenciador.getInstance(context).selectDataRequisito(descricao, idProjeto);
         final int prioridade = BDGerenciador.getInstance(context).selectPrioridadeRequisito(descricao, idProjeto);
         final int versaoRequisito = BDGerenciador.getInstance(context).selectVersaoRequisito(descricao, idProjeto);
+        final int subversaoRequisito = BDGerenciador.getInstance(context).selectSubversaoRequisito(descricao, idProjeto);
         final String autor = BDGerenciador.getInstance(context).selectAutorRequisito(descricao,idProjeto);
 
         final AlertDialog.Builder alertbox = new AlertDialog.Builder(context);
@@ -171,7 +170,7 @@ public class RequisitosUtils extends Activity {
             public void onClick(DialogInterface dialog, int whichButton) {
                 removeRequisitoBD(context, descricao, idProjeto);
                 moveRequisitoBD(context, descricao, data, prioridade,
-                        versaoRequisito, autor, idProjeto);
+                        versaoRequisito, subversaoRequisito, autor, idProjeto);
                 requisitos.remove(posicao);
                 lvRequisitosAdapter.notifyDataSetChanged();
                 Toast.makeText(context, R.string.tela_requisitos_msg_movido, Toast.LENGTH_SHORT).show();
@@ -188,39 +187,26 @@ public class RequisitosUtils extends Activity {
      * Edita um requisito da lista.
      *
      * @param context O contexto que sera utilizado
-     * @param requisitos A lista de requisitos
      * @param descricaoAtual A descricao atual do requisito
+     * @param versaoValor A versao do requisito
+     * @param subversaoValor A subversao do requisito
      * @param posicao A posicao do requisito na lista
      * @param idProjeto O id do projeto
-     * @param lvRequisitosAdapter O adapter da lista de requisitos
      */
-    public static void editaRequisito(final Context context, final ArrayList<String> requisitos, final String descricaoAtual,
-                                final int posicao, final int idProjeto, final ListViewRequisitosAdapter lvRequisitosAdapter)
+    public static void editaRequisito(Context context, String descricaoAtual,String descricaoNova,
+                                      int versaoValor, int subversaoValor, int posicao, int idProjeto)
     {
-        AlertDialog.Builder alert = new AlertDialog.Builder(context);
-        alert.setTitle(R.string.alert_editar_requisito_titulo);
+        editaRequisitoBD(context, descricaoAtual, descricaoNova, versaoValor, subversaoValor, idProjeto);
+        RequisitosFragment.atualizaLista(posicao, descricaoNova);
+    }
 
-        final int versaoRequisito = BDGerenciador.getInstance(context).selectVersaoRequisito(descricaoAtual, idProjeto);
-        final EditText entrada = new EditText(context);
-        entrada.setText(descricaoAtual);
-        alert.setView(entrada);
+    public static int getVersaoRequisito(Context context, String descricao, int idProjeto)
+    {
+        return BDGerenciador.getInstance(context).selectVersaoRequisito(descricao, idProjeto);
+    }
 
-        alert.setPositiveButton(R.string.alert_salvar, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                if (!entrada.getText().toString().equals(""))
-                {
-                    requisitos.set(posicao, entrada.getText().toString());
-                    lvRequisitosAdapter.notifyDataSetChanged();
-                    editaRequisitoBD(context, descricaoAtual, entrada.getText().toString(),
-                                     versaoRequisito + 1, idProjeto);
-                }
-            }
-        });
-
-        alert.setNegativeButton(R.string.alert_cancelar, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-            }
-        });
-        alert.show();
+    public static int getSubversaoRequisito(Context context, String descricao, int idProjeto)
+    {
+        return BDGerenciador.getInstance(context).selectSubversaoRequisito(descricao, idProjeto);
     }
 }

@@ -7,22 +7,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fundo"
+    android:background="@color/background"
     android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/background_light"
+        android:background="@drawable/card_layout"
         android:orientation="vertical"
+        android:layout_marginBottom="20dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:measureWithLargestChild="false">
+            android:measureWithLargestChild="false"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp">
 
             <Spinner
                 android:id="@+id/spinnerRequisito1"
@@ -38,7 +48,7 @@
                 android:layout_marginLeft="3dp"
                 android:layout_marginRight="3dp"
                 android:layout_weight="0"
-                android:background="@drawable/ic_mudar_direcao" />
+                android:background="@drawable/ic_inverter" />
 
             <Spinner
                 android:id="@+id/spinnerRequisito2"
@@ -72,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/preto"
+                android:textColor="@color/Black"
                 android:textSize="14sp" />
 
             <TextView
@@ -80,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/tela_dependencias_text_depende"
-                android:textColor="@color/preto"
+                android:textColor="@color/Black"
                 android:textSize="14sp" />
 
             <TextView
@@ -88,22 +98,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/preto"
+                android:textColor="@color/Black"
                 android:textSize="14sp" />
         </LinearLayout>
 
     </LinearLayout>
 
     <ListView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/lvDependencias"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:dividerHeight="5dp"
+            android:scrollbarStyle="outsideInset"
+            android:dividerHeight="10dp"
             android:clickable="true"
             android:divider="@android:color/transparent"
             android:choiceMode="singleChoice"
-            android:layout_marginTop="5dp"/>
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp" />
 
 </LinearLayout>
